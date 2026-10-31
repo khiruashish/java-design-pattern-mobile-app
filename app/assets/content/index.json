@@ -577,13 +577,13 @@
    "id": "l2-practitioner__iterator",
    "path": "l2-practitioner/iterator.md",
    "title": "Iterator",
-   "summary": "Traverse a collection without exposing its internals.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Iterator gives sequential access to the elements of a collection without exposing how it's stored. In Java it's built in: `Iterable` makes for-each work, `Iterator` walks one element at a time, and `Spliterator` powers streams. Write your own when the data isn't a plain list: a tree, a paginated API, a database cursor. Know the contracts: `ArrayList` iterators fail fast on concurrent changes, concurrent collections iterate weakly consistently, and a lazy iterator should fetch only what the caller actually uses.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l2-practitioner"
   },

@@ -1,0 +1,6 @@
+show FC-9007
+show FC-9006
+show FC-9005
+show FC-9004
+API calls: 2 (the last page was never requested)
+full history: 7 orders in 3 calls
