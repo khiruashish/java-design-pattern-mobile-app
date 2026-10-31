@@ -1,0 +1,7 @@
+station 1 uses client 1
+station 3: no object available within 20ms (active: [returns-desk, packing-station-2])
+suspected leaks: [returns-desk held 90s, packing-station-2 held 90s]
+use after return: lease already returned
+station 4 uses client 3 (unhealthy client 2 was discarded)
+station 5 uses client 4 (old clients retired)
+metrics: {borrowed=5, created=4, evicted.lifetime=2, evicted.unhealthy=1, returned=5, timeouts=1}

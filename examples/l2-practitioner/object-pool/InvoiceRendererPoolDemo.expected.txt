@@ -1,0 +1,2 @@
+invoices rendered: 200 by 8 worker threads
+renderers started: 3 (without a pool it would be 200)

@@ -1,0 +1,3 @@
+printer-A printed label for FC-2601
+printer-B printed label for FC-2602
+printer-A printed label for FC-2603

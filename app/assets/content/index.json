@@ -479,9 +479,9 @@
    "id": "l2-practitioner__object-pool",
    "path": "l2-practitioner/object-pool.md",
    "title": "Object Pool",
-   "summary": "Reuse expensive objects instead of creating them.",
-   "minutes": 20,
-   "written": false,
+   "summary": "An object pool keeps a limited set of expensive objects (database connections, threads, heavyweight clients) and lends them out instead of creating new ones each time. Pools also *limit* how many are in use, which protects scarce resources. On today's JVM, don't pool cheap objects, and with virtual threads, don't pool threads: limit access to the resource instead.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",

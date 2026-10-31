@@ -1,0 +1,3 @@
+Receipt for asha: MILK,BREAD
+Receipt for asha: MILK,BREADEGGS
+without pool: Receipt for ravi: EGGS
