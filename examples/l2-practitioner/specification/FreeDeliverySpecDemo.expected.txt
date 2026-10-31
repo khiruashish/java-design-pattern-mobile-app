@@ -1,0 +1,4 @@
+Q1 free delivery: true
+Q2 free delivery: true
+Q3 free delivery: false
+Q4 free delivery: false

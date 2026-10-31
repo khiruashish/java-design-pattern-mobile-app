@@ -1,0 +1,9 @@
+WHERE ((category = ? OR category = ?) AND price_paise BETWEEN ? AND ? AND stock > 0)
+binds [fruit, dairy, 0, 10000]
+cache hit: [MLK, PNR]
+WHERE LOWER(name) LIKE ? ESCAPE '\'  binds [%100\%%]  memory [SPN]
+no filters: WHERE TRUE, 6 products
+400 Bad Request: unknown category 'fruit' --'
+400 Bad Request: min_price is above max_price
+400 Bad Request: unknown filter 'sort'
+400 Bad Request: search text must be 2 to 40 characters

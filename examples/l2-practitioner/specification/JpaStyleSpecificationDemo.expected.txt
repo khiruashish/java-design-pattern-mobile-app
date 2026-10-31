@@ -1,0 +1,4 @@
+SELECT * FROM product WHERE (organic = TRUE AND (category = ? OR price_paise < ?))
+params: [fruit, 7000]
+hostile input stays a parameter: category = ?  params=[fruit' OR '1'='1]
+in memory: [APPLE, CURD]

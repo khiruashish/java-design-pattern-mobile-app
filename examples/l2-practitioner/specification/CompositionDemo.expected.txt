@@ -1,0 +1,6 @@
+rule: ((gold tier or 5+ orders in 30 days) and verified email)
+  Asha: true
+  Ravi: true
+  Meena: false
+  Kiran: false
+rule: not verified email -> Kiran true

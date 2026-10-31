@@ -689,9 +689,9 @@
    "id": "l2-practitioner__specification",
    "path": "l2-practitioner/specification.md",
    "title": "Specification",
-   "summary": "Combine business rules as composable predicates.",
-   "minutes": 20,
-   "written": false,
+   "summary": "A Specification is a business rule packaged as an object with one question: \"does this candidate satisfy me?\". Small named rules (`inStock`, `organic`, `cheaperThan(100)`) combine with `and`, `or` and `not` into bigger ones, so you stop writing a finder method for every combination. In memory, `java.util.function.Predicate` is often enough. When the data lives in a database, the specification builds a query instead (Spring Data JPA's `Specification<T>`), so filtering runs in SQL with bind parameters.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",

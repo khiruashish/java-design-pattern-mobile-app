@@ -1,0 +1,3 @@
+evening, standard, with room: [S-20]
+express or morning: [S-09, S-19]
+can it explain itself? toString() is a lambda class name: true
