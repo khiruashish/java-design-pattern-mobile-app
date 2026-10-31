@@ -521,9 +521,9 @@
    "id": "l2-practitioner__proxy",
    "path": "l2-practitioner/proxy.md",
    "title": "Proxy",
-   "summary": "Control access to an object through a stand-in.",
-   "minutes": 25,
-   "written": false,
+   "summary": "A Proxy is a stand-in object with the same interface as the real one that **controls access** to it: creating it lazily, checking permissions, caching answers, or forwarding calls over the network. In Java you meet proxies every day: Spring's `@Transactional`, `@Cacheable` and `@PreAuthorize` work by wrapping your beans in generated proxies (JDK dynamic proxies for interfaces, ByteBuddy/CGLIB subclasses for classes). Know their one big trap: calling `this.method()` from inside the object skips the proxy.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",

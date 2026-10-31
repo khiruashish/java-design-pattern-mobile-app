@@ -1,0 +1,9 @@
+FC-4001: 4 items, Rs 649
+FC-4001: 4 items, Rs 649
+real summary loads: 1
+denied: refund requires SUPERVISOR
+refunded Rs 500 on FC-4001
+real exception type kept: order id is blank
+Proxy[OrderAdmin -> RealOrderAdmin], equals itself: true
+metrics: orderSummary=2(1 err) orderSummary.cacheHit=1 refund=2(1 err)
+RealOrderAdmin is not an interface; use composition or a subclass proxy

@@ -1,0 +1,4 @@
+list screen ready with 3 products, nothing downloaded
+  downloading mango.jpg (2 MB)
+showing mango.jpg
+showing mango.jpg

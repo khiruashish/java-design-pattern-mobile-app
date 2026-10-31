@@ -1,0 +1,14 @@
+trap: one transaction around placeAll, none around each place():
+  [tx begin] placeAll
+    place FC-1
+    place FC-2
+  [tx commit] placeAll
+fix: call through the proxy (better: move place() to another bean):
+  [tx begin] placeAll
+  [tx begin] place
+    place FC-1
+  [tx commit] place
+  [tx begin] place
+    place FC-2
+  [tx commit] place
+  [tx commit] placeAll

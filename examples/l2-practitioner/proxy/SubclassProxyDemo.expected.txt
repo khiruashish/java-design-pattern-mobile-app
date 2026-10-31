@@ -1,0 +1,5 @@
+  [tx] begin
+  [tx] commit
+reserved MILK-1L
+released MILK-1L  <- no [tx] lines: final method not intercepted
+caller sees an InventoryService: true, class: InventoryService$$Proxy

@@ -1,0 +1,6 @@
+before:
+  TextBlast API <- +919800000001
+after:
+  TextBlast API <- +919800000001: Your order is on the way
+  blocked: +919800000009 opted out
+caller only knows SmsGateway: true
