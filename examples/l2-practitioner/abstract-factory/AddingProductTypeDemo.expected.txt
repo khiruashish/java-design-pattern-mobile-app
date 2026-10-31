@@ -1,0 +1,3 @@
+IndiaFactory: GST invoice FC/IN/2026-27/000042
+UaeFactory: VAT invoice FC-AE-42
+SaudiFactory: VAT 15% invoice FC-42   <- generic number, probably not compliant

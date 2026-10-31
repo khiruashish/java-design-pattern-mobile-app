@@ -1,0 +1,2 @@
+IndiaFactory: INR 1200.00 + GST 5% INR 60.00 = INR 1260.00, phone ok: true
+UaeFactory: AED 1200.00 + VAT 5% AED 60.00 = AED 1260.00, phone ok: true

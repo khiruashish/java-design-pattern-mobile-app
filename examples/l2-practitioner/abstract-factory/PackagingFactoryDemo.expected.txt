@@ -1,0 +1,3 @@
+standard: [plastic-free paper bag, gel ice pack, air pillows]
+eco:      [reusable jute bag, water-based ice pack, shredded cardboard]
+eco, no frozen: [reusable jute bag, shredded cardboard]

@@ -1,0 +1,3 @@
+local: file:/tmp/freshcart/invoices/FC-2401.pdf | in-memory queue <- archived FC-2401
+cloud(ap-south-1): s3://freshcart-ap-south-1/invoices/FC-2401.pdf | sqs:ap-south-1 <- archived FC-2401
+startup failed fast: FRESHCART_INFRA=cloud-mars is not one of [cloud-dubai, cloud-mumbai, local]

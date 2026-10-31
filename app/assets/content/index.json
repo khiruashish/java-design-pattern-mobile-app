@@ -451,9 +451,9 @@
    "id": "l2-practitioner__abstract-factory",
    "path": "l2-practitioner/abstract-factory.md",
    "title": "Abstract Factory",
-   "summary": "Create families of related objects that must match.",
-   "minutes": 25,
-   "written": false,
+   "summary": "Abstract Factory is an interface for creating a *family* of related objects (tax rules, address format and delivery promise for a country; charge, webhook and refund clients for an environment) without naming their classes. Pick one concrete factory, usually at startup, and every object it creates is guaranteed to match. Its weakness: adding a new kind of product changes every factory.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
