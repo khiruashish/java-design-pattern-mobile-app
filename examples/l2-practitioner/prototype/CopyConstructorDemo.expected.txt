@@ -1,0 +1,4 @@
+original: kothrud [411038] {18:00=40}
+copy:     kothrud [411038] {18:00=60}
+copyOf:   baner [411038, 411045] {18:00=40}
+records: Slot[label=18:00-19:00, capacity=40] -> Slot[label=18:00-19:00, capacity=80], original unchanged: true

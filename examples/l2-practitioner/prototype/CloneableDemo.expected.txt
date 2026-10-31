@@ -1,0 +1,4 @@
+clone shares the list: original now [SWEETS, DRY-FRUITS, CANDLES]
+clone kept the same final id: DIWALI (can't be changed after super.clone())
+constructor calls: 1 for 2 objects (clone skipped the constructor)
+copy constructor: EID[DATES, VERMICELLI] -> EID-DXB[DATES, VERMICELLI]

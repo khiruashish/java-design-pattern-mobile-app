@@ -465,9 +465,9 @@
    "id": "l2-practitioner__prototype",
    "path": "l2-practitioner/prototype.md",
    "title": "Prototype",
-   "summary": "Create new objects by copying an existing one.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Prototype creates new objects by copying an existing, pre-configured one, then customising the copy. It's useful when setting an object up from scratch is long or error-prone: templates, campaigns, store configurations. In Java, copy with copy constructors or copy methods, not `Cloneable`. Decide deliberately what is deep-copied, shared, reset or left out.",
+   "minutes": 30,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",

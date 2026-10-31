@@ -1,0 +1,3 @@
+{BREAD=2, EGGS-12=1, MILK-1L=7} <- template
+{EGGS-12=1, MILK-1L=4} <- asha
+{BREAD=2, EGGS-12=2, MILK-1L=7} <- ravi

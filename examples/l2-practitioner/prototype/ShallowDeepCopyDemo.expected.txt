@@ -1,0 +1,2 @@
+after editing the SHALLOW copy, template = template[MILKx5, BREADx1, EGGSx1]
+after editing the DEEP copy,    template = template[MILKx2, BREADx1], copy = ravi[MILKx5, BREADx1, EGGSx1]

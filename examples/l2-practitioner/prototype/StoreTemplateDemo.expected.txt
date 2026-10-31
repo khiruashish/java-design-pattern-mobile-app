@@ -1,0 +1,5 @@
+source:   pune-01 pune pincodes=[411001, 411004] slots=3 staff={packer=3, picker=6, rider=12} key=**** orders=842 from=null
+new:      store-1 nashik pincodes=[422001] slots=2 staff={packer=3, picker=3, rider=12} key=<unset> orders=0 from=tpl-standard-dark-store@v1
+go-live blockers: [at least 4 pickers needed, payment terminal key not set]
+go-live blockers after fixes: []
+template still has 2 slots
