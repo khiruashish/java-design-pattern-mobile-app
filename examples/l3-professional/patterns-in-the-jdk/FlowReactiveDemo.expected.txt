@@ -1,0 +1,9 @@
+subscribed, requesting 2
+  got FC-1 placed
+  got FC-2 placed
+  processed a batch, requesting 2 more
+  got FC-1 packed
+  got FC-3 placed
+  processed a batch, requesting 2 more
+  got FC-2 packed
+complete after 5 events

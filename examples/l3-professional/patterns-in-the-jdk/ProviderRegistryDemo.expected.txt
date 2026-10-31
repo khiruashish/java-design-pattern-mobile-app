@@ -1,0 +1,9 @@
+IN candidates: [textblast-in, globalsms, expensive-legacy], SG: [globalsms]
+TBIN:+9198450
+TBIN:+9170000
+  globalsms failed (SG route down), trying next
+all channels failed for SG
+stats: textblast-in calls=2 failures=0; globalsms calls=1 failures=1
+legacy gateway instantiated: false
+startup refused: duplicate channel id textblast-in
+startup refused: no channel covers AE

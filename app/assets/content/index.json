@@ -758,9 +758,9 @@
    "id": "l3-professional__patterns-in-the-jdk",
    "path": "l3-professional/patterns-in-the-jdk.md",
    "title": "Patterns in the JDK",
-   "summary": "Recognise the patterns you already use every day.",
-   "minutes": 25,
-   "written": false,
+   "summary": "You already use dozens of design patterns every day through the JDK. Collections give you Iterator, Adapter (`Arrays.asList`), Proxy views (`unmodifiableList`) and Factory methods (`List.of`). `java.io` is a stack of Decorators with an Adapter (`InputStreamReader`) between bytes and characters. `Runtime` is a Singleton, `Integer.valueOf` a Flyweight, `Collections.emptyList` a Null Object. `Comparator` is Strategy. `ServiceLoader` is a plugin registry. `Flow` is Observer with back-pressure. Recognising them tells you how the APIs behave, including their traps.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",

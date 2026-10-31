@@ -1,0 +1,4 @@
+Runtime.getRuntime() is one instance: true, processors > 0: true
+Integer 127 == 127: true, 128 == 128: false, equals: true
+Boolean.valueOf shares instances: true
+emptyList() is a shared immutable Null Object: true, size 0

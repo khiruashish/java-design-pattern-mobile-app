@@ -1,0 +1,5 @@
+Apples    kg     Rs 180.00
+banana    dozen  Rs 55.00
+Okra      kg     Rs 60.50
+spinach   bunch  Rs 30.00
+imported 4, skipped 2 bad rows

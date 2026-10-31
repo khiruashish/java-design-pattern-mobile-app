@@ -1,0 +1,2 @@
+header: sku,price, first row: SKU-1,41, remaining rows: 299
+decompressed bytes: 3202, compressed bytes on the wire under a third of that: true
