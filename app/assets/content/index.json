@@ -730,9 +730,9 @@
    "id": "l3-professional__patterns-in-modern-java",
    "path": "l3-professional/patterns-in-modern-java.md",
    "title": "Patterns in Modern Java (17–21)",
-   "summary": "How records, sealed types, pattern matching and lambdas reshape the GoF catalogue.",
-   "minutes": 35,
-   "written": false,
+   "summary": "Java 16–21 added records, sealed types, pattern matching for `switch` and record patterns, on top of lambdas (8) and richer interfaces (8–9). Together they change how many GoF patterns look. Value Objects and Mementos become records. Closed hierarchies become sealed interfaces. Visitor becomes a `switch`. Strategy, Command and Template Method become lambdas. Singleton and State become enums. The intent of each pattern stays the same; the boilerplate goes, and the compiler checks more of it for you.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",

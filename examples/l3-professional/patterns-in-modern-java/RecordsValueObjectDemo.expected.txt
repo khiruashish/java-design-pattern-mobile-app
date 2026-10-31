@@ -1,0 +1,5 @@
+before: equal values in a set -> size 2
+record: equal values in a set -> size 1, printed as Money[paise=6400, currency=INR]
+plus: Money[paise=10900, currency=INR]
+rejected: negative amount: -1
+snapshot unaffected by later changes: [MILK]

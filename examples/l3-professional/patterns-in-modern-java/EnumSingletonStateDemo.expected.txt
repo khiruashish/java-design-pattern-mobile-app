@@ -1,0 +1,6 @@
+classic: second instance via reflection? true
+enum: reflection refused (Cannot reflectively create enum objects)
+pack -> PACKED
+dispatch -> OUT_FOR_DELIVERY
+deliver -> DELIVERED
+can't 'cancel' when DELIVERED

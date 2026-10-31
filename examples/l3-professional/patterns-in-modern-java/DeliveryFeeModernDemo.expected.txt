@@ -1,0 +1,4 @@
+City[km=2.5] -> Rs 0
+City[km=6.0] -> Rs 35
+Suburb[km=10.0, tollRoad=true] -> Rs 110
+Village[name=Khed, km=18.0] -> Rs 188

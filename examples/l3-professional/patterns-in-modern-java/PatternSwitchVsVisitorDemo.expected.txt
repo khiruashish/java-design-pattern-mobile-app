@@ -1,0 +1,2 @@
+visitor: [3000, 12800]
+switch:  [3000, 12800, 5700]  (6+ packs get 5% off)
