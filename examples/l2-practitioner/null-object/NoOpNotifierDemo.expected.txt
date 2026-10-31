@@ -1,0 +1,2 @@
+messages sent: 1
+SMS 98450: order FC-1001 placed

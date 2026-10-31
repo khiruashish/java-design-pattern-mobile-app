@@ -1,0 +1,4 @@
+98450: Hi Asha
+  SMS to 98450: order confirmed
+70000: Welcome, new customer
+existing customer at checkout? false -> ask them to sign up

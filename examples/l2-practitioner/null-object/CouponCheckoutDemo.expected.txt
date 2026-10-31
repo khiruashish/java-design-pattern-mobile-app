@@ -1,0 +1,5 @@
+no code:   Rs 649.00 -> Rs 649.00
+FRESH10:   Rs 649.00 -> Rs 584.10  [FRESH10 applied: 10% off (max Rs 100)]
+big cart:  Rs 2500.00 -> Rs 2400.00  [FRESH10 applied: 10% off (max Rs 100)]
+typo:      Rs 649.00 -> Rs 649.00  [code FRSH10 isn't valid]
+expired:   Rs 649.00 -> Rs 649.00  [code DIWALI25 expired on 2026-10-25]

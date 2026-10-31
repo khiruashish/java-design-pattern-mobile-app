@@ -675,9 +675,9 @@
    "id": "l2-practitioner__null-object",
    "path": "l2-practitioner/null-object.md",
    "title": "Null Object",
-   "summary": "Replace null checks with an object that does nothing.",
-   "minutes": 15,
-   "written": false,
+   "summary": "A Null Object is an implementation of an interface that does nothing, used instead of `null` when \"nothing\" has one obvious meaning: no discount, no notification, no metrics. Callers stop writing `if (x != null)`, and `NullPointerException`s from forgotten checks disappear. Its bigger sibling, the Special Case, gives specific, sensible answers for situations like \"guest customer\" or \"invalid coupon\". Use `Optional` instead when the caller must decide what absence means, and never use a Null Object for something that must happen, such as a payment.",
+   "minutes": 30,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",

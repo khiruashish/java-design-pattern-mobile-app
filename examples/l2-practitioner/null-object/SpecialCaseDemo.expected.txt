@@ -1,0 +1,4 @@
+u1    Welcome back, Asha                     points=420  cod=true
+u2    Hi Ravi, please contact support        points=0    cod=false
+null  Hello! Sign in to earn points          points=0    cod=false
+blocked customers: 1
