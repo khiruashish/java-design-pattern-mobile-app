@@ -1,0 +1,7 @@
+push: Imran is your rider for FC-3001
+push: FC-3001 is on its way, ETA 25 min
+push: Almost there! FC-3001 arrives in 8 min
+push: FC-3001 delivered. Enjoy!
+push: Sorry, FC-3002 could not be delivered: customer not reachable
+metrics: {ASSIGNED=1, PICKED_UP=2, DELIVERED=1, FAILED=1}
+rejected: Failed event needs a reason

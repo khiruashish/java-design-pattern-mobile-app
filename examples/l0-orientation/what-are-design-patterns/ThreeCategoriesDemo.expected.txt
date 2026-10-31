@@ -1,0 +1,5 @@
+Creational:  standard delivery in slot 18:00-19:00
+Creational:  express delivery within 30 min
+Structural:  partner courier booked for FC-1001 at 12.97,77.59
+Behavioural: app push   -> FC-1001 is now PACKED
+Behavioural: store desk -> FC-1001 is now PACKED

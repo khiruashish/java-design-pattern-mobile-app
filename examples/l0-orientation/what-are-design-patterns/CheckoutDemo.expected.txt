@@ -1,0 +1,7 @@
+receipt order=FC-2001 total=$37.49
+listener_failed order=FC-2001 error="loyalty service unavailable"
+metric orders_placed{express=false} +1
+receipt order=FC-2002 total=$64.00
+listener_failed order=FC-2002 error="loyalty service unavailable"
+metric orders_placed{express=true} +1
+rejected: Invalid order: id is required, customer is required, basket must be positive
