@@ -1,0 +1,4 @@
+balked: nothing changed
+saved, then: balked: nothing changed
+customer still waiting for a slot: true
+after a cancellation freed a slot: Asha got a slot

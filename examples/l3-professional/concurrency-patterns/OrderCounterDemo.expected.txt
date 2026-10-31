@@ -1,0 +1,2 @@
+expected 800000, LongAdder counted 800000
+plain long: never more than 800000 (true), usually less, and no guarantee either way

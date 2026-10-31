@@ -1,0 +1,2 @@
+packed 40 orders, 100 items; queue never held more than 5 jobs
+queue empty at the end: true

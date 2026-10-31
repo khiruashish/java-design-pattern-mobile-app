@@ -1,0 +1,3 @@
+before: a reader between the two writes sees mrp=8000 sale=9000 -> sale above MRP: true
+after: 100,000 snapshot swaps and 100,000 reads, inconsistent reads = 0
+atomic read-modify-write: Price[mrpPaise=10099, salePaise=8079]

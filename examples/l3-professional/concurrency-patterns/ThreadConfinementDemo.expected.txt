@@ -1,0 +1,6 @@
+ThreadLocal formatter: 2026-10-31 18:30, separate instances per thread: true
+better: an immutable DateTimeFormatter needs no confinement: 2026-10-31 18:30
+leaky:   tenant seen by handler: FreshCart
+leaky:   next request without a tenant -> tenant seen by handler: FreshCart   <- leaked
+cleaned: tenant seen by handler: DairyDay
+cleaned: next request without a tenant -> tenant seen by handler: null

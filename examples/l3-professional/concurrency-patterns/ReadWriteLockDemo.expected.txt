@@ -1,0 +1,3 @@
+readers overlapped: true, MILK = 6400
+after a write: MILK = 6800
+rider at 18.5204, 73.8567 (optimistic read, no lock taken when uncontended)

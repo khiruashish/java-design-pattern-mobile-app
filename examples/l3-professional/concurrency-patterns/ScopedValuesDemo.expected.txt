@@ -1,0 +1,3 @@
+query for tenant freshcart [req-1]
+nested: query for tenant dairyday-audit [req-2a] then back to dairyday
+bound after the call returned: false

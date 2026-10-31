@@ -786,9 +786,9 @@
    "id": "l3-professional__concurrency-patterns",
    "path": "l3-professional/concurrency-patterns.md",
    "title": "Concurrency Patterns",
-   "summary": "Write correct concurrent code with proven patterns.",
-   "minutes": 40,
-   "written": false,
+   "summary": "Concurrent code goes wrong when threads share mutable state without coordination. The patterns here avoid that in three ways. **Don't share**: immutability and thread confinement. **Share through a safe channel**: producer-consumer queues, thread pools, futures, Active Object. **Coordinate explicitly**: read-write locks, balking, guarded suspension, atomic compare-and-set. Java 21's **virtual threads** make blocking, thread-per-request code scale again, and **structured concurrency** and **scoped values** (final in Java 25) tidy up task lifetimes and context passing. Prefer the highest-level tool that fits: an executor over raw threads, a concurrent collection over a lock, an immutable snapshot over both.",
+   "minutes": 50,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",
