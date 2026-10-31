@@ -1,0 +1,11 @@
+event=item_added basket=B-42 sku=MILK-1L qty=2 subtotal=$2.58
+event=item_added basket=B-42 sku=BREAD-WHT qty=1 subtotal=$2.49
+event=item_added basket=B-42 sku=APPLE-GALA qty=6 subtotal=$3.90
+event=item_rejected basket=B-42 sku=CAVIAR-50G reason="Unknown product: CAVIAR-50G"
+rejected: Unknown product: CAVIAR-50G
+event=item_rejected basket=B-42 sku=APPLE-GALA reason="Basket limit of 10 items reached"
+rejected: Basket limit of 10 items reached
+event=item_rejected basket=B-42 sku=MILK-1L reason="Quantity must be positive: 0"
+rejected: Quantity must be positive: 0
+rejected: callers cannot modify the basket's lines directly
+basket=B-42 items=9 total=$8.97

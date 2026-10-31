@@ -1,0 +1,25 @@
+---
+tags: [L2, creational]
+---
+# Dependency Injection
+
+<span class="badge-l2">L2 🔵 Practitioner</span> · ⏱ 30 min read
+
+!!! abstract "TL;DR"
+    Give objects their dependencies instead of letting them find them.
+
+!!! info "This page is being written"
+    The full page follows the playbook template (description, how it works, three runnable
+    examples, pros and cons, best practices, pitfalls, expert deep dive, interview corner).
+    It will cover these subtopics:
+
+    - Constructor, setter and field injection
+    - Composition root
+    - Service Locator and why it's an anti-pattern
+    - DI containers: Spring, Guice, Dagger
+    - Scopes and lifecycles
+
+
+---
+
+[← Previous: Object Pool](object-pool.md) · [Next: Composite →](composite.md)

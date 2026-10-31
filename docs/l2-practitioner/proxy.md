@@ -1,0 +1,25 @@
+---
+tags: [L2, structural]
+---
+# Proxy
+
+<span class="badge-l2">L2 🔵 Practitioner</span> · ⏱ 25 min read
+
+!!! abstract "TL;DR"
+    Control access to an object through a stand-in.
+
+!!! info "This page is being written"
+    The full page follows the playbook template (description, how it works, three runnable
+    examples, pros and cons, best practices, pitfalls, expert deep dive, interview corner).
+    It will cover these subtopics:
+
+    - Virtual, protection, remote and caching proxies
+    - Static proxies
+    - JDK dynamic proxies (java.lang.reflect.Proxy)
+    - Byte-code proxies (ByteBuddy, CGLIB)
+    - Proxy pitfalls: self-invocation
+
+
+---
+
+[← Previous: Composite](composite.md) · [Next: Bridge →](bridge.md)
