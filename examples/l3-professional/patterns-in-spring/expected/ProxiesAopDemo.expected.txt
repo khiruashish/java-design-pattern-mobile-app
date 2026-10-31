@@ -1,0 +1,6 @@
+hand-made proxy: 42 | before available; after; 
+bean class is a CGLIB subclass: true
+through the proxy: PANEER is out of stock
+  MILK after rollback: 10
+self-invocation: PANEER is out of stock
+  MILK after self-call: 9   <- no transaction, partial update kept

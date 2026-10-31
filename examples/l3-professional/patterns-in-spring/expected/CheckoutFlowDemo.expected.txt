@@ -1,0 +1,4 @@
+  receipt queued for FC-2 (upi)
+FC-2 by upi: UPI-FC-2
+FC-1 by card failed: card limit exceeded
+payments rows: [FC-2], FC-1 status: DELIVERED

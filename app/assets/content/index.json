@@ -772,9 +772,9 @@
    "id": "l3-professional__patterns-in-spring",
    "path": "l3-professional/patterns-in-spring.md",
    "title": "Patterns in Spring",
-   "summary": "See how Spring is built from patterns and how to use them well.",
-   "minutes": 30,
-   "written": false,
+   "summary": "Spring is a set of design patterns you configure. The **IoC container** is a Factory plus Dependency Injection with Singleton and Prototype scopes. **AOP** features (`@Transactional`, `@Cacheable`, `@Async`, method security) are **Proxies** around your beans, which is why calling an annotated method on `this` silently skips them. **`JdbcTemplate`**, `TransactionTemplate` and `RestTemplate` are **Template Method with callbacks**. **Application events** are **Observer**. **`FactoryBean`** is Factory. Injecting `List<Strategy>` or `Map<String, Strategy>` gives you **Strategy** registries for free. Knowing the pattern behind each feature explains most Spring surprises.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",

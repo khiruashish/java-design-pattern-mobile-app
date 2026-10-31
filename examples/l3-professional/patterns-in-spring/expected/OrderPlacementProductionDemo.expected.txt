@@ -1,0 +1,6 @@
+FC-10 paid: UPI-FC-10
+FC-11: card declined: limit
+orders in DB: [FC-10]
+SMS after commit: [FC-10] | naive listener would have sent: [FC-10, FC-11]
+audit: [orders.place ok, orders.place failed: card declined: limit]
+startup refused: no PaymentProcessor bean for [CARD]
