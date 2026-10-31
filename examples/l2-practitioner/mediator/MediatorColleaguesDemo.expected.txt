@@ -1,0 +1,4 @@
+  after AddressField: slots=[10-11, 11-12] chosen=null pay=null button=off
+  after SlotPicker: slots=[10-11, 11-12] chosen=10-11 pay=null button=off
+  after PaymentSelector: slots=[10-11, 11-12] chosen=10-11 pay=UPI button=ON
+  after AddressField: slots=[18-19] chosen=null pay=UPI button=off

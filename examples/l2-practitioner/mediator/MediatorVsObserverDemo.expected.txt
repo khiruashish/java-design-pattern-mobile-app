@@ -1,0 +1,7 @@
+observer:
+  dashboard shows 15 units
+  app shows 'only a few left'
+mediator:
+  promo paused
+  buyer: reorder 200 units
+  buyer: reorder 100 units

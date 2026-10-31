@@ -619,13 +619,13 @@
    "id": "l2-practitioner__mediator",
    "path": "l2-practitioner/mediator.md",
    "title": "Mediator",
-   "summary": "Centralise how objects talk to each other.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Mediator puts the coordination between several objects into one place. Instead of every object knowing and calling the others (a web of n² links), each \"colleague\" talks only to the mediator, which decides who should react. Typical uses: UI screens where fields affect each other, dispatchers matching orders with riders, and in-process buses that route requests to handlers. Keep each mediator focused on one workflow, or it becomes a god class.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l2-practitioner"
   },

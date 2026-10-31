@@ -1,0 +1,6 @@
+checkout publishes OrderPlaced:
+  inventory: reserve [MILK-1L, BREAD]
+  subscriber failed: analytics endpoint down (others still run)
+  notifications: SMS for FC-9401
+support publishes OrderCancelled:
+  inventory: release FC-9401
