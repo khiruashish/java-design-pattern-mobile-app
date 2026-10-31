@@ -1,0 +1,12 @@
+eligible: true
+  category == "fruit" -> false (dairy)
+  tier == "gold" -> true (gold)
+  first_order == true -> false (false)
+1,001 evaluations, compilations: 1
+rejected: can't compare Long with String in '>='
+rejected: unknown field 'cartTotal', known: [cart_total, category, first_order, tier]
+rejected: '>' needs numbers
+rejected: rule must be a yes/no condition
+rejected: parentheses nested deeper than 12 (at char 13)
+rejected: rule has more than 60 parts (at char 285)
+rejected: rule longer than 500 chars

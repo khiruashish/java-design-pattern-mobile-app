@@ -661,9 +661,9 @@
    "id": "l2-practitioner__interpreter",
    "path": "l2-practitioner/interpreter.md",
    "title": "Interpreter",
-   "summary": "Represent and evaluate a small language.",
-   "minutes": 25,
-   "written": false,
+   "summary": "Interpreter turns a small language (promo rules, fee formulas, filters) into a tree of objects and evaluates that tree. Each grammar rule becomes a node type; evaluation is a recursive walk. In Java 21 the nodes are sealed records and evaluation is an exhaustive `switch`. Parse once, evaluate many times, and when the input comes from people (not code), add type checking, size limits and clear error messages. When the grammar grows beyond a page, use a parser generator such as ANTLR or an existing expression language instead of hand-writing one.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
