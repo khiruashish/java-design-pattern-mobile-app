@@ -1,0 +1,4 @@
+before:  Order[id=FC-1, customerTier=silver, city=Pune, items=[Item[sku=MILK, qty=2, unitPaise=6400]], paid=true, couponCode=null, express=false]
+mother:  Order[id=FC-1, customerTier=gold, city=Pune, items=[Item[sku=MILK, qty=2, unitPaise=6400]], paid=true, couponCode=null, express=true]
+builder: total=84000 coupon=FRESH10 (everything else default)
+unpaid?  true

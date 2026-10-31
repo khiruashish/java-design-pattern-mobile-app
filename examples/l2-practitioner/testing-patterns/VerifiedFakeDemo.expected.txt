@@ -1,0 +1,4 @@
+PayLinkHttpAdapter (sandbox): 5/5 contract checks pass
+FakePaymentGateway: 5/5 contract checks pass
+NaiveFake: 1/5, fails [same idempotency key returns the same payment, declines the test decline card, refund above capture is rejected, timeout card throws GatewayTimeout]
+=> only fakes that pass the same contract as the real adapter may be used in other tests

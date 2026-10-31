@@ -1,0 +1,3 @@
+before: untestable; outcome depends on the wall clock (skipped or real SMS)
+after, 18:30 IST: sent [98450: Your slot is tomorrow 8-10 am]
+after, 21:30 IST: too late, skipped

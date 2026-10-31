@@ -703,9 +703,9 @@
    "id": "l2-practitioner__testing-patterns",
    "path": "l2-practitioner/testing-patterns.md",
    "title": "Testing Patterns",
-   "summary": "Test pattern-based code and use the patterns of testing.",
-   "minutes": 30,
-   "written": false,
+   "summary": "Tests have their own design patterns. **Test doubles** (dummy, stub, fake, spy, mock) stand in for collaborators. **Object Mother** and **Test Data Builder** make test data short and readable. **Arrange-Act-Assert** gives every test the same three-part shape. Design patterns in production code (DI, Strategy, Decorator) create **seams** where doubles plug in. **Contract tests** run one suite against every implementation of an interface, including your fakes, so the fakes stay honest.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
