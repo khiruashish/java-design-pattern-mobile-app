@@ -1,0 +1,2 @@
+before: gst 1250
+GST Rs 14.90, shipping weight 6260 g

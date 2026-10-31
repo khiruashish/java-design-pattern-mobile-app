@@ -1,0 +1,4 @@
+overload only: generic label
+overload only: generic label
+double dispatch: weigh-and-print label: Tomatoes 750 g
+double dispatch: barcode label: 8901234567890

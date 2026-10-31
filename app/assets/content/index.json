@@ -647,13 +647,13 @@
    "id": "l2-practitioner__visitor",
    "path": "l2-practitioner/visitor.md",
    "title": "Visitor",
-   "summary": "Add operations to a class hierarchy without changing it.",
-   "minutes": 30,
-   "written": false,
+   "summary": "Visitor lets you add new operations (tax, weight, export, validation) to a fixed set of element types without changing those types. Classic Visitor uses \"double dispatch\": each element's `accept(visitor)` calls the visitor method for its own type. Since Java 21, a sealed interface plus an exhaustive `switch` with pattern matching does the same job with far less code, and the compiler checks you handled every type. Choose Visitor when operations change more often than types.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l2-practitioner"
   },
