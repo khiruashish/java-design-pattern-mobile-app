@@ -1,0 +1,3 @@
+push: reorder EGGS-12 (9 -> 3)
+pull: reorder EGGS-12, now 3, threshold 5
+pull: reorder EGGS-12, now 3, threshold 5

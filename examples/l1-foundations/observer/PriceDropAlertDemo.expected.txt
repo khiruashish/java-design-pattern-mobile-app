@@ -1,0 +1,6 @@
+price -> 17500
+price -> 16900
+  alert asha: OIL-SUN-1L is now 16900 (target 17000)
+price -> 15900
+  alert asha: OIL-SUN-1L is now 15900 (target 17000)
+  alert vikram: OIL-SUN-1L is now 15900 (target 16000)

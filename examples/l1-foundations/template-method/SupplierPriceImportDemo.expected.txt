@@ -1,0 +1,6 @@
+GreenValley applied [PriceUpdate[sku=RICE-5KG, cents=55900]]
+  rejected [ATTA-5KG (unknown sku), 'OIL-2L,abc' (For input string: "abc")]
+  review [OIL-1L 18900 -> 29900]
+DairyDay applied [PriceUpdate[sku=MILK-1L, cents=7000]]
+  rejected [CURD-500 (non-positive price)]
+  review []

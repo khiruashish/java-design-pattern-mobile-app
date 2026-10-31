@@ -1,0 +1,5 @@
+observer: basket badge shows 3
+pubsub inventory got FC-1201
+pubsub loyalty got FC-1201
+delivered to 2 subscribers; publisher doesn't know who
+nobody listening to orders.cancelled: 0 deliveries

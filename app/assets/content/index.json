@@ -368,13 +368,13 @@
    "id": "l1-foundations__observer",
    "path": "l1-foundations/observer.md",
    "title": "Observer",
-   "summary": "Notify many listeners when something changes.",
-   "minutes": 25,
-   "written": false,
+   "summary": "Observer lets one object (the subject) notify any number of others (observers) when something happens, without knowing who they are. It's how \"order placed\" reaches inventory, email and loyalty without checkout calling each one. The pattern is easy; the production questions are hard: sync or async, what happens when an observer fails, and who unsubscribes.",
+   "minutes": 45,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L1",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l1-foundations"
   },
@@ -382,13 +382,13 @@
    "id": "l1-foundations__template-method",
    "path": "l1-foundations/template-method.md",
    "title": "Template Method",
-   "summary": "Fix the algorithm's skeleton, let subclasses fill the steps.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Template Method fixes the steps of an algorithm in one `final` method of a base class and lets subclasses fill in the steps that vary. It's how frameworks keep the important parts (transactions, retries, validation) in one place while you supply the business bits. In modern Java, passing the varying steps as lambdas often does the same job without inheritance.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L1",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l1-foundations"
   },
