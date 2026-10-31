@@ -1,0 +1,8 @@
+before CARD: 4060
+after  CARD: 4060
+after  WALLET: 4000
+after  COD: 4099
+after  UPI: 4000
+rejected: COD not available for this amount
+rejected: unsupported payment method CRYPTO, available: [CARD, WALLET, COD, UPI]
+rejected: duplicate payment method UPI

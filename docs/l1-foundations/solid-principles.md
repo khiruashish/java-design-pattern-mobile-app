@@ -3,7 +3,7 @@ tags: [L1, core]
 ---
 # SOLID Principles
 
-<span class="badge-l1">L1 🟢 Foundations</span> · <span class="read-time">⏱ 30 min read</span> · Prerequisites: [OOP Refresher for Patterns](oop-refresher.md)
+<span class="badge-l1">L1 🟢 Foundations</span> · <span class="read-time">⏱ 55 min read</span> · Prerequisites: [OOP Refresher for Patterns](oop-refresher.md)
 
 !!! abstract "TL;DR"
     SOLID is five principles for classes that are easy to change: one reason to change per class, extend without editing, subtypes that keep their parent's promises, small interfaces, and dependencies on abstractions. They are the "why" behind most design patterns: when you can name which principle a design breaks, you usually know which pattern fixes it.
@@ -56,50 +56,230 @@ The arrows from the details now point *toward* the policy layer: the dependency 
 
 ## 5. Subtopics
 
-### Single Responsibility
+Each principle below gets the same deep dive: what it means, why it helps, a runnable before/after example in FreshCart, a pros/cons table, when to use and avoid it, where you already see it in real Java, a best practice and the most common mistake.
 
-- **Description:** A class should have one reason to change, meaning it serves one actor. "Calculates order totals, formats emails and writes to the database" is three responsibilities, owned by pricing, marketing and the platform team.
-- **How to use it:** list who would ask for changes to the class. More than one group means you should split it.
-- **Pros:** smaller classes; changes for one actor can't break another's feature; easier tests.
-- **Cons:** more classes and wiring; taken too far, logic gets scattered across tiny classes.
-- **Best practice:** split by reason to change, not by "number of methods".
-- **Gotcha:** "do one thing" is a rule for *functions*. SRP is about *who causes change*, which is a different question.
+### S: Single Responsibility Principle
 
-### Open/Closed
+**Description.** A class should have one reason to change. Robert C. Martin's sharper version: a module should be *responsible to one, and only one, actor*, meaning one group of people who request changes. An invoice service that calculates tax (Finance), lays out the invoice (Marketing) and sends it (Platform) has three actors, so three groups edit the same file for unrelated reasons, and one group's change can break another's feature.
 
-- **Description:** You should be able to add behaviour by adding code (a new class) rather than editing tested code. In Java this usually means polymorphism over an interface.
-- **How to use it:** put an interface on the axis that changes (pricing rules, payment providers) and add implementations.
-- **Pros:** new features don't risk old ones; parallel work without merge conflicts.
-- **Cons:** you must guess the axis; abstractions on the wrong axis add cost and still need edits.
-- **Best practice:** apply OCP after the second or third change of the same kind (see [Why Patterns Matter](../l0-orientation/why-patterns-matter.md)).
-- **Gotcha:** no code is closed against every change. Choose what to be closed against.
+**Advantages / features.**
 
-### Liskov Substitution
+- Changes requested by one team can't break another team's behaviour.
+- Smaller classes are easier to read, name, review and test.
+- Each part can be reused (the calculator also feeds the refund screen).
+- Merge conflicts drop, because different teams edit different files.
 
-- **Description:** A subtype must honour the supertype's contract: accept at least the same inputs, promise at least the same results, and keep its invariants. Code written for the parent must still work with the child.
-- **How to use it:** for each override ask: "could a caller written for the parent be surprised?" Exceptions the parent doesn't throw, stricter inputs or weaker results are red flags.
-- **Pros:** polymorphism you can trust; patterns built on substitution (Strategy, Decorator, Proxy) work safely.
-- **Cons:** forces you to give up some "natural" hierarchies (Square/Rectangle).
-- **Best practice:** prefer immutable types and interfaces; LSP problems mostly come from mutable state in hierarchies.
-- **Gotcha:** `UnsupportedOperationException` in an override is an LSP violation in disguise; the JDK's unmodifiable collections are a known, documented trade-off.
+**Production example: splitting an invoice service by actor.**
 
-### Interface Segregation
+```java title="SrpDemo.java"
+--8<-- "examples/l1-foundations/solid-principles/SrpDemo.java"
+```
 
-- **Description:** Don't make clients depend on methods they don't call. Split fat interfaces into role interfaces.
-- **How to use it:** design interfaces from the client's point of view: `OrderLookup` for readers, `RefundLedger` for the refund flow.
-- **Pros:** smaller fakes in tests; changes to one role don't recompile or redeploy unrelated clients; clearer intent.
-- **Cons:** more interfaces to name and find.
-- **Best practice:** one class can implement several role interfaces; the split is for clients, not implementations.
-- **Gotcha:** splitting so far that every interface has one method and no clear role makes the code harder to navigate.
+1. **Before:** tax rule, text layout and delivery mixed in one method. A layout tweak means re-testing tax.
+2. Finance's class: validated tax rate, `BigDecimal` with explicit rounding, rejects empty invoices.
+3. Marketing's class: only formatting. It can change freely without touching money.
+4. Platform's interface: email today, SMS or PDF-to-S3 tomorrow, without editing the others.
 
-### Dependency Inversion
+**Run it:** `java SrpDemo.java`
 
-- **Description:** High-level modules (business policy) define the abstractions they need; low-level modules (database, email, HTTP) implement them. Concrete classes are chosen in one place, the *composition root*.
-- **How to use it:** pass collaborators through constructors as interfaces; create the concrete objects in `main` or the DI container.
-- **Pros:** testable without infrastructure; infrastructure can change without touching business code.
-- **Cons:** indirection; a container or wiring code to maintain.
-- **Best practice:** inject time (`Clock`), randomness and IDs too, not just databases. They're details as well.
-- **Gotcha:** DIP isn't the same as dependency *injection*. Injection is a technique; inversion is about who owns the abstraction. See [Dependency Injection](../l2-practitioner/dependency-injection.md).
+```text
+--8<-- "examples/l1-foundations/solid-principles/SrpDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Changes are isolated per actor | More classes and constructor wiring |
+| Smaller, focused unit tests | Logic for one use case is spread over several files |
+| Parts are reusable (calculator in refunds, renderer in emails) | Over-splitting creates "one method per class" noise |
+| Fewer merge conflicts across teams | Needs judgement to identify the actors |
+
+**Use it when** a class is edited for unrelated reasons, its tests need lots of unrelated setup, or different teams keep touching the same file. **Avoid over-applying it** to small, stable classes with one obvious job; splitting a 30-line class into five adds cost and no benefit.
+
+**Real-world Java.** Spring separates `@Controller` (HTTP), `@Service` (business process) and `@Repository` (persistence) for exactly this reason. In the JDK, `java.time.format.DateTimeFormatter` formats dates, while `LocalDate` only represents them.
+
+**Best practice:** name each class after its single job (`InvoiceCalculator`, not `InvoiceManager`); "Manager", "Helper" and "Util" are SRP warning signs.
+**Gotcha:** SRP isn't "one method per class". A class with ten methods that all serve Finance is fine.
+
+### O: Open/Closed Principle
+
+**Description.** Software entities should be *open for extension, closed for modification* (Bertrand Meyer, 1988). In Java: put an interface on the part that keeps changing, and add new behaviour as new implementations, so tested code isn't edited. Every new payment method, promotion or delivery partner should be a new class plus one registration line, not another `case` in a growing `switch`.
+
+**Advantages / features.**
+
+- New features can't break existing ones, because existing code isn't edited.
+- Each variant is tested in isolation.
+- Several developers can add variants in parallel without conflicts.
+- Variants can be enabled per country or per customer through configuration.
+
+**Production example: a payment-method registry.**
+
+```java title="OcpDemo.java"
+--8<-- "examples/l1-foundations/solid-principles/OcpDemo.java"
+```
+
+1. **Before:** every new method edits this `switch` and risks the existing cases.
+2. The extension point: everything that varies per payment method is behind one interface.
+3. Variants can carry their own rules: cash on delivery only up to $100.
+4. UPI was added for the India launch without touching any line above it.
+5. The registry fails fast on duplicates and lists the available methods in its error message.
+
+**Run it:** `java OcpDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/solid-principles/OcpDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Adding a variant can't break existing ones | You must predict the axis of change |
+| Variants are tested alone | More types and a registry to understand |
+| Parallel work without merge conflicts | Cross-cutting changes (to every variant) touch many files |
+| Variants can be selected by configuration | Behaviour is no longer visible in one `switch` |
+
+**Use it when** the same kind of change has happened two or three times and more are coming (payment methods, promotions, notification channels). **Avoid it when** the set is small and stable; a `switch` over a sealed type or an `enum` is simpler and the compiler checks it's complete.
+
+**Real-world Java.** `java.util.Comparator`, JDBC drivers (`java.sql.Driver` found through `ServiceLoader`), Servlet filters and Spring's `HandlerInterceptor` all let you add behaviour without editing the framework.
+
+**Best practice:** combine OCP with a registry or DI (`List<PaymentMethod>` injected by Spring) so adding a variant is truly one new class.
+**Gotcha:** OCP is about the code that *uses* the variants. The composition root (where variants are registered) is expected to change.
+
+### L: Liskov Substitution Principle
+
+**Description.** If `S` is a subtype of `T`, code that works with a `T` must keep working when given an `S` (Barbara Liskov, 1987). In practice a subtype must not require more (stricter inputs), promise less (weaker results), throw new exceptions, or break the supertype's invariants. LSP is what makes polymorphism safe: Strategy, Decorator and Proxy all assume any implementation can be swapped in.
+
+**Advantages / features.**
+
+- You can swap implementations (in-memory, database, remote) without surprises.
+- Callers don't need `instanceof` checks or special cases.
+- Contract tests can verify every implementation the same way.
+- Bugs from "almost compatible" subclasses are caught before production.
+
+**Production example: one contract test for every stock implementation.**
+
+```java title="LspContractDemo.java"
+--8<-- "examples/l1-foundations/solid-principles/LspContractDemo.java"
+```
+
+1. The contract is written down: what callers may rely on, including "never throws for an unknown SKU" and "never negative".
+2. A violating implementation: it throws, and lets stock go negative to support backorders.
+3. The fix: keep the contract, and expose backorders as a separate, explicit capability.
+4. The same checks run against every implementation. In a real project this is an abstract JUnit test class that each implementation's test extends.
+
+**Run it:** `java LspContractDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/solid-principles/LspContractDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Safe substitution: polymorphism you can trust | Forces you to drop "natural" but broken hierarchies |
+| No `instanceof` special cases in callers | Contracts must be written down and tested |
+| Contract tests catch violations early | Extra interfaces for optional capabilities |
+| Enables Strategy, Decorator, Proxy | Non-functional behaviour (speed, blocking) is hard to specify |
+
+**Use it** for every interface with more than one implementation, especially ones other teams implement. **Watch for violations** when an override throws `UnsupportedOperationException`, ignores its input, or adds a precondition the parent didn't have.
+
+**Real-world Java.** The `java.util.Collection` Javadoc marks `add` and `remove` as *optional operations*, so `List.of(...)` throws on `add`. It's a documented, deliberate LSP trade-off, and the reason you should never assume a `List` you receive is mutable.
+
+**Best practice:** write a reusable contract test and run it against every implementation, including fakes used in other tests.
+**Gotcha:** LSP also covers behaviour: an implementation that blocks for 30 seconds where the contract implies fast in-memory access breaks callers just as surely as an exception.
+
+### I: Interface Segregation Principle
+
+**Description.** Clients should not be forced to depend on methods they don't use. A fat interface forces implementers to write fake methods that throw, and forces clients to depend on (and recompile for) changes they don't care about. Split it into *role interfaces* shaped by what each client needs; one class can still implement several roles.
+
+**Advantages / features.**
+
+- Implementers only implement what they can really do: no `UnsupportedOperationException`.
+- Clients declare exactly what they need, which documents the dependency.
+- Test doubles are tiny (often a lambda).
+- Least privilege: a component given only `Scale` can't print or scan.
+
+**Production example: store devices with role interfaces.**
+
+```java title="IspDemo.java"
+--8<-- "examples/l1-foundations/solid-principles/IspDemo.java"
+```
+
+1. **Before:** one interface for every device capability.
+2. The printer must "implement" scanning and weighing, and fails at runtime.
+3. Three role interfaces, each with one capability.
+4. A checkout counter really has all three, so it implements all three.
+5. The produce station asks only for a scale and a printer, and validates the scale's reading.
+
+**Run it:** `java IspDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/solid-principles/IspDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| No fake or throwing methods | More interfaces to name and discover |
+| Clients state exactly what they use | Over-splitting into one-method interfaces with no clear role |
+| Tiny test doubles (lambdas) | Some clients need several interfaces injected |
+| Least-privilege access by design | Refactoring a published fat interface is a breaking change |
+
+**Use it when** implementers leave methods empty or throwing, or when different clients use clearly different subsets of an interface. **Avoid** splitting interfaces that are always used together.
+
+**Real-world Java.** `java.lang.Readable`, `Appendable`, `AutoCloseable`, `Comparable` and `Iterable` are all small role interfaces that many unrelated classes implement. Spring Data offers `CrudRepository`, `PagingAndSortingRepository` and the minimal `Repository` marker, so you can expose only the operations you want.
+
+**Best practice:** design interfaces from the *client's* side ("what does the produce station need?"), not from the implementation's side ("what can the device do?").
+**Gotcha:** ISP doesn't mean every interface has one method; a cohesive set of methods always used together belongs in one interface.
+
+### D: Dependency Inversion Principle
+
+**Description.** High-level modules (business policy) should not depend on low-level modules (SMTP, HTTP, databases); both should depend on abstractions, and the abstractions belong to the high-level side. The concrete classes are chosen in one place, the *composition root* (your `main`, or a DI container such as Spring).
+
+**Advantages / features.**
+
+- Business rules are testable without infrastructure (no SMTP server, no database).
+- Infrastructure can be replaced (email → Slack) without editing business code.
+- Cross-cutting behaviour (retries, metrics, caching) can be added as decorators around the abstraction.
+- Configuration can choose implementations per environment.
+
+**Production example: low-stock alerts with pluggable channels.**
+
+```java title="DipDemo.java"
+--8<-- "examples/l1-foundations/solid-principles/DipDemo.java"
+```
+
+1. **Before:** the policy creates its own `SmtpClient`, so it can't be tested or switched to Slack.
+2. Abstractions owned by the policy: "give me stock levels" and "send an alert".
+3. Retries added once, for every channel, as a decorator.
+4. The composition root chooses the channel from configuration and fails fast on unknown values.
+5. In tests, a method reference (`captured::add`) is the whole test double.
+
+**Run it:** `java DipDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/solid-principles/DipDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Business logic testable without infrastructure | Indirection: you must find the implementation |
+| Swap infrastructure without touching policy | Wiring code or a DI container to maintain |
+| Decorators add retries, caching, metrics once | Abstractions designed too early can be wrong |
+| Configuration chooses implementations per environment | Misconfigured wiring fails only at startup or runtime |
+
+**Use it at real boundaries:** databases, external APIs, messaging, email, file systems, the clock and random numbers. **Avoid** wrapping stable, in-process libraries (`java.util`, `java.time` types) behind your own interfaces.
+
+**Real-world Java.** Spring's whole IoC container exists to implement DIP: you depend on `JavaMailSender` or your own `OrderRepository` interface, and Spring injects the implementation. JDBC code depends on `javax.sql.DataSource`, not on a specific connection pool.
+
+**Best practice:** inject through constructors, keep `new SomeInfrastructureClient()` out of business classes, and have exactly one composition root.
+**Gotcha:** an interface in the *infrastructure* package that mirrors the vendor's API (`SmtpClientInterface`) isn't inversion; the abstraction must speak the business's language (`AlertChannel.alert(message)`).
+
+### SOLID at a glance
+
+| Principle | Question to ask in review | Typical fix | Pattern it leads to |
+|-----------|---------------------------|-------------|---------------------|
+| SRP | Who would ask for changes to this class? | Split by actor | Facade, Service Layer |
+| OCP | Where will the next variant go? | Interface + registry | Strategy, Decorator, Plugin |
+| LSP | Can every implementation pass the same contract test? | Narrow the contract or split capabilities | Template Method (done right), Composite |
+| ISP | Does any client or implementer ignore methods? | Role interfaces | Adapter, Proxy |
+| DIP | Can I test this without the database, network and clock? | Inject abstractions owned by the policy | Dependency Injection, Hexagonal architecture |
 
 ## 6. Examples (exactly 3, progressively harder)
 

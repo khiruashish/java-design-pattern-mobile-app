@@ -1,0 +1,5 @@
+before, PACKED cancellable? api=true support=false
+moved to PACKED
+moved to OUT_FOR_DELIVERY
+rejected: cannot go from OUT_FOR_DELIVERY to CANCELLED
+after, PACKED cancellable? everyone=true

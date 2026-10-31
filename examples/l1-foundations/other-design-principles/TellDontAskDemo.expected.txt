@@ -1,0 +1,2 @@
+ask style:  last place sold twice, booked = 21/20
+tell style: exactly 20 of 200 booked in all 50 runs = true

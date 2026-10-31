@@ -1,0 +1,3 @@
+clever: [S3-18:00]
+simple: [S3-18:00]
+why S1 closed: bookable=false (past cutoff)

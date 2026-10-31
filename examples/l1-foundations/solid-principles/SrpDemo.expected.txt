@@ -1,0 +1,8 @@
+BEFORE: asha@example.com <- FreshCart invoice | net 5.07 | tax 0.25 | total 5.32
+AFTER: to asha@example.com
+FreshCart invoice FC-8001
+  MILK-1L    x2      2.58
+  BREAD-WHT  x1      2.49
+  net 5.07 | tax 0.25 | TOTAL 5.32
+Tax change only touches InvoiceCalculator: InvoiceTotals[net=5.07, tax=0.61, total=5.68]
+rejected: invoice needs at least one line

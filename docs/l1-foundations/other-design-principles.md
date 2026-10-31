@@ -3,7 +3,7 @@ tags: [L1, core]
 ---
 # DRY, KISS, YAGNI and Friends
 
-<span class="badge-l1">L1 🟢 Foundations</span> · <span class="read-time">⏱ 20 min read</span> · Prerequisites: [SOLID Principles](solid-principles.md)
+<span class="badge-l1">L1 🟢 Foundations</span> · <span class="read-time">⏱ 50 min read</span> · Prerequisites: [SOLID Principles](solid-principles.md)
 
 !!! abstract "TL;DR"
     SOLID tells you how to make code flexible; DRY, KISS and YAGNI stop you overdoing it. Keep each piece of *knowledge* in one place (DRY), choose the simplest design that works (KISS), and don't build what nobody needs yet (YAGNI). Law of Demeter, Tell Don't Ask, cohesion/coupling and GRASP help you decide which class a piece of behaviour belongs to.
@@ -50,68 +50,292 @@ The practical test for DRY: *if this rule changes, would both copies have to cha
 
 ## 5. Subtopics
 
-### DRY
+Each principle gets a full deep dive: description, advantages, a runnable before/after production-style example, pros and cons, when to use and avoid it, real-world Java, a best practice and the classic mistake.
 
-- **Description:** Every piece of business knowledge (a validation rule, a tax rate, a status transition) has one authoritative home.
-- **How to use it:** put the rule in a type (`PhoneNumber`, `Money`) or a single function, and make everything else use it.
-- **Pros:** one place to change; copies can't drift; fewer bugs.
-- **Cons:** shared code couples its users; a wrong abstraction is worse than duplication.
-- **Best practice:** unify duplicated *knowledge*; tolerate duplicated *code* that represents different knowledge.
-- **Gotcha:** "wrong DRY": merging two formulas that look the same today but belong to different teams (Example 3).
+### DRY: Don't Repeat Yourself
 
-### KISS
+**Description.** "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system" (Hunt and Thomas). The key word is *knowledge*: a business rule, a validation, a status transition, a configuration value. When the same rule is written in two places, the copies drift apart, and the system gives different answers depending on which copy runs. DRY is **not** about removing every pair of similar-looking lines.
 
-- **Description:** Prefer the simplest design that meets today's requirements and that a new team member can follow.
-- **How to use it:** before adding a layer, a pattern or a framework, ask what the simplest working version looks like.
-- **Pros:** fewer bugs, faster onboarding, easier debugging.
-- **Cons:** "simple" is subjective; simple designs may need refactoring as requirements grow.
-- **Best practice:** simple means *few concepts*, not *few lines*; a clear 20-line method beats a clever 5-line one.
-- **Gotcha:** confusing simple with easy: copy-pasting is easy, but the result isn't simple.
+**Advantages / features.**
 
-### YAGNI
+- One place to change a rule, so a change can't be half-applied.
+- Every client gets the same answer (API, support tool, mobile app).
+- The rule can be tested once, thoroughly.
+- Rules expressed as types (`enum`, value objects) are visible and discoverable.
 
-- **Description:** Don't implement capabilities until there's an actual need. It's the time dimension of KISS.
-- **How to use it:** build for the current story; keep the code clean and tested so the next story is cheap to add.
-- **Pros:** less code to maintain; no time spent on features that never ship.
-- **Cons:** occasionally you redo work you could have anticipated.
-- **Best practice:** YAGNI works only with refactoring and tests. Without them, people over-build out of fear.
-- **Gotcha:** it doesn't apply to things that are expensive to add later: security, data model decisions, public API contracts.
+**Production example: one order-status state machine instead of copied checks.**
+
+```java title="DryStatusDemo.java"
+--8<-- "examples/l1-foundations/other-design-principles/DryStatusDemo.java"
+```
+
+1. **Before:** the API and the support tool each have their own copy of "can this order be cancelled?", and they already disagree.
+2. **After:** the lifecycle lives in the `OrderStatus` enum, as a table of allowed transitions.
+3. Every transition goes through one method that enforces the table.
+4. All clients now give the same answer, because they all ask the same place.
+
+**Run it:** `java DryStatusDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/other-design-principles/DryStatusDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Rules can't drift between copies | Shared code couples everyone who uses it |
+| One place to test and audit | A wrong shared abstraction hurts every user |
+| Consistent behaviour across clients | Shared code needs a clear owner |
+| Encourages rules-as-types (enums, value objects) | Across services, sharing code couples deployments |
+
+**Use it for** business rules, validations, state transitions, constants with business meaning and mappings. **Avoid it for** code that merely looks similar but represents different decisions (see Example 3), and across microservice boundaries, where you share contracts rather than code.
+
+**Real-world Java.** `java.time.DayOfWeek` and `java.util.concurrent.TimeUnit` are single authoritative representations of knowledge that used to be scattered as magic numbers. Bean Validation (`@NotNull`, `@Email`) keeps validation rules in one place on the type.
+
+**Best practice:** before merging two copies, ask "would these change for the same reason, at the same time, requested by the same people?"
+**Gotcha:** DRY applies to tests too, but readable tests often repeat setup on purpose. Prefer clarity over DRY in tests.
+
+### KISS: Keep It Simple
+
+**Description.** Choose the simplest design that meets the requirement and that a new teammate can understand quickly. Simple means *few concepts*, not *few characters*. A generic rule engine, a clever stream reduction or a reflection trick may be shorter, but every reader has to decode it, and every bug hides in it.
+
+**Advantages / features.**
+
+- Faster code reviews and onboarding.
+- Fewer places for bugs to hide; easier debugging at 3 a.m.
+- Names that match the business language ("bookable", "before cutoff").
+- Easier to change, because the intent is obvious.
+
+**Production example: the same slot rule, clever vs. simple.**
+
+```java title="KissDemo.java"
+--8<-- "examples/l1-foundations/other-design-principles/KissDemo.java"
+```
+
+1. **Clever:** a map of predicates reduced into one. It works, but the reader must decode it, and the rules are anonymous.
+2. **Simple:** two named booleans that read like the business rule.
+3. Simple code is also easier to explain when support asks "why can't I book this slot?".
+
+**Run it:** `java KissDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/other-design-principles/KissDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Easy to read, review and debug | Simple designs may need refactoring as needs grow |
+| Fewer bugs and edge cases | "Simple" is subjective; teams must agree |
+| Intent matches the business language | Can be mistaken for "unsophisticated" |
+| Cheap to change | Copy-paste is easy but not simple |
+
+**Use it** by default, everywhere. **Accept extra complexity** only when a measured need requires it: performance after profiling, a framework your team already knows, or a real second variant.
+
+**Real-world Java.** `record` replaced pages of `equals`/`hashCode`/`toString` boilerplate; `var`, text blocks and `List.of` exist to make simple code shorter without making it clever.
+
+**Best practice:** name intermediate results (`hasRoom`, `beforeCutoff`); a well-named boolean is the cheapest documentation there is.
+**Gotcha:** "simple" isn't "easy": a 400-line copy-pasted method was easy to write and is anything but simple.
+
+### YAGNI: You Aren't Gonna Need It
+
+**Description.** Don't build capabilities until an actual requirement needs them. From Extreme Programming: speculative features cost design time, build time, test time and reading time forever, and most guessed requirements arrive in a different shape than predicted, or never arrive. YAGNI only works together with refactoring and tests, which make adding the feature later cheap.
+
+**Advantages / features.**
+
+- Less code to build, test, secure and maintain.
+- The design fits real requirements instead of imagined ones.
+- Faster delivery of what users actually asked for.
+- When the real need arrives, you design for its real shape.
+
+**Production example: one discount rule today, a second one later.**
+
+```java title="YagniDemo.java"
+--8<-- "examples/l1-foundations/other-design-principles/YagniDemo.java"
+```
+
+1. **Speculative:** a factory taking region, channel and tier, all ignored, because only one rule exists.
+2. **YAGNI:** exactly the requirement, with validation.
+3. Months later, a real second rule arrives, and only now is an extension point added, shaped by the actual need (per city, not per region/channel/tier).
+
+**Run it:** `java YagniDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/other-design-principles/YagniDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Less code and less maintenance | Some refactoring when needs do arrive |
+| Designs match real requirements | Needs good tests to be safe |
+| Faster delivery | Can be misused to skip important non-functional work |
+| No dead configuration or unused abstractions | Hard to apply to public APIs, which can't be refactored freely |
+
+**Use it** for features, abstractions, configuration options and infrastructure. **Don't use it** for "one-way doors" that are expensive to change later: security, data models and storage formats, public API contracts, and observability.
+
+**Real-world Java.** The JDK itself follows a version of this: features arrive first as previews (sealed classes, pattern matching, virtual threads' early APIs) and are finalised only after real-world feedback.
+
+**Best practice:** when tempted to add a parameter "for later", write it down as a ticket instead of code.
+**Gotcha:** YAGNI is not an excuse to skip tests, error handling or logging; those are needed now.
 
 ### Law of Demeter
 
-- **Description:** A method should call methods only on itself, its fields, its parameters and objects it creates; not on objects returned by those calls. Informally: "only talk to your friends", or "one dot per line" (fluent builders and streams are an accepted exception).
-- **How to use it:** replace `order.getCustomer().getWallet().getBalance()` with a method on the nearest friend: `order.settle()`.
-- **Pros:** callers don't depend on the internal structure of objects they don't own; refactoring is safer.
-- **Cons:** can produce many small "wrapper" methods if applied blindly.
-- **Best practice:** apply it to *behaviour*; navigating plain data records (DTOs) is usually fine.
-- **Gotcha:** counting dots mechanically: `stream().filter().map()` is one object's fluent API, not a Demeter violation.
+**Description.** A method should call methods only on: itself, its fields, its parameters and objects it creates. Not on objects *returned by* those calls. Chains like `order.getCustomer().getWallet().getBalance()` make the caller depend on the internal structure of three classes, so changing any of them breaks callers far away. It's also called the *principle of least knowledge*.
+
+**Advantages / features.**
+
+- Callers depend only on their direct collaborators.
+- Internal structures can be refactored without breaking distant code.
+- Behaviour moves next to the data (it pairs naturally with Tell, Don't Ask).
+- Easier mocking: one collaborator to fake instead of a chain.
+
+**Example: see [Example 2](#example-2-realistic-in-freshcart-grocery-delivery)** below, which settles an order from a wallet both ways.
+
+| Pros | Cons |
+|------|------|
+| Lower coupling to internal structure | Wrapper methods that only delegate |
+| Safer refactoring | Can bloat intermediate classes with pass-through methods |
+| Simpler test setup | Misapplied to data records and fluent APIs |
+
+**Use it** for objects with behaviour and invariants. **Don't apply it** to plain data (records, DTOs, JSON trees) or fluent APIs like streams and builders, where chaining is the design.
+
+**Real-world Java.** `Optional.map(...).orElse(...)` and `stream().filter().map()` chain calls on *one* abstraction, so they're not violations. A train wreck through JPA entities (`order.getCustomer().getAddress().getCity()`) often causes lazy-loading queries too, so Demeter violations can also be performance bugs.
+
+**Best practice:** when you see a chain, add a method on the first object that answers the question directly.
+**Gotcha:** counting dots mechanically. The rule is about reaching into *other objects' internals*.
 
 ### Tell, Don't Ask
 
-- **Description:** Instead of asking an object for data and making decisions about it, tell the object what you want and let it decide using its own data.
-- **How to use it:** `wallet.tryDebit(cents)` instead of `if (wallet.getBalance() >= cents) wallet.setBalance(...)`.
-- **Pros:** rules live with the data (encapsulation); no duplicated decision logic in callers.
-- **Cons:** objects can grow too many methods; some decisions belong outside (reports, UI).
-- **Best practice:** use it for decisions that protect invariants; queries for display are fine.
-- **Gotcha:** "ask" code is also a race condition when two threads check and act separately.
+**Description.** Tell an object what you want done, and let it decide using its own data, instead of asking for its data, deciding outside, and writing back. Asking spreads the object's rules across its callers, and the read-decide-write sequence is a race condition when two callers run at once.
+
+**Advantages / features.**
+
+- Invariants are enforced in one place, inside the object.
+- No duplicated decision logic in callers.
+- Check-and-act can be made atomic, which matters under concurrency.
+- Objects get behaviour-rich APIs (`tryBook`, `tryDebit`) instead of getters and setters.
+
+**Production example: booking the last delivery slot under concurrency.**
+
+```java title="TellDontAskDemo.java"
+--8<-- "examples/l1-foundations/other-design-principles/TellDontAskDemo.java"
+```
+
+1. **Ask:** the caller checks, then writes. Between the two steps another caller can do the same.
+2. **Tell:** the slot decides and updates atomically with compare-and-set, so it can never overbook.
+3. The interleaving is replayed step by step so the output is deterministic: both customers see a free place and both get it.
+
+**Run it:** `java TellDontAskDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/other-design-principles/TellDontAskDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Rules live with the data | Objects can grow many behaviour methods |
+| Atomic check-and-act prevents races | Reporting and UI still need to read data |
+| Callers are simpler | Some decisions span several objects and belong in a service |
+| Fewer getters/setters exposed | Requires rethinking setter-heavy code |
+
+**Use it** for anything that protects an invariant: balances, capacity, stock, status transitions. **Asking is fine** for display, reports and serialisation.
+
+**Real-world Java.** `ConcurrentHashMap.putIfAbsent`, `AtomicInteger.compareAndSet` and `Set.add` (which returns whether it added) are "tell" APIs that make check-and-act atomic.
+
+**Best practice:** name methods after the intent and return the outcome (`boolean tryBook()`), so the caller doesn't need to read state first.
+**Gotcha:** wrapping an ask-style sequence in `synchronized` in the *caller* only works if every caller uses the same lock. Put the decision in the object.
 
 ### Cohesion and coupling
 
-- **Description:** *Cohesion* is how strongly the parts of a module belong together. *Coupling* is how much one module depends on another. Aim for high cohesion and low coupling.
-- **How to use it:** group code by the reason it changes; minimise what modules know about each other.
-- **Pros:** changes stay local; modules can be understood and tested alone.
-- **Cons:** reducing coupling usually adds an interface or an event, which is indirection.
-- **Best practice:** package by feature (`delivery`, `refunds`) rather than by layer (`controllers`, `services`) when features change independently.
-- **Gotcha:** coupling through shared data (one database table used by five modules) is as real as coupling through code.
+**Description.** *Cohesion* measures how strongly the parts of a module belong together: a `Pincode` class with all pincode rules is highly cohesive; an `OrderUtils` class with prices, pincodes and payouts is not. *Coupling* measures how much modules know about each other. Aim for high cohesion (each module has one purpose) and low coupling (modules interact through small, stable contracts such as events or interfaces).
+
+**Advantages / features.**
+
+- Features can be understood, changed and tested on their own.
+- Teams can own modules with few cross-team dependencies.
+- Changes stay local; the blast radius of a bug is smaller.
+- Modules can later be extracted into separate deployables if needed.
+
+**Production example: from a utils grab-bag to cohesive features connected by an event.**
+
+```java title="CohesionDemo.java"
+--8<-- "examples/l1-foundations/other-design-principles/CohesionDemo.java"
+```
+
+1. **Low cohesion:** three unrelated rules in one class, owned by three different teams.
+2. A small event record is the only thing Checkout and Delivery share: low coupling.
+3. Checkout publishes the event; it doesn't know who listens or what they do.
+
+**Run it:** `java CohesionDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/other-design-principles/CohesionDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Local, safe changes | More classes and packages |
+| Clear ownership per feature | Events make the flow harder to follow |
+| Easier extraction into modules or services | Too-fine modules add coordination overhead |
+| Smaller test setups | Shared data (one table used by all) can hide coupling |
+
+**Use it** when organising packages and modules: package by feature (`checkout`, `delivery`, `addresses`) rather than by layer (`controllers`, `services`, `utils`). **Avoid** splitting a cohesive feature across many modules just to keep files small.
+
+**Real-world Java.** The JDK's own packages are cohesive (`java.time`, `java.util.concurrent`), and Java modules (JPMS, Java 9) enforce low coupling by exporting only chosen packages.
+
+**Best practice:** treat any class named `*Utils` or `*Helper` as a review question: whose rules are these, and where do they belong?
+**Gotcha:** coupling through a shared database table is still coupling, even if the code never imports the other module.
 
 ### GRASP in brief
 
-- **Description:** Craig Larman's nine responsibility-assignment patterns: Information Expert, Creator, Controller, Low Coupling, High Cohesion, Polymorphism, Pure Fabrication, Indirection and Protected Variations.
-- **How to use it:** the two you'll use daily: **Information Expert** (give a responsibility to the class that has the data to fulfil it) and **Creator** (let the class that contains or closely uses objects create them).
-- **Pros:** a vocabulary for "which class should do this?".
-- **Cons:** less widely known than GoF; some terms overlap with SOLID.
-- **Best practice:** when unsure where a method goes, apply Information Expert first.
-- **Gotcha:** *Pure Fabrication* (a class that isn't a domain concept, like `OrderRepository`) is allowed when Information Expert would hurt cohesion.
+**Description.** Craig Larman's General Responsibility Assignment Software Patterns answer "which class should do this?". There are nine: **Information Expert**, **Creator**, **Controller**, **Low Coupling**, **High Cohesion**, **Polymorphism**, **Pure Fabrication**, **Indirection** and **Protected Variations**. The first four are the ones you'll use in almost every design discussion.
+
+**Advantages / features.**
+
+- A shared vocabulary for responsibility decisions in design reviews.
+- Behaviour ends up next to the data it uses.
+- A principled reason for non-domain classes (repositories, controllers) to exist.
+- Connects naturally to GoF: Polymorphism → Strategy, Indirection → Adapter/Mediator, Protected Variations → OCP.
+
+**Production example: one checkout flow, four GRASP patterns.**
+
+```java title="GraspDemo.java"
+--8<-- "examples/l1-foundations/other-design-principles/GraspDemo.java"
+```
+
+1. **Information Expert:** the line has the price and quantity, so it computes its subtotal.
+2. **Creator:** the basket contains lines, so the basket creates (and validates) them.
+3. **Pure Fabrication:** a repository isn't a grocery concept; it's invented to keep persistence out of the domain.
+4. **Controller:** receives the system event and delegates; it contains no business rules.
+
+**Run it:** `java GraspDemo.java`
+
+```text
+--8<-- "examples/l1-foundations/other-design-principles/GraspDemo.expected.txt"
+```
+
+| Pros | Cons |
+|------|------|
+| Principled answers to "where does this go?" | Less known than GoF or SOLID |
+| Behaviour sits with its data | Terms overlap with SOLID (Low Coupling, High Cohesion) |
+| Justifies useful non-domain classes | Information Expert alone can overload central classes |
+
+**Use it** in design reviews and when adding a new method: start with Information Expert, and fall back to Pure Fabrication when the expert would lose cohesion. **Avoid** treating it as a checklist to apply all nine everywhere.
+
+**Real-world Java.** Spring MVC's `@Controller` is GRASP's Controller; Spring Data repositories are Pure Fabrications; `List.of` creating its own immutable implementation is Creator.
+
+**Best practice:** if a method mostly reads another object's fields, move it to that object (Information Expert).
+**Gotcha:** Information Expert can pull persistence or UI concerns into domain objects; that's when Pure Fabrication is the right answer.
+
+### Principles at a glance
+
+| Principle | One-line test | If violated | Typical fix |
+|-----------|---------------|-------------|-------------|
+| DRY | Is this rule written in exactly one place? | Copies drift, clients disagree | Value type, enum, single function |
+| KISS | Could a new teammate explain this in a minute? | Bugs hide in clever code | Name things, remove indirection |
+| YAGNI | Is there a real requirement for this today? | Dead code, wrong abstractions | Delete it; add when needed |
+| Demeter | Does this call reach through a returned object? | Distant code breaks on refactoring | Method on the nearest collaborator |
+| Tell, Don't Ask | Does the caller decide using another object's data? | Duplicated rules, race conditions | Behaviour method on the data owner |
+| Cohesion/coupling | Do this module's parts change together? Does it know too much about others? | Grab-bag classes, ripple changes | Package by feature, events, interfaces |
+| GRASP Expert | Does this class have the data to do this job? | Logic far from its data | Move the method to the data |
 
 ## 6. Examples (exactly 3, progressively harder)
 
