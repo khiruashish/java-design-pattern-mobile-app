@@ -507,9 +507,9 @@
    "id": "l2-practitioner__composite",
    "path": "l2-practitioner/composite.md",
    "title": "Composite",
-   "summary": "Treat single objects and groups the same way.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Composite lets you treat a single object and a group of objects through the same interface, so a tree (a combo pack of items and smaller packs, a category menu, a UI layout) can be priced, counted or drawn with one call on the root. Leaves do the work; composites forward it to their children and combine the results. In modern Java, model the tree as a sealed interface with records and use pattern-matching switches.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",

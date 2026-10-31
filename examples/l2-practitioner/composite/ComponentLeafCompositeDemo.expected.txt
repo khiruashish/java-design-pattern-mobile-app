@@ -1,0 +1,4 @@
+before: 12900
+Milk 1L      Rs 68.00
+Weekly box   Rs 609.00
+cart total   Rs 677.00
