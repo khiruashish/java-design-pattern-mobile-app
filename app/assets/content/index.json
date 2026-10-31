@@ -493,9 +493,9 @@
    "id": "l2-practitioner__dependency-injection",
    "path": "l2-practitioner/dependency-injection.md",
    "title": "Dependency Injection",
-   "summary": "Give objects their dependencies instead of letting them find them.",
-   "minutes": 30,
-   "written": false,
+   "summary": "Dependency Injection (DI) means an object **receives** the things it needs (repositories, clients, clocks) through its constructor instead of creating or looking them up itself. One place, the **composition root**, builds the object graph. A container such as Spring automates that wiring, but the pattern works fine in plain Java. Prefer constructor injection, avoid Service Locators, and watch scopes: a singleton must never hold a request-scoped object.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",

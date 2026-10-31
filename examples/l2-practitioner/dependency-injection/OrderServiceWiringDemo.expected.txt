@@ -1,0 +1,3 @@
+  SMS to +919800000001: Order for MILK confirmed
+placed MILK
+sorry, MILK is out of stock, SMS sent in test: 0

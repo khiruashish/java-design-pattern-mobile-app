@@ -1,0 +1,4 @@
+dev: [FAKE charge FC-2901, console SMS 'Paid FC-2901', memory://invoices/FC-2901]
+staging: [sandbox charge FC-2901, SMS to test numbers only, s3://freshcart-staging/invoices/FC-2901]
+prod: [LIVE charge FC-2901 49950, SMS to +919800000001, s3://freshcart-prod/invoices/FC-2901]
+test override: TEST charge FC-2902
