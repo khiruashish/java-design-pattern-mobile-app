@@ -1,0 +1,6 @@
+god facade: 14 dependencies, 12 unrelated methods, owned by everyone (so by no one)
+AccountFacade: 3 dependencies [Accounts, Addresses, Loyalty]
+CheckoutFacade: 5 dependencies [Inventory, Pricing, Coupons, Payments, Notifications]
+DeliveryFacade: 3 dependencies [Riders, Tracking, Notifications]
+SupportFacade: 3 dependencies [Refunds, Support, Payments]
+shared subsystems used by more than one facade: Notifications, Payments (4 usages)

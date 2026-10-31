@@ -424,9 +424,9 @@
    "id": "l1-foundations__facade",
    "path": "l1-foundations/facade.md",
    "title": "Facade",
-   "summary": "Give a complex subsystem one simple entry point.",
-   "minutes": 15,
-   "written": false,
+   "summary": "Facade gives a complicated set of classes one simple entry point for a common task, like \"place order\" or \"get delivery quote\". The client calls one method; the facade coordinates the subsystems in the right order. Keep facades focused on one use-case area, keep business rules in services or the domain, and use facades as the public face of modules.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L1",

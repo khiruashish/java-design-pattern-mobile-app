@@ -1,0 +1,4 @@
+facade:  ProductPage[product=Product[sku=RICE-5KG, name=Basmati 5kg, priceCents=54900, stock=7], avgStars=4.5, similar=[RICE-1KG, RICE-10KG]]
+service: added 2 x Basmati 5kg
+service: limit 3 per customer
+service: only 7 in stock
