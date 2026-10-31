@@ -2,3 +2,4 @@ site/
 .venv/
 *.class
 .cache/
+target/

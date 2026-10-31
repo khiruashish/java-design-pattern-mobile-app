@@ -13,13 +13,21 @@ while IFS= read -r demo; do
   else
     echo "FAIL $demo"; failed=1
   fi
-done < <(find . -name '*Demo.java' | sort)
+done < <(find . -name '*Demo.java' -not -path '*/src/*' | sort)
 
 if [[ -n "${JUNIT_JAR:-}" ]]; then
   while IFS= read -r dir; do
     out="$(mktemp -d)"
     javac -d "$out" -cp "$JUNIT_JAR" "$dir"/*.java
     java -jar "$JUNIT_JAR" execute -cp "$out" --scan-classpath --disable-banner --details=summary || failed=1
-  done < <(find . -name '*Test.java' -exec dirname {} \; | sort -u)
+  done < <(find . -name '*Test.java' -not -path '*/src/*' -exec dirname {} \; | sort -u)
+fi
+if command -v mvn >/dev/null 2>&1; then
+  while IFS= read -r pom; do
+    echo "MAVEN $(dirname "$pom")"
+    (cd "$(dirname "$pom")" && mvn -B -q -ntp verify) || failed=1
+  done < <(find . -name pom.xml -not -path '*/target/*' | sort)
+else
+  echo "SKIP Maven projects (mvn not installed)"
 fi
 exit "$failed"
