@@ -1,0 +1,4 @@
+98765/123456 -> [error: Enter a 10-digit phone number]
+9876543210/12 -> [error: OTP has 6 digits]
+9876543210/000000 -> [loading=true, error: Login failed: wrong OTP, loading=false]
+9876543210/123456 -> [loading=true, home: Asha, loading=false]

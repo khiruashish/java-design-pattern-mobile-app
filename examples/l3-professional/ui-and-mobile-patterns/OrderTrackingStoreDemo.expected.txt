@@ -1,0 +1,15 @@
+  [IDLE] nothing to show
+> open DD-42
+  [LOADING] spinner
+> pull to refresh twice (second is ignored while loading)
+> server answers request 1
+  [SHOWING] PACKED, 25 min
+> refresh, then the network drops
+  [LOADING] PACKED (refreshing)
+  [OFFLINE] PACKED | You're offline. Showing last known status.
+> connectivity back
+  [LOADING] PACKED (refreshing)
+  [SHOWING] DELIVERED, 0 min
+> a very late answer to request 2 arrives
+process restarted, restored order: DD-42
+effects run: [FetchStatus, FetchStatus, FetchStatus, Vibrate]

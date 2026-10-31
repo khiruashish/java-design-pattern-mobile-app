@@ -1,0 +1,9 @@
+  [] Rs 0 |  | checkout=false
+> add milk x2
+  [1 x Milk 1L] Rs 68 | Add Rs 431 for free delivery | checkout=true
+  [2 x Milk 1L] Rs 136 | Add Rs 363 for free delivery | checkout=true
+> add mango x2
+  [1 x Alphonso 1kg, 2 x Milk 1L] Rs 586 | Free delivery | checkout=true
+  [1 x Alphonso 1kg, 2 x Milk 1L] Rs 586 | Free delivery | checkout=true | Only 1 Alphonso 1kg available
+> remove mango
+  [2 x Milk 1L] Rs 136 | Add Rs 363 for free delivery | checkout=true

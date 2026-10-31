@@ -1,0 +1,4 @@
+start: {rice=1}
+offline, UI shows: {eggs=12, milk=2, rice=1}, server has: {rice=1}
+back online: {atta=1, eggs=12, milk=2, rice=1}
+log: [synced, pending=0, offline, pending=1, offline, pending=2, synced, pending=0]

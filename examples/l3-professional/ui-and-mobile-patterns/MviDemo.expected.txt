@@ -1,0 +1,6 @@
+QueryChanged -> [spinner] searching 'pan'
+QueryChanged -> [spinner] searching 'paneer'
+ResultsLoaded -> [spinner] searching 'paneer'
+ResultsLoaded -> [list] [Paneer 200g, Paneer tikka kit]
+QueryChanged -> [spinner] searching 'xyz'
+LoadFailed -> [error] network timeout

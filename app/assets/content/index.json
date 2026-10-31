@@ -814,9 +814,9 @@
    "id": "l3-professional__ui-and-mobile-patterns",
    "path": "l3-professional/ui-and-mobile-patterns.md",
    "title": "UI and Mobile Patterns",
-   "summary": "Structure user-facing apps, including Android and other mobile clients.",
-   "minutes": 35,
-   "written": false,
+   "summary": "UI code fails when screens hold business logic, state is scattered, and asynchronous answers arrive in surprising orders. **MVC, MVP and MVVM** separate what's shown (view) from what it means (model) and the logic in between (controller, presenter, ViewModel). **MVI / unidirectional data flow** goes further: one immutable state, changed only by a pure reducer, so every screen is a function of state. Mobile apps add **offline-first repositories** (local data is the source of truth), **coordinators** that own navigation, and a **Backend for Frontend** that shapes server data for each client. Android's recommended architecture is MVVM + UDF with Jetpack Compose; Flutter's BLoC and Riverpod follow the same ideas.",
+   "minutes": 45,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",
