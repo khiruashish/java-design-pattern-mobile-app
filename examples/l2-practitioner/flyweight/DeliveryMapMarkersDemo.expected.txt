@@ -1,0 +1,4 @@
+drew 5000 markers using 9 shared styles
+bike.png grey at (12.900, 77.550) FC-6000
+bike.png green at (12.901, 77.550) FC-6001
+bike.png red at (12.902, 77.550) FC-6002

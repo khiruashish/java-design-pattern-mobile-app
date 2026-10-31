@@ -549,9 +549,9 @@
    "id": "l2-practitioner__flyweight",
    "path": "l2-practitioner/flyweight.md",
    "title": "Flyweight",
-   "summary": "Share common state to save memory.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Flyweight saves memory when you have huge numbers of similar objects: split each object's data into **intrinsic** state (the same for many objects, immutable, shared) and **extrinsic** state (unique per use, kept outside or passed in). A factory hands out one shared instance per intrinsic value. The JDK uses it for `Integer.valueOf`, `Boolean.TRUE` and the String pool, which is also why `==` on boxed numbers is a classic bug. Measure first: it only pays off with many objects and repeated, heavy intrinsic data.",
+   "minutes": 30,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",

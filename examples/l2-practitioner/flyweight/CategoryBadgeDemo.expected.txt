@@ -1,0 +1,2 @@
+10000 tiles share 4 badge objects
+Product 2 shows Badge[text=Fruit, colour=#27AE60, icon=apple.svg]

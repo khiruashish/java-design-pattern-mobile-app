@@ -1,0 +1,4 @@
+good feed: lookups=200,000 hits=199,940 distinct=60 overCap=0 hitRate=99.97%
+rows 0 and 60 share attributes: true
+junk feed: lookups=50,000 hits=0 distinct=10000 overCap=40,000 hitRate=0.00%
+StringBuilder is not a known immutable type; refuse to share it
