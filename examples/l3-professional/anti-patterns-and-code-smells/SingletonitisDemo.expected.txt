@@ -1,0 +1,3 @@
+before: result depends on when you run it (got a boolean: true)
+after, 21:30 IST: true
+after, 22:30 IST: false

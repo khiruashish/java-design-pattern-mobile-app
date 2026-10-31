@@ -1,0 +1,2 @@
+characterization: 10000 random shifts, mismatches: 0
+Bina's rainy shift: Rs 987

@@ -1,0 +1,2 @@
+before: 1000 (5 types, 1 lambda registry), after: 1000 (1 enum)
+same for OTHER: true

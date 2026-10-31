@@ -1,0 +1,2 @@
+before: 32950 and 50000
+after:  Rs 329.50 and Rs 500.00

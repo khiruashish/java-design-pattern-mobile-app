@@ -842,9 +842,9 @@
    "id": "l3-professional__anti-patterns-and-code-smells",
    "path": "l3-professional/anti-patterns-and-code-smells.md",
    "title": "Anti-Patterns and Code Smells",
-   "summary": "Spot the designs patterns are meant to fix, and the ones patterns cause.",
-   "minutes": 30,
-   "written": false,
+   "summary": "An **anti-pattern** is a common solution that looks reasonable but causes more problems than it solves. A **code smell** is a surface symptom (a long method, a repeated switch, a class with 60 fields) that often points to a deeper design problem. This page covers the classic anti-patterns (**God Object, Anaemic Domain Model, Spaghetti code and Lava Flow, Golden Hammer, Singletonitis, Poltergeists**) and the smells that suggest which pattern would help. Two lessons: patterns fix smells, and patterns overused *are* smells. Detect with reviews and static analysis, fix in small steps protected by tests, and gate only *new* problems so legacy debt doesn't block delivery.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",
