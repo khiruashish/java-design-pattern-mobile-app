@@ -1,0 +1,1339 @@
+{
+ "levels": [
+  {
+   "id": "l0-orientation",
+   "code": "L0",
+   "name": "Orientation",
+   "experience": "Day 0",
+   "pages": [
+    "l0-orientation__index",
+    "l0-orientation__what-are-design-patterns",
+    "l0-orientation__why-patterns-matter",
+    "l0-orientation__java-setup",
+    "l0-orientation__reading-uml"
+   ]
+  },
+  {
+   "id": "l1-foundations",
+   "code": "L1",
+   "name": "Foundations",
+   "experience": "0–1 yr",
+   "pages": [
+    "l1-foundations__index",
+    "l1-foundations__oop-refresher",
+    "l1-foundations__solid-principles",
+    "l1-foundations__other-design-principles",
+    "l1-foundations__singleton",
+    "l1-foundations__factory-method",
+    "l1-foundations__builder",
+    "l1-foundations__strategy",
+    "l1-foundations__observer",
+    "l1-foundations__template-method",
+    "l1-foundations__adapter",
+    "l1-foundations__decorator",
+    "l1-foundations__facade"
+   ]
+  },
+  {
+   "id": "l2-practitioner",
+   "code": "L2",
+   "name": "Practitioner",
+   "experience": "1–3 yrs",
+   "pages": [
+    "l2-practitioner__index",
+    "l2-practitioner__abstract-factory",
+    "l2-practitioner__prototype",
+    "l2-practitioner__object-pool",
+    "l2-practitioner__dependency-injection",
+    "l2-practitioner__composite",
+    "l2-practitioner__proxy",
+    "l2-practitioner__bridge",
+    "l2-practitioner__flyweight",
+    "l2-practitioner__command",
+    "l2-practitioner__iterator",
+    "l2-practitioner__state",
+    "l2-practitioner__chain-of-responsibility",
+    "l2-practitioner__mediator",
+    "l2-practitioner__memento",
+    "l2-practitioner__visitor",
+    "l2-practitioner__interpreter",
+    "l2-practitioner__null-object",
+    "l2-practitioner__specification",
+    "l2-practitioner__testing-patterns"
+   ]
+  },
+  {
+   "id": "l3-professional",
+   "code": "L3",
+   "name": "Professional",
+   "experience": "3–6 yrs",
+   "pages": [
+    "l3-professional__index",
+    "l3-professional__patterns-in-modern-java",
+    "l3-professional__functional-patterns",
+    "l3-professional__patterns-in-the-jdk",
+    "l3-professional__patterns-in-spring",
+    "l3-professional__concurrency-patterns",
+    "l3-professional__enterprise-application-patterns",
+    "l3-professional__ui-and-mobile-patterns",
+    "l3-professional__error-handling-patterns",
+    "l3-professional__anti-patterns-and-code-smells",
+    "l3-professional__refactoring-to-patterns",
+    "l3-professional__performance-of-patterns"
+   ]
+  },
+  {
+   "id": "l4-senior",
+   "code": "L4",
+   "name": "Senior / Lead",
+   "experience": "6–10 yrs",
+   "pages": [
+    "l4-senior__index",
+    "l4-senior__architectural-patterns",
+    "l4-senior__ddd-tactical",
+    "l4-senior__ddd-strategic",
+    "l4-senior__microservice-patterns",
+    "l4-senior__resilience-patterns",
+    "l4-senior__distributed-data-patterns",
+    "l4-senior__messaging-patterns",
+    "l4-senior__caching-patterns",
+    "l4-senior__api-design-patterns"
+   ]
+  },
+  {
+   "id": "l5-staff-principal",
+   "code": "L5",
+   "name": "Staff / Principal",
+   "experience": "10–15+ yrs",
+   "pages": [
+    "l5-staff-principal__index",
+    "l5-staff-principal__pattern-selection",
+    "l5-staff-principal__evolutionary-architecture",
+    "l5-staff-principal__legacy-modernisation",
+    "l5-staff-principal__jvm-internals-behind-patterns",
+    "l5-staff-principal__framework-and-library-design",
+    "l5-staff-principal__governing-patterns-at-scale"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "reference",
+   "name": "Reference",
+   "pages": [
+    "reference__cheatsheet",
+    "reference__configuration",
+    "reference__comparisons",
+    "reference__decision-guide",
+    "reference__anti-patterns",
+    "reference__production-checklist",
+    "reference__migration-guide",
+    "reference__version-history"
+   ]
+  },
+  {
+   "id": "projects",
+   "name": "Projects",
+   "pages": [
+    "projects__index",
+    "projects__capstone"
+   ]
+  },
+  {
+   "id": "interview",
+   "name": "Interview",
+   "pages": [
+    "interview__index",
+    "interview__questions-by-level",
+    "interview__scenario-questions",
+    "interview__hands-on-tasks"
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "id": "index",
+   "path": "index.md",
+   "title": "Java Design Patterns Playbook",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [],
+   "group": ""
+  },
+  {
+   "id": "how-to-use",
+   "path": "how-to-use.md",
+   "title": "How to Use This Playbook",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [],
+   "group": ""
+  },
+  {
+   "id": "roadmap",
+   "path": "roadmap.md",
+   "title": "Roadmap",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [],
+   "group": ""
+  },
+  {
+   "id": "l0-orientation__index",
+   "path": "l0-orientation/index.md",
+   "title": "L0 · Orientation",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L0"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l0-orientation__what-are-design-patterns",
+   "path": "l0-orientation/what-are-design-patterns.md",
+   "title": "What Are Design Patterns",
+   "summary": "A design pattern is a named, proven solution to a design problem that keeps coming back, described so you can adapt it rather than copy it. The classic catalogue is the Gang of Four's 23 patterns, grouped into creational, structural and behavioural. Learn them to recognise problems faster and to talk about designs in a few words.",
+   "minutes": 15,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L0",
+    "core"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l0-orientation__why-patterns-matter",
+   "path": "l0-orientation/why-patterns-matter.md",
+   "title": "Why Patterns Matter (and When They Don't)",
+   "summary": "Patterns matter because they give teams a shared vocabulary and proven ways to keep code easy to change. They stop mattering, and start hurting, when you add them for changes that never come. Modern Java has made several patterns much smaller, so the goal is the pattern's intent, not its original class diagram.",
+   "minutes": 12,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L0",
+    "core"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l0-orientation__java-setup",
+   "path": "l0-orientation/java-setup.md",
+   "title": "Setting Up Java to Run the Examples",
+   "summary": "Install a JDK 21, check it with `java -version`, and you can run every example in this playbook with `java File.java`. Use Maven when an example has several files or tests, and JShell when you want to try one line. Any major IDE works.",
+   "minutes": 10,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L0",
+    "tooling"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l0-orientation__reading-uml",
+   "path": "l0-orientation/reading-uml.md",
+   "title": "Reading UML for Patterns",
+   "summary": "Every pattern page shows its structure as a UML class diagram and its behaviour as a sequence diagram. You need about a dozen symbols to read them: boxes for classes and interfaces, six kinds of lines for relationships, and arrows for calls over time. This page maps each symbol to the Java code that produces it.",
+   "minutes": 15,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L0",
+    "core"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l1-foundations__index",
+   "path": "l1-foundations/index.md",
+   "title": "L1 · Foundations",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L1"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__oop-refresher",
+   "path": "l1-foundations/oop-refresher.md",
+   "title": "OOP Refresher for Patterns",
+   "summary": "Every design pattern is a particular arrangement of four OOP ideas: encapsulation, abstraction, inheritance and polymorphism. If you can hide state behind methods, depend on interfaces, and choose composition over inheritance by default, most patterns stop looking like magic and start looking like common sense.",
+   "minutes": 25,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "core"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__solid-principles",
+   "path": "l1-foundations/solid-principles.md",
+   "title": "SOLID Principles",
+   "summary": "SOLID is five principles for classes that are easy to change: one reason to change per class, extend without editing, subtypes that keep their parent's promises, small interfaces, and dependencies on abstractions. They are the \"why\" behind most design patterns: when you can name which principle a design breaks, you usually know which pattern fixes it.",
+   "minutes": 55,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "core"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__other-design-principles",
+   "path": "l1-foundations/other-design-principles.md",
+   "title": "DRY, KISS, YAGNI and Friends",
+   "summary": "SOLID tells you how to make code flexible; DRY, KISS and YAGNI stop you overdoing it. Keep each piece of *knowledge* in one place (DRY), choose the simplest design that works (KISS), and don't build what nobody needs yet (YAGNI). Law of Demeter, Tell Don't Ask, cohesion/coupling and GRASP help you decide which class a piece of behaviour belongs to.",
+   "minutes": 50,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "core"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__singleton",
+   "path": "l1-foundations/singleton.md",
+   "title": "Singleton",
+   "summary": "One instance, global access, and why it's often a smell.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "creational"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__factory-method",
+   "path": "l1-foundations/factory-method.md",
+   "title": "Factory Method",
+   "summary": "Let subclasses or functions decide which class to create.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "creational"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__builder",
+   "path": "l1-foundations/builder.md",
+   "title": "Builder",
+   "summary": "Build complex or immutable objects step by step.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "creational"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__strategy",
+   "path": "l1-foundations/strategy.md",
+   "title": "Strategy",
+   "summary": "Swap algorithms at runtime behind one interface.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "behavioural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__observer",
+   "path": "l1-foundations/observer.md",
+   "title": "Observer",
+   "summary": "Notify many listeners when something changes.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "behavioural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__template-method",
+   "path": "l1-foundations/template-method.md",
+   "title": "Template Method",
+   "summary": "Fix the algorithm's skeleton, let subclasses fill the steps.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "behavioural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__adapter",
+   "path": "l1-foundations/adapter.md",
+   "title": "Adapter",
+   "summary": "Make an incompatible interface fit the one you need.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "structural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__decorator",
+   "path": "l1-foundations/decorator.md",
+   "title": "Decorator",
+   "summary": "Add behaviour to an object without subclassing.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "structural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__facade",
+   "path": "l1-foundations/facade.md",
+   "title": "Facade",
+   "summary": "Give a complex subsystem one simple entry point.",
+   "minutes": 15,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "structural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l2-practitioner__index",
+   "path": "l2-practitioner/index.md",
+   "title": "L2 · Practitioner",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L2"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__abstract-factory",
+   "path": "l2-practitioner/abstract-factory.md",
+   "title": "Abstract Factory",
+   "summary": "Create families of related objects that must match.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "creational"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__prototype",
+   "path": "l2-practitioner/prototype.md",
+   "title": "Prototype",
+   "summary": "Create new objects by copying an existing one.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "creational"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__object-pool",
+   "path": "l2-practitioner/object-pool.md",
+   "title": "Object Pool",
+   "summary": "Reuse expensive objects instead of creating them.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "creational"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__dependency-injection",
+   "path": "l2-practitioner/dependency-injection.md",
+   "title": "Dependency Injection",
+   "summary": "Give objects their dependencies instead of letting them find them.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "creational"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__composite",
+   "path": "l2-practitioner/composite.md",
+   "title": "Composite",
+   "summary": "Treat single objects and groups the same way.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "structural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__proxy",
+   "path": "l2-practitioner/proxy.md",
+   "title": "Proxy",
+   "summary": "Control access to an object through a stand-in.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "structural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__bridge",
+   "path": "l2-practitioner/bridge.md",
+   "title": "Bridge",
+   "summary": "Separate an abstraction from its implementation so both can vary.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "structural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__flyweight",
+   "path": "l2-practitioner/flyweight.md",
+   "title": "Flyweight",
+   "summary": "Share common state to save memory.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "structural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__command",
+   "path": "l2-practitioner/command.md",
+   "title": "Command",
+   "summary": "Turn a request into an object you can queue, log or undo.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__iterator",
+   "path": "l2-practitioner/iterator.md",
+   "title": "Iterator",
+   "summary": "Traverse a collection without exposing its internals.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__state",
+   "path": "l2-practitioner/state.md",
+   "title": "State",
+   "summary": "Change behaviour when internal state changes.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__chain-of-responsibility",
+   "path": "l2-practitioner/chain-of-responsibility.md",
+   "title": "Chain of Responsibility",
+   "summary": "Pass a request along handlers until one handles it.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__mediator",
+   "path": "l2-practitioner/mediator.md",
+   "title": "Mediator",
+   "summary": "Centralise how objects talk to each other.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__memento",
+   "path": "l2-practitioner/memento.md",
+   "title": "Memento",
+   "summary": "Capture and restore state without breaking encapsulation.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__visitor",
+   "path": "l2-practitioner/visitor.md",
+   "title": "Visitor",
+   "summary": "Add operations to a class hierarchy without changing it.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__interpreter",
+   "path": "l2-practitioner/interpreter.md",
+   "title": "Interpreter",
+   "summary": "Represent and evaluate a small language.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__null-object",
+   "path": "l2-practitioner/null-object.md",
+   "title": "Null Object",
+   "summary": "Replace null checks with an object that does nothing.",
+   "minutes": 15,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__specification",
+   "path": "l2-practitioner/specification.md",
+   "title": "Specification",
+   "summary": "Combine business rules as composable predicates.",
+   "minutes": 20,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__testing-patterns",
+   "path": "l2-practitioner/testing-patterns.md",
+   "title": "Testing Patterns",
+   "summary": "Test pattern-based code and use the patterns of testing.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "testing"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l3-professional__index",
+   "path": "l3-professional/index.md",
+   "title": "L3 · Professional",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L3"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__patterns-in-modern-java",
+   "path": "l3-professional/patterns-in-modern-java.md",
+   "title": "Patterns in Modern Java (17–21)",
+   "summary": "How records, sealed types, pattern matching and lambdas reshape the GoF catalogue.",
+   "minutes": 35,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__functional-patterns",
+   "path": "l3-professional/functional-patterns.md",
+   "title": "Functional Patterns in Java",
+   "summary": "Use higher-order functions, composition and immutability as patterns.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__patterns-in-the-jdk",
+   "path": "l3-professional/patterns-in-the-jdk.md",
+   "title": "Patterns in the JDK",
+   "summary": "Recognise the patterns you already use every day.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__patterns-in-spring",
+   "path": "l3-professional/patterns-in-spring.md",
+   "title": "Patterns in Spring",
+   "summary": "See how Spring is built from patterns and how to use them well.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__concurrency-patterns",
+   "path": "l3-professional/concurrency-patterns.md",
+   "title": "Concurrency Patterns",
+   "summary": "Write correct concurrent code with proven patterns.",
+   "minutes": 40,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "concurrency"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__enterprise-application-patterns",
+   "path": "l3-professional/enterprise-application-patterns.md",
+   "title": "Enterprise Application Patterns",
+   "summary": "Organise business logic and data access (Fowler's PoEAA).",
+   "minutes": 35,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "data"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__ui-and-mobile-patterns",
+   "path": "l3-professional/ui-and-mobile-patterns.md",
+   "title": "UI and Mobile Patterns",
+   "summary": "Structure user-facing apps, including Android and other mobile clients.",
+   "minutes": 35,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "ui"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__error-handling-patterns",
+   "path": "l3-professional/error-handling-patterns.md",
+   "title": "Error Handling Patterns",
+   "summary": "Handle failure in a consistent, testable way.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__anti-patterns-and-code-smells",
+   "path": "l3-professional/anti-patterns-and-code-smells.md",
+   "title": "Anti-Patterns and Code Smells",
+   "summary": "Spot the designs patterns are meant to fix, and the ones patterns cause.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__refactoring-to-patterns",
+   "path": "l3-professional/refactoring-to-patterns.md",
+   "title": "Refactoring to Patterns",
+   "summary": "Move existing code toward (and away from) patterns safely.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__performance-of-patterns",
+   "path": "l3-professional/performance-of-patterns.md",
+   "title": "Performance Cost of Patterns",
+   "summary": "Know what indirection costs on the JVM and how to measure it.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "performance"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l4-senior__index",
+   "path": "l4-senior/index.md",
+   "title": "L4 · Senior / Lead",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L4"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__architectural-patterns",
+   "path": "l4-senior/architectural-patterns.md",
+   "title": "Architectural Patterns",
+   "summary": "Structure whole applications.",
+   "minutes": 40,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "architecture"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__ddd-tactical",
+   "path": "l4-senior/ddd-tactical.md",
+   "title": "Domain-Driven Design: Tactical Patterns",
+   "summary": "Model a rich domain in code.",
+   "minutes": 40,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "architecture"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__ddd-strategic",
+   "path": "l4-senior/ddd-strategic.md",
+   "title": "Domain-Driven Design: Strategic Patterns",
+   "summary": "Split a large domain into models and teams.",
+   "minutes": 35,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "architecture"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__microservice-patterns",
+   "path": "l4-senior/microservice-patterns.md",
+   "title": "Microservice Patterns",
+   "summary": "Decompose and connect services.",
+   "minutes": 40,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "architecture"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__resilience-patterns",
+   "path": "l4-senior/resilience-patterns.md",
+   "title": "Resilience Patterns",
+   "summary": "Keep systems up when dependencies fail.",
+   "minutes": 35,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "operations"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__distributed-data-patterns",
+   "path": "l4-senior/distributed-data-patterns.md",
+   "title": "Distributed Data Patterns",
+   "summary": "Keep data consistent across services.",
+   "minutes": 40,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "data"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__messaging-patterns",
+   "path": "l4-senior/messaging-patterns.md",
+   "title": "Messaging and Integration Patterns",
+   "summary": "Connect systems with messages (Enterprise Integration Patterns).",
+   "minutes": 35,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "integration"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__caching-patterns",
+   "path": "l4-senior/caching-patterns.md",
+   "title": "Caching Patterns",
+   "summary": "Choose where and how to cache.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "performance"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__api-design-patterns",
+   "path": "l4-senior/api-design-patterns.md",
+   "title": "API Design Patterns",
+   "summary": "Design APIs that stay stable as they grow.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "integration"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l5-staff-principal__index",
+   "path": "l5-staff-principal/index.md",
+   "title": "L5 · Staff / Principal",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L5"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__pattern-selection",
+   "path": "l5-staff-principal/pattern-selection.md",
+   "title": "Choosing Patterns and Trade-offs",
+   "summary": "Decide when a pattern pays off, and say no when it doesn't.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "architecture"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__evolutionary-architecture",
+   "path": "l5-staff-principal/evolutionary-architecture.md",
+   "title": "Evolutionary Architecture",
+   "summary": "Keep architecture healthy as code and teams change.",
+   "minutes": 30,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "architecture"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__legacy-modernisation",
+   "path": "l5-staff-principal/legacy-modernisation.md",
+   "title": "Legacy Modernisation Patterns",
+   "summary": "Move old systems forward without a rewrite.",
+   "minutes": 35,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "architecture"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__jvm-internals-behind-patterns",
+   "path": "l5-staff-principal/jvm-internals-behind-patterns.md",
+   "title": "JVM Internals Behind Patterns",
+   "summary": "Understand how the JVM implements what patterns rely on.",
+   "minutes": 40,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "performance"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__framework-and-library-design",
+   "path": "l5-staff-principal/framework-and-library-design.md",
+   "title": "Designing Frameworks and Libraries",
+   "summary": "Build extension points other teams can rely on.",
+   "minutes": 35,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "architecture"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__governing-patterns-at-scale",
+   "path": "l5-staff-principal/governing-patterns-at-scale.md",
+   "title": "Governing Patterns Across an Organisation",
+   "summary": "Set standards, review designs and grow engineers.",
+   "minutes": 25,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "organisation"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "reference__cheatsheet",
+   "path": "reference/cheatsheet.md",
+   "title": "Cheat Sheet",
+   "summary": "Every pattern on one page: intent, structure and a Java skeleton.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__configuration",
+   "path": "reference/configuration.md",
+   "title": "Build & Tooling Configuration",
+   "summary": "Maven, compiler, test and static-analysis settings used by the examples, with defaults and when to change them.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__comparisons",
+   "path": "reference/comparisons.md",
+   "title": "Pattern Comparisons",
+   "summary": "Side-by-side comparisons of patterns that look alike, with a decision table.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__decision-guide",
+   "path": "reference/decision-guide.md",
+   "title": "Decision Guide",
+   "summary": "Mermaid decision trees: which pattern for which problem.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__anti-patterns",
+   "path": "reference/anti-patterns.md",
+   "title": "Anti-Pattern Catalogue",
+   "summary": "Catalogue of anti-patterns with symptoms and fixes.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__production-checklist",
+   "path": "reference/production-checklist.md",
+   "title": "Production Checklist",
+   "summary": "Go-live checklist for pattern-heavy Java code.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__migration-guide",
+   "path": "reference/migration-guide.md",
+   "title": "Migration Guide",
+   "summary": "Moving classic pattern code to modern Java (8 → 17 → 21) and from inheritance-heavy designs.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__version-history",
+   "path": "reference/version-history.md",
+   "title": "Java Version History for Patterns",
+   "summary": "What each Java release changed for design patterns and why.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "projects__index",
+   "path": "projects/index.md",
+   "title": "Projects",
+   "summary": "Hands-on projects that combine many patterns.",
+   "minutes": null,
+   "written": false,
+   "isIndex": true,
+   "tags": [
+    "projects"
+   ],
+   "group": "projects"
+  },
+  {
+   "id": "projects__capstone",
+   "path": "projects/capstone.md",
+   "title": "Capstone: FreshCart",
+   "summary": "Build FreshCart, a grocery delivery backend and its mobile client contract, using most patterns in this playbook.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "projects"
+   ],
+   "group": "projects"
+  },
+  {
+   "id": "interview__index",
+   "path": "interview/index.md",
+   "title": "Interview Guide",
+   "summary": "How design-pattern interviews work and what each level is judged on.",
+   "minutes": null,
+   "written": false,
+   "isIndex": true,
+   "tags": [
+    "interview"
+   ],
+   "group": "interview"
+  },
+  {
+   "id": "interview__questions-by-level",
+   "path": "interview/questions-by-level.md",
+   "title": "Questions by Level",
+   "summary": "Graded questions from L1 to L5 with model answers.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "interview"
+   ],
+   "group": "interview"
+  },
+  {
+   "id": "interview__scenario-questions",
+   "path": "interview/scenario-questions.md",
+   "title": "Scenario Questions",
+   "summary": "\"Production is down, what do you do?\" style questions on pattern-heavy systems.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "interview"
+   ],
+   "group": "interview"
+  },
+  {
+   "id": "interview__hands-on-tasks",
+   "path": "interview/hands-on-tasks.md",
+   "title": "Hands-on Tasks",
+   "summary": "Take-home and live-coding tasks with solutions.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "interview"
+   ],
+   "group": "interview"
+  },
+  {
+   "id": "glossary",
+   "path": "glossary.md",
+   "title": "Glossary",
+   "summary": "Every term used in the playbook. Terms also show as tooltips on every page.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": ""
+  },
+  {
+   "id": "further-reading",
+   "path": "further-reading.md",
+   "title": "Further Reading",
+   "summary": "Books, specifications and talks worth your time.",
+   "minutes": null,
+   "written": false,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": ""
+  },
+  {
+   "id": "tags",
+   "path": "tags.md",
+   "title": "Tags",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [],
+   "group": ""
+  }
+ ]
+}

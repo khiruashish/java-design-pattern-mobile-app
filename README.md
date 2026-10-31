@@ -4,6 +4,10 @@ A MkDocs (Material) site that teaches Java design patterns from Day 0 to staff/p
 
 It was generated with [PLAYBOOK_MASTER_PROMPT.md](PLAYBOOK_MASTER_PROMPT.md). The approved topic list is in [SYLLABUS.md](SYLLABUS.md).
 
+## Mobile app
+
+The [`app/`](app/) folder is a Flutter app (Android, iOS, web) that shows the same pages offline, with search, bookmarks and reading progress. See [app/README.md](app/README.md).
+
 ## Run the site locally
 
 ```bash
