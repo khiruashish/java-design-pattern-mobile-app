@@ -1,0 +1,3 @@
+region: IN-MH
+basket of 12: ok (12/50)
+basket of 80: too many items (80/50)

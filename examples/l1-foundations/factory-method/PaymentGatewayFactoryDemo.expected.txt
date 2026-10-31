@@ -1,0 +1,7 @@
+LIVE ok FC-3001 4250 via https://cards.example/v2 timeout=2500ms
+UPI collect FC-3002 1999 to freshcart.pune@bank
+cached: true, clients created: 2
+rejected: dev-01: sandbox gateway is not allowed in prod
+rejected: bad-01: missing config 'bad-01.endpoint'
+rejected: nope-99: missing config 'nope-99.type'
+SANDBOX ok FC-T1 100 (dev-01)

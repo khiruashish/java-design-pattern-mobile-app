@@ -1,0 +1,4 @@
+naive, reflection:      second instance = true
+naive, serialization:   second instance = true
+hardened, reflection:   blocked (HardenedSettings is a singleton)
+hardened, serialization: same instance = true

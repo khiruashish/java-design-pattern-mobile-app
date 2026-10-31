@@ -1,0 +1,5 @@
+standard -> standard (same day), fee 499
+Express -> express in 30 min, fee 799
+scheduled -> scheduled 18:00-19:00, fee 299
+drone -> rejected: unknown delivery kind 'drone', use one of [STANDARD, EXPRESS, SCHEDULED]
+scheduled -> rejected: scheduled delivery needs a slot like 18:00-19:00

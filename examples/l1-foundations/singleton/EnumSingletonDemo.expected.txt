@@ -1,0 +1,4 @@
+FC-1001
+FC-1002
+same after serialization: true
+reflection blocked: Cannot reflectively create enum objects

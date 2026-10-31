@@ -1,0 +1,5 @@
+main started
+FeatureFlags created
+same instance: true
+express-delivery: true
+rejected: unknown flag: drone-delivery

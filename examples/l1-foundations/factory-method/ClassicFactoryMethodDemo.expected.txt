@@ -1,0 +1,3 @@
+sms -> FreshCart: order FC-2101 paid $42.50
+email -> <h1 style='color:#2e7d32'>Order FC-2101</h1><p>Total $42.50</p>
+rejected: total must be positive

@@ -1,0 +1,7 @@
+pune-01-2026-11-02.csv (text/csv)
+sku,quantity,revenue_cents
+MILK-1L,42,5418
+BREAD-WHT,17,4233
+pune-01-2026-11-02.JSON (application/json)
+[{"sku":"MILK-1L","quantity":42,"revenueCents":5418},{"sku":"BREAD-WHT","quantity":17,"revenueCents":4233}]
+rejected: can't export 'pune-01-2026-11-02.xlsx', supported: [csv, json]

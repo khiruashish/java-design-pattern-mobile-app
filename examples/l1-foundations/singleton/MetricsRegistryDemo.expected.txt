@@ -1,0 +1,2 @@
+{checkout.orders_placed=3, delivery.completed=2, delivery.failed=1}
+rejected: bad metric name: Delivery Failed!
