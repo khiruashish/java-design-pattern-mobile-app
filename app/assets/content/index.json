@@ -744,9 +744,9 @@
    "id": "l3-professional__functional-patterns",
    "path": "l3-professional/functional-patterns.md",
    "title": "Functional Patterns in Java",
-   "summary": "Use higher-order functions, composition and immutability as patterns.",
-   "minutes": 30,
-   "written": false,
+   "summary": "Functional programming has its own pattern catalogue, and Java 8–21 supports most of it. **Higher-order functions** wrap behaviour (retry, caching, logging) once. **Composition** builds pipelines from small functions. **Optional** and **Result/Either** make absence and failure into values you can chain. **Currying and partial application** fix arguments early. **Streams** express data pipelines declaratively. **Immutability** makes all of it safe to share and parallelise. The practical architecture is \"functional core, imperative shell\": pure functions inside, I/O at the edges.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",

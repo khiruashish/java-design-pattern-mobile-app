@@ -1,0 +1,5 @@
+loop:   {Mumbai=118500, Nashik=9900, Pune=86900}
+stream: {Mumbai=118500, Nashik=9900, Pune=86900}
+5 delivered, average Rs 431
+top 2: [O5, O1]
+parallel, collected (not forEach-added) in encounter order: [O1, O2, O3, O4, O5, O6]

@@ -1,0 +1,5 @@
+MILK-1L,2  -> Ok[value=Line[sku=MILK-1L, qty=Qty[value=2]]]
+milk,2     -> Err[error=bad SKU 'milk']
+BREAD,0    -> Err[error=qty must be 1-20, got 0]
+EGGS,six   -> Err[error=qty is not a number: 'six']
+PANEER     -> Err[error=expected 'SKU,QTY', got 'PANEER']

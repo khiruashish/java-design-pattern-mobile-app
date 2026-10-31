@@ -1,0 +1,3 @@
+before:   49308
+composed: 49308
+festival config (no tax step, for a tax-free day): 46960

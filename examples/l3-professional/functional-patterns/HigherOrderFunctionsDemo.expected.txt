@@ -1,0 +1,6 @@
+  attempt 1 failed: timeout
+  attempt 2 failed: timeout
+stock: MILK: 42 left
+  zoneLookup(411001) = 1
+  zoneLookup(560001) = 2
+4 calls, 2 real lookups
