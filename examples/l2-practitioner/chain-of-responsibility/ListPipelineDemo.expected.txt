@@ -1,0 +1,3 @@
+stop at first: minimum order is Rs 99
+collect all:   [minimum order is Rs 99, we don't deliver to 110001, age check failed]
+good order:    []

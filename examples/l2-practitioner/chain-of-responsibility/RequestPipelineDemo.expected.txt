@@ -1,0 +1,9 @@
+Response[status=201, body=order FC-9301 for asha]
+Response[status=201, body=order FC-9301 for asha]  <- retry replayed, no second order
+Response[status=401, body=invalid token]
+Response[status=500, body=internal error, ref req-4]
+  10-request-id: calls=4 shortCircuits=0
+  15-errors: calls=4 shortCircuits=0
+  20-auth: calls=4 shortCircuits=1
+  30-idempotency: calls=3 shortCircuits=1
+duplicate handler name or order: auth

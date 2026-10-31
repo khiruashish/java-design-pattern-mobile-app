@@ -605,13 +605,13 @@
    "id": "l2-practitioner__chain-of-responsibility",
    "path": "l2-practitioner/chain-of-responsibility.md",
    "title": "Chain of Responsibility",
-   "summary": "Pass a request along handlers until one handles it.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Chain of Responsibility passes a request along a sequence of handlers; each one either handles it, passes it on, or (in the filter style) does something before and after the rest of the chain. It decouples the sender from whoever ends up handling the request. You use it every day in Java: servlet filters, Spring `HandlerInterceptor`s and Spring Security's filter chain. Order matters, and every chain needs a defined ending for requests nobody handles.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l2-practitioner"
   },
