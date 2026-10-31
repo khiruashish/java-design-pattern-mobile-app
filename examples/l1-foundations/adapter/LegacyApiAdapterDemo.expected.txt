@@ -1,0 +1,5 @@
+MILK: AVAILABLE, reserve 2 -> 2
+EGGS: LOW, reserve 2 -> 2
+RICE: UNKNOWN, reserve 2 -> failed
+last count: 2026-11-01T08:00:00Z
+JDK's own adapters: [1, 2], [a, b]

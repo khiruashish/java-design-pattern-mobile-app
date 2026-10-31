@@ -1,0 +1,2 @@
+Logging(Retrying(...)): log [send +91980001, ok +91980001], delivered [+91980001: Your order FC-210...]
+Retrying(Logging(...)): log [send +91980001, error +91980001: gateway timeout, send +91980001, ok +91980001], delivered [+91980001: Your order FC-210...]

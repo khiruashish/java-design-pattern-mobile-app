@@ -1,0 +1,4 @@
+legacy pay 499.50 -> true
+new charge 12000 -> Charge[id=ch_2, cents=12000, ok=true]
+legacy pay 0 -> false
+one ledger for both: [ch_1 cust-1 49950, ch_2 cust-2 12000]
