@@ -1,0 +1,6 @@
+cheapest: [Brown rice 1kg, Sona Masoori 5kg, Basmati 5kg]
+best rated: [Brown rice 1kg, Basmati 5kg, Sona Masoori 5kg]
+popular: [Sona Masoori 5kg, Basmati 5kg, Brown rice 1kg]
+20% capped at $50 on $120.00: 9600
+20% capped at $50 on $400.00: 35000
+search text strategy: 'basmati'

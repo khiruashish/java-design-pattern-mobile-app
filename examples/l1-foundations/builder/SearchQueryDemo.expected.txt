@@ -1,0 +1,3 @@
+q=organic+milk&cat=dairy&cat=organic&maxPrice=20000&inStock=true&sort=price_low_high&page=1&size=20
+q=rice&page=2&size=50
+rejected: search needs text or a category

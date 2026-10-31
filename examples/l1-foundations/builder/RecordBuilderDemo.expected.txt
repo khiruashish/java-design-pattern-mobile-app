@@ -1,0 +1,5 @@
+Coupon[code=WELCOME20, percentOff=20, minBasketCents=0, firstOrderOnly=true]
+Coupon[code=BIGBASKET, percentOff=10, minBasketCents=150000, firstOrderOnly=false]
+wither: Coupon[code=WELCOME20, percentOff=25, minBasketCents=0, firstOrderOnly=true]
+toBuilder: Coupon[code=BIGBASKET, percentOff=10, minBasketCents=150000, firstOrderOnly=true]
+rejected: percentOff must be 1..90

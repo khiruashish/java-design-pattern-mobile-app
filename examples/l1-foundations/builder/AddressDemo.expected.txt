@@ -1,0 +1,3 @@
+Address[line1=Flat 4B, Lake View, pincode=411001, line2=, landmark=Near City Park, gateCode=4471]
+Address[line1=Plot 9, IT Park, pincode=411057, line2=, landmark=, gateCode=]
+rejected: pincode must be 6 digits

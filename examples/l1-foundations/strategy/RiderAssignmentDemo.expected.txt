@@ -1,0 +1,9 @@
+pune-01 FC-1001 -> ravi via NEAREST
+pune-01 FC-1002 -> ravi via NEAREST
+pune-01 FC-1003 -> meena via LEAST_LOADED
+pune-01 FC-1004 -> ravi via NEAREST
+pune-02 FC-2001 -> meena via NEAREST
+pune-02 FC-2002 -> ravi via BATCHING
+pune-09 FC-9001 -> QUEUED (no eligible rider) via NEAREST
+same order, same strategy every time: true
+{assign.fallback.BATCHING=1, assign.used.BATCHING=1, assign.used.LEAST_LOADED=1, assign.used.NEAREST=5}

@@ -1,0 +1,4 @@
+telescoping: MLK-1 Milk 129c organic=true shelf=3d brand=DairyDay
+bean half-built, valid? false
+builder: MLK-1 Milk 129c organic=true shelf=3d brand=FreshCart
+rejected: price must be positive

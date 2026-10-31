@@ -1,0 +1,6 @@
+UPI fee on 74950: 0
+CARD fee on 74950: 1349
+WALLET fee on 74950: 750
+CASH_ON_DELIVERY fee on 74950: 2500
+UP_TO_RUPEE: 74950 + 1349 -> 76300
+rejected: unknown payment method CRYPTO

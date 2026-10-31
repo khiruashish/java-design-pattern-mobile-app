@@ -340,9 +340,9 @@
    "id": "l1-foundations__builder",
    "path": "l1-foundations/builder.md",
    "title": "Builder",
-   "summary": "Build complex or immutable objects step by step.",
-   "minutes": 25,
-   "written": false,
+   "summary": "Builder constructs a complex object step by step, so callers name each value they set, optional fields get defaults, and validation runs once in `build()` before an immutable object exists. Use it when a constructor would take many parameters, several of them optional. In modern Java, pair it with records; for two or three fields, a constructor or static factory is better.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L1",
@@ -354,13 +354,13 @@
    "id": "l1-foundations__strategy",
    "path": "l1-foundations/strategy.md",
    "title": "Strategy",
-   "summary": "Swap algorithms at runtime behind one interface.",
-   "minutes": 25,
-   "written": false,
+   "summary": "Strategy puts each variant of an algorithm (how to price, sort, assign, round) behind one interface, so the code that uses it can swap algorithms without `if/else` chains. In Java 8+ a strategy is often just a lambda (`Comparator` is the most famous example). It's the pattern you'll use most; the hard parts are choosing the strategy at runtime and rolling new ones out safely.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L1",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l1-foundations"
   },

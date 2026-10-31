@@ -1,0 +1,4 @@
+FC-610 to 12 Lake Road, Pune contactless=true tip=2000 notes=[Ring once, Leave with guard]
+built object unaffected by later builder calls: true
+instructions are immutable
+rejected: orderId and address are required

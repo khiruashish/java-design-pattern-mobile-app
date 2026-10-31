@@ -1,0 +1,9 @@
+lines: [Line[sku=MILK-1L, quantity=3, unitPriceCents=129], Line[sku=RICE-5KG, quantity=1, unitPriceCents=54900]]
+subtotal: 55287, coupon: WELCOME20, at 2026-11-02T06:30:00Z
+reorder: [MILK-1L, ATTA-5KG], original unchanged: 2
+5 errors:
+  - customer is required
+  - EGGS-12: at most 20 per order
+  - FREEBIE: price must be positive
+  - minimum order is 9900 cents, basket is 8725
+  - slot 12:15 must start at least 30 minutes from now
