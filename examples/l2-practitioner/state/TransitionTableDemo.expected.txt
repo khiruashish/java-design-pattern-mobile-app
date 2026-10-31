@@ -1,0 +1,9 @@
+PLACED            --PACK    --> PACKED
+PLACED            --CANCEL  --> CANCELLED
+PACKED            --DISPATCH--> OUT_FOR_DELIVERY
+PACKED            --CANCEL  --> CANCELLED
+OUT_FOR_DELIVERY  --DELIVER --> DELIVERED
+DELIVERED         --RETURN  --> RETURNED
+fire PLACED+PACK = PACKED
+CANCEL not allowed in DELIVERED
+validation, unreachable states: [REFUNDED]

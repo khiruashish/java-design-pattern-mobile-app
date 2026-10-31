@@ -591,13 +591,13 @@
    "id": "l2-practitioner__state",
    "path": "l2-practitioner/state.md",
    "title": "State",
-   "summary": "Change behaviour when internal state changes.",
-   "minutes": 25,
-   "written": false,
+   "summary": "State lets an object change its behaviour when its internal state changes, so \"what does cancel do?\" is answered by the current state instead of `if`/`switch` chains in every method. Java gives you several ways to build it: one class per state (classic GoF), an enum with allowed transitions, sealed records with an exhaustive `switch` (modern Java), or a transition table (state machine as data). In production, add guards, optimistic versioning, idempotent events and a history.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l2-practitioner"
   },

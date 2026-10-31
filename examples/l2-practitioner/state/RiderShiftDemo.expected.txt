@@ -1,0 +1,1 @@
+started shift; accepted order; marked delivered; accepted order; now ON_DELIVERY

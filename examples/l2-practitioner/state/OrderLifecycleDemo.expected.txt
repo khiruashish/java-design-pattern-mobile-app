@@ -1,0 +1,5 @@
+Placed -> Cancelled [refund Rs 649, sms: Order cancelled, full refund]
+Packed -> Cancelled [restock 2 bags, refund Rs 649, sms: Order cancelled, full refund]
+OutForDelivery -> OutForDelivery [sms: Rider R-42 is on the way; cancel at the door instead]
+Cancelled -> Cancelled []
+Delivered: delivered orders are returned, not cancelled
