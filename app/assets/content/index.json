@@ -563,13 +563,13 @@
    "id": "l2-practitioner__command",
    "path": "l2-practitioner/command.md",
    "title": "Command",
-   "summary": "Turn a request into an object you can queue, log or undo.",
-   "minutes": 25,
-   "written": false,
+   "summary": "Command turns a request (\"reserve 2 milk\", \"refund order FC-7201\") into an object. Once a request is an object, you can queue it, log it, retry it, undo it, combine several into one, or run it later on another machine. In modern Java a simple command is just a lambda (`Runnable`); use a record or class when you need data, a name, undo, or persistence. Commands that cross process boundaries need idempotency keys.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l2-practitioner"
   },

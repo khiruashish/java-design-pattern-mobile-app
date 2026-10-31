@@ -1,0 +1,5 @@
+after 3 edits: {BREAD=1}
+undo:          {BREAD=1, MILK-1L=2}
+undo:          {MILK-1L=2}
+redo:          {MILK-1L=2, BREAD=1}
+new edit, redo ignored: {MILK-1L=2, BREAD=1, EGGS-6=1}

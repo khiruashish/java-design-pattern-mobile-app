@@ -1,0 +1,7 @@
+before:
+  inventory: reserved 2 x MILK-1L
+after:
+  inventory: reserved 2 x MILK-1L
+  inventory: reserved 1 x BREAD
+  printer: label for FC-7001
+station log: [reserve 2 x MILK-1L, reserve 1 x BREAD, print label FC-7001]

@@ -1,0 +1,6 @@
+preview (nothing changed yet):
+  MANGO-1KG: 180 -> 162
+  APPLE-1KG: 220 -> 198
+  BANANA-12: 60 -> 54
+applied: {MANGO-1KG=16200, APPLE-1KG=19800, BANANA-12=5400}
+undone:  {MANGO-1KG=18000, APPLE-1KG=22000, BANANA-12=6000}
