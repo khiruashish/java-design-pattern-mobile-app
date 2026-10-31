@@ -1,0 +1,2 @@
+without map: same object=false, saved balance=20000 (expected 30000), queries=2
+with map:    same object=true, saved balance=30000, queries=1

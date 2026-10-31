@@ -1,0 +1,3 @@
+names only: [asha, ravi, meera], queries=1
+N+1: 6 orders, queries=4
+batch fetch: 6 orders, queries=2

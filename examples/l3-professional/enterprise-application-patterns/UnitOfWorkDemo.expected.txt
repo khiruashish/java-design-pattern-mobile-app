@@ -1,0 +1,6 @@
+  BEGIN
+  INSERT item(EGGS-12, 24)
+  UPDATE item SET stock=37 WHERE sku=MILK-1L
+  DELETE item WHERE sku=CAKE-OLD
+  COMMIT
+second unit: [(nothing written)]

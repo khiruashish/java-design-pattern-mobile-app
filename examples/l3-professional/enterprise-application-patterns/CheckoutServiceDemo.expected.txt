@@ -1,0 +1,5 @@
+Confirmed[orderId=FC-100, total=Rs 161.00, delivery=Rs 25.00]
+Confirmed[orderId=FC-101, total=Rs 518.00, delivery=free]
+Rejected[reason=MANGO-1KG has only 1 left]
+Rejected[reason=empty cart]
+milk left: 7, mango left: 1, orders: 2

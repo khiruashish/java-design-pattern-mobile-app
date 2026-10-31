@@ -800,9 +800,9 @@
    "id": "l3-professional__enterprise-application-patterns",
    "path": "l3-professional/enterprise-application-patterns.md",
    "title": "Enterprise Application Patterns",
-   "summary": "Organise business logic and data access (Fowler's PoEAA).",
-   "minutes": 35,
-   "written": false,
+   "summary": "Martin Fowler's *Patterns of Enterprise Application Architecture* (PoEAA, 2002) names the building blocks of almost every business application: how to organise **business logic** (Transaction Script or Domain Model), where **use cases** live (Service Layer), and how objects reach the **database** (Repository, Data Mapper or Active Record, Unit of Work, Identity Map, Lazy Load), plus how data crosses **boundaries** (DTOs and assemblers). JPA/Hibernate and Spring Data implement most of them for you, so knowing them explains what your ORM is doing, why N+1 queries and lost updates happen, and when to step outside the framework.",
+   "minutes": 45,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",

@@ -1,0 +1,10 @@
+placed ORD-1
+failed: only 1 PANEER-200G
+  BEGIN placeOrder
+  UPDATE stock PANEER-200G -> 1
+  INSERT order ORD-1
+  COMMIT
+  SMS to asha: ORD-1 placed
+  BEGIN placeOrder
+  ROLLBACK (only 1 PANEER-200G)
+orders saved: [ORD-1]
