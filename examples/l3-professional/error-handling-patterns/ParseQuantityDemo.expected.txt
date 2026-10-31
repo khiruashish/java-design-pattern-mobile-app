@@ -1,0 +1,5 @@
+'3' -> 3
+' 12 ' -> 12
+'0' -> error: quantity must be 1 to 20, got 0
+'two' -> error: 'two' is not a number
+'' -> error: quantity is required

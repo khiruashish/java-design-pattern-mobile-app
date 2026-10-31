@@ -1,0 +1,4 @@
+recovered: CURD-400G is out of stock, trying Indiranagar
+Indiranagar left: 7
+caller bug: qty must be positive, got -1
+wrapped: IOException: label printer offline

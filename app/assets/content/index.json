@@ -828,9 +828,9 @@
    "id": "l3-professional__error-handling-patterns",
    "path": "l3-professional/error-handling-patterns.md",
    "title": "Error Handling Patterns",
-   "summary": "Handle failure in a consistent, testable way.",
-   "minutes": 25,
-   "written": false,
+   "summary": "Good error handling answers three questions: **who can do something about this failure, what do they need to know, and what state is the system left in?** Use **checked exceptions** (sparingly) for recoverable conditions a caller must handle, **unchecked** ones for bugs and unrecoverable failures. **Translate** exceptions at layer boundaries so each layer speaks its own language, keeping the cause. Use **Result types** when failure is an expected outcome, so the compiler forces handling. **Fail fast** on bad input and configuration, as early and clearly as possible. Use the **Notification pattern** to report every validation problem at once. Never swallow exceptions, and never lose the cause.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",
