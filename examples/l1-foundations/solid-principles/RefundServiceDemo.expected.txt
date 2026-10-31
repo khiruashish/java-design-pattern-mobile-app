@@ -1,0 +1,11 @@
+1: RF-1
+2: already refunded
+rejected: amount must be between 1 and 4250
+rejected: refund window closed at 2026-10-31T09:00:00Z
+rejected: unknown order
+audit:
+  refund_ok order=FC-6001 cents=1000 ref=RF-1
+  refund_duplicate key=req-1
+  refund_rejected order=FC-6001 reason="amount must be between 1 and 4250"
+  refund_rejected order=FC-6002 reason="refund window closed at 2026-10-31T09:00:00Z"
+  refund_rejected order=FC-9999 reason="unknown order"

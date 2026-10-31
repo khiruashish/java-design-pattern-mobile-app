@@ -1,0 +1,4 @@
+signup accepts:    true
+rider app accepts: false
+PhoneNumber valid: true
+normalised:        +919876543210
