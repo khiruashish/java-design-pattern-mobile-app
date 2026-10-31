@@ -1,0 +1,4 @@
+Milk          68.00
+Bread         45.00
+TOTAL        113.00
+<table><tr><td>TOTAL</td><td>113.00</td></tr></table>

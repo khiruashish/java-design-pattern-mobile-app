@@ -1,0 +1,3 @@
+adapter:  sent = true
+strategy: 32500 / 31000
+bridge:   Order FC-5101: 3 items | <h1>Help</h1><p>call 1800-000</p>

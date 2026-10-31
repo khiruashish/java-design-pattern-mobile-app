@@ -1,0 +1,7 @@
+dev saved invoices/2026/FC-2026-11-0042.txt (1 attempt)
+prod saved invoices/2026/FC-2026-11-0043.txt (3 attempts)
+prod load: Invoice FC-2026-11-0043: Rs 1,197.45
+audit: [saved FC-2026-11-0043 to object-store, read invoices/2026/FC-2026-11-0043.txt]
+tamper detected: checksum mismatch for invoices/2026/FC-2026-11-0045.txt
+could not archive FC-2026-11-0046 on object-store: timeout talking to object store
+no blob store for scheme 'ftp'

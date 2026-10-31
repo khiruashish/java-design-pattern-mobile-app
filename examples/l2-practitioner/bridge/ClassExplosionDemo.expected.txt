@@ -1,0 +1,5 @@
+inheritance: 9 classes, e.g. [SmsOrderUpdate, PushOrderUpdate, EmailOrderUpdate]
+bridge:      6 classes [OrderUpdate, Promo, OtpCode, Sms, Push, Email]
+after adding WhatsApp and RefundNotice:
+inheritance: 16 classes (m x n)
+bridge:      8 classes (m + n)

@@ -535,9 +535,9 @@
    "id": "l2-practitioner__bridge",
    "path": "l2-practitioner/bridge.md",
    "title": "Bridge",
-   "summary": "Separate an abstraction from its implementation so both can vary.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Bridge splits one class hierarchy that varies in **two independent ways** into two hierarchies connected by a reference: the **abstraction** (what you do: order update, promo, report) holds an **implementor** (how it's done: SMS, push, CSV, S3). Each side grows on its own, so m kinds × n back ends need m + n classes instead of m × n. JDBC is the classic Java example: your code uses `Connection`, each vendor ships a `Driver`.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
