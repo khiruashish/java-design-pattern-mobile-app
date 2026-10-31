@@ -633,13 +633,13 @@
    "id": "l2-practitioner__memento",
    "path": "l2-practitioner/memento.md",
    "title": "Memento",
-   "summary": "Capture and restore state without breaking encapsulation.",
-   "minutes": 20,
-   "written": false,
+   "summary": "Memento captures an object's state as a snapshot, without exposing its internals, so the object can be restored later: undo, \"discard changes\", checkpoints before risky operations, and drafts saved for later. The object (originator) creates and restores its own snapshots; another object (caretaker) stores them without looking inside. In Java, a deeply immutable `record` is a natural memento. Watch the memory cost: big state with small changes may be better served by storing changes (Command) instead of full copies.",
+   "minutes": 30,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L2",
-    "behavioural"
+    "behavioral"
    ],
    "group": "l2-practitioner"
   },

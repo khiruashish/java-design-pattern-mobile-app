@@ -1,0 +1,3 @@
+shallow snapshot changed by later edits: [Mango 20% off, Free delivery]
+deep snapshot stayed as saved:          [Mango 20% off]
+and nobody can modify it: UnsupportedOperationException

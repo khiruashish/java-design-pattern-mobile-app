@@ -1,0 +1,3 @@
+50 edits, full snapshots: 500000 entries copied
+50 edits, deltas:         50 small records
+undo all via deltas equals first snapshot: true

@@ -1,0 +1,4 @@
+current: Banner[headline=Mango madness, colour=red, discount=20], undo depth 3 (limit 3, oldest dropped)
+undo x2: Banner[headline=Mango mania, colour=orange, discount=15]
+redo:    Banner[headline=Mango madness, colour=orange, discount=15]
+undo as far as possible: Banner[headline=Mango mania, colour=orange, discount=10] (the original yellow banner was dropped)

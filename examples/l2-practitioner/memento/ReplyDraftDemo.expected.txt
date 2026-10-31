@@ -1,0 +1,2 @@
+after accident: '' (cursor 0)
+restored:       'Sorry about the late delivery. We've refunded the delivery fee.' (cursor 63)

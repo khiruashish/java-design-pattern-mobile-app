@@ -1,0 +1,3 @@
+cart:         {MILK-1L=2, PANEER-200G=1} fee Rs 25
+after recipe: {MILK-1L=2, PANEER-200G=2, TOMATO-1KG=1, ONION-1KG=1, BUTTER-100G=1, CREAM-200ML=1} fee Rs 0
+undo recipe:  {MILK-1L=2, PANEER-200G=1} fee Rs 25

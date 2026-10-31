@@ -1,0 +1,3 @@
+before: the 'saved' copy changed too: {MILK=1, BREAD=1}
+after edits: {MILK=2, BREAD=1, CAKE=1} coupon=BDAY20
+restored:    {MILK=2, BREAD=1}
