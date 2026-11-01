@@ -1224,9 +1224,9 @@
    "id": "projects__index",
    "path": "projects/index.md",
    "title": "Projects",
-   "summary": "Hands-on projects that combine many patterns.",
+   "summary": "Hands-on projects that combine many patterns. The main one is the [FreshCart capstone](capstone.md): six milestones from a domain model to production hardening, with a runnable reference solution and tests.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": true,
    "tags": [
     "projects"
@@ -1237,9 +1237,9 @@
    "id": "projects__capstone",
    "path": "projects/capstone.md",
    "title": "Capstone: FreshCart",
-   "summary": "Build FreshCart, a grocery delivery backend and its mobile client contract, using most patterns in this playbook.",
+   "summary": "Build FreshCart, a grocery delivery backend and its mobile client contract, using most patterns in this playbook. You work through six milestones: domain model, pricing, delivery partners, checkout with saga, outbox and idempotency, the mobile contract, and production hardening. Each milestone lists requirements, the patterns to use and acceptance tests. A runnable one-file reference solution and its JUnit tests are included so you can compare.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "projects"

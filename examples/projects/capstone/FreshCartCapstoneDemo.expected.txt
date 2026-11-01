@@ -1,0 +1,29 @@
+M2 pricing and M4 checkout:
+  FC-1001 DISPATCHED via QuickDrop QD-FC-1001: subtotal Rs 361.00, GREEN10 -Rs 18.00, delivery Rs 29.00, total Rs 372.00
+  retry with the same idempotency key returns the same receipt: true, charges so far 1
+M3 partners in Pune (ParcelGo is down):
+  FC-2001 DISPATCHED via QuickDrop (fallback: ParcelGo 503)
+  FC-2002 DISPATCHED via QuickDrop (fallback: ParcelGo 503)
+  FC-2003 DISPATCHED via QuickDrop (fallback: circuit open)
+  ParcelGo was called 2 times; breaker open = true
+M4 saga compensation:
+  FC-3001 CANCELLED: PayLink declined Rs 2640.00; rice stock back to 2, milk 45
+  state guard: cannot dispatch an order that is CANCELLED
+M4 outbox relay to subscribers:
+  TextBlast SMS to asha: order FC-1001 is on its way with QuickDrop
+  TextBlast SMS to bilal: order FC-2001 is on its way with QuickDrop
+  TextBlast SMS to bilal: order FC-2002 is on its way with QuickDrop
+  TextBlast SMS to bilal: order FC-2003 is on its way with QuickDrop
+  TextBlast SMS to chen: order FC-3001 cancelled, no charge
+  published 14 events; loyalty points {asha=10, bilal=30}
+  PayLink ledger [charge FC-1001 Rs 372.00, charge FC-2001 Rs 708.00, charge FC-2002 Rs 708.00, charge FC-2003 Rs 708.00]
+  catalogue lookups hitting the database: 4 (cache serves the rest)
+M5 home screen contract for the mobile app:
+{
+  "customer": "asha",
+  "loyaltyPoints": 10,
+  "recentOrders": [
+    {"id": "FC-1001", "status": "DISPATCHED", "totalPaise": 37200}
+  ],
+  "offers": ["DairyDay Curd 500g", "DairyDay Milk 1L", "GreenValley Organic Spinach"]
+}
