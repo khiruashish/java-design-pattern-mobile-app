@@ -1,0 +1,9 @@
+events: 4, balance now: Rs 148
+balance at end of day 3: Rs 284
+insufficient balance for FC-3
+concurrency conflict: expected v2 but stream is at v4
+audit trail:
+  Credited[day=1, paise=50000, reason=top-up]
+  Debited[day=2, paise=24000, orderId=FC-1]
+  Credited[day=3, paise=2400, reason=cashback FC-1]
+  Debited[day=5, paise=13600, orderId=FC-2]

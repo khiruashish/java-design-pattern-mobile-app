@@ -967,9 +967,9 @@
    "id": "l4-senior__distributed-data-patterns",
    "path": "l4-senior/distributed-data-patterns.md",
    "title": "Distributed Data Patterns",
-   "summary": "Keep data consistent across services.",
+   "summary": "Once each service owns its data, there's no single ACID transaction across them. A **saga** runs a business transaction as a series of local transactions with **compensating actions** for undo. The **transactional outbox** writes the event in the same local transaction as the data, so \"saved but never published\" can't happen; a relay publishes afterwards, at least once. **CQRS** separates the write model (rules) from read models (shaped for queries), updated from events. **Event sourcing** stores events as the source of truth and derives state from them. **Idempotent consumers** make at-least-once delivery safe. **Change data capture** turns the database's own change log into events. Together they trade immediate consistency for availability and autonomy, so design every screen and rule for eventual consistency.",
    "minutes": 40,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",

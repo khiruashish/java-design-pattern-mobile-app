@@ -1,0 +1,12 @@
+order FC-1, rider available=true
+  ok   reserve 2 x MILK-1L (Inventory)
+  ok   charge Rs 136 (Payments via PayLink)
+  ok   book rider (Fulfilment)
+  order CONFIRMED
+order FC-1, rider available=false
+  ok   reserve 2 x MILK-1L (Inventory)
+  ok   charge Rs 136 (Payments via PayLink)
+  FAIL book rider (Fulfilment), compensating
+  compensate: refund Rs 136
+  compensate: release 2 x MILK-1L
+  order CANCELLED

@@ -1,0 +1,8 @@
+  apply v1 of FC-1 -> PLACED
+  park v3 of FC-1 (waiting for v2)
+  apply v2 of FC-1 -> PACKED
+  apply v3 of FC-1 -> OUT_FOR_DELIVERY
+  skip v2 of FC-1 (already at v3)
+  apply v1 of FC-2 -> PLACED
+  apply v4 of FC-1 -> DELIVERED
+My orders: {FC-1=DELIVERED, FC-2=PLACED}

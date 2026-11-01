@@ -1,0 +1,5 @@
+naive points: 61 (should be 37)
+  credited 24 for msg-81
+  credited 13 for msg-82
+  skip duplicate msg-81
+idempotent points: 37
