@@ -1250,9 +1250,9 @@
    "id": "interview__index",
    "path": "interview/index.md",
    "title": "Interview Guide",
-   "summary": "How design-pattern interviews work and what each level is judged on.",
+   "summary": "Design-pattern interviews rarely ask \"define Decorator\". They give you a problem and watch how you **find the variation, pick the simplest structure, explain the trade-offs and change your mind when constraints change**. This guide explains the common round types, what each level is judged on, and how to practise with the rest of this section.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": true,
    "tags": [
     "interview"
@@ -1263,9 +1263,9 @@
    "id": "interview__questions-by-level",
    "path": "interview/questions-by-level.md",
    "title": "Questions by Level",
-   "summary": "Graded questions from L1 to L5 with model answers.",
+   "summary": "Graded questions from L1 to L5 with model answers. Try to answer out loud before opening each answer, then follow the link to the page that covers it in depth.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "interview"
@@ -1276,9 +1276,9 @@
    "id": "interview__scenario-questions",
    "path": "interview/scenario-questions.md",
    "title": "Scenario Questions",
-   "summary": "\"Production is down, what do you do?\" style questions on pattern-heavy systems.",
+   "summary": "\"Production is down, what do you do?\" style questions on pattern-heavy systems. Each scenario gives the symptoms; the strong answer shows how to **stabilise first, then diagnose, then fix the design** so it can't happen again. Most root causes are a missing or misused pattern.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "interview"
@@ -1289,9 +1289,9 @@
    "id": "interview__hands-on-tasks",
    "path": "interview/hands-on-tasks.md",
    "title": "Hands-on Tasks",
-   "summary": "Take-home and live-coding tasks with solutions.",
+   "summary": "Five take-home and live-coding tasks in the FreshCart domain, from L2 to L4, each with requirements, hints and a complete, runnable solution with its real output. Set a timer, write your own version and tests first, then compare.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "interview"

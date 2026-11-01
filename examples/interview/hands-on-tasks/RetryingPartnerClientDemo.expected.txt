@@ -1,0 +1,13 @@
+partner fails 2 times:
+  t=0ms attempt 1 503 busy, retry in 100ms (max 100)
+  t=100ms attempt 2 503 busy, retry in 176ms (max 200)
+  t=276ms attempt 3 ok QD-FC-1001
+  bookings at partner: 1
+partner fails 5 times:
+  t=0ms attempt 1 503 busy, retry in 100ms (max 100)
+  t=100ms attempt 2 503 busy, retry in 176ms (max 200)
+  t=276ms attempt 3 503 busy, retry in 257ms (max 400)
+  t=533ms attempt 4 503 busy, giving up
+  bookings at partner: 0
+bad request:
+  t=0ms attempt 1 400 missing order id, not retried

@@ -1,0 +1,9 @@
+set MILK-1L to 2 -> {MILK-1L=2}
+set CURD-500G to 1 -> {CURD-500G=1, MILK-1L=2}
+set MILK-1L to 5 -> {CURD-500G=1, MILK-1L=5}
+clear cart -> {}
+undo clear cart -> {CURD-500G=1, MILK-1L=5}
+undo set MILK-1L to 5 -> {CURD-500G=1, MILK-1L=2}
+redo set MILK-1L to 5 -> {CURD-500G=1, MILK-1L=5}
+set BREAD to 1 -> {BREAD=1, CURD-500G=1, MILK-1L=5}
+nothing to redo (a new edit cleared the redo stack)
