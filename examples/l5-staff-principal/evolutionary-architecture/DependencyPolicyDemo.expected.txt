@@ -1,0 +1,5 @@
+FAIL org.springframework.boot:spring-boot 1.5.22.RELEASE is 2+ majors behind 3
+FAIL com.netflix.hystrix:hystrix-core: Hystrix is in maintenance mode; use Resilience4j
+FAIL com.freshcart:pricing-client:4.2.0-SNAPSHOT is a snapshot in a release build
+WARN org.flywaydb:flyway-core 9.22.3 is behind approved major 10
+build FAILED

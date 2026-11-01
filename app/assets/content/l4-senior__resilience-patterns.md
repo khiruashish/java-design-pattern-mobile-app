@@ -332,7 +332,8 @@ public class BulkheadDemo {
     static Map<String, Integer> simulate(int sharedThreads, Map<String, Integer> perDependency) {
         Map<String, Integer> latencyMs = Map.of("offers", 2000, "payments", 50);
         Map<String, List<Integer>> busyUntil = new LinkedHashMap<>();
-        Map<String, Integer> rejected = new LinkedHashMap<>(Map.of("offers", 0, "payments", 0));
+        Map<String, Integer> rejected = new LinkedHashMap<>();
+        rejected.put("offers", 0); rejected.put("payments", 0);
         List<Integer> shared = new ArrayList<>();
         for (int t = 0; t < 1000; t += 10) {                                                     // a request every 10 ms per dependency
             for (String dep : List.of("offers", "payments")) {

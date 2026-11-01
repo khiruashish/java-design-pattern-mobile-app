@@ -1050,9 +1050,9 @@
    "id": "l5-staff-principal__evolutionary-architecture",
    "path": "l5-staff-principal/evolutionary-architecture.md",
    "title": "Evolutionary Architecture",
-   "summary": "Keep architecture healthy as code and teams change.",
+   "summary": "Architecture decays one reasonable shortcut at a time unless something checks it. **Fitness functions** are executable checks of architectural characteristics (latency budgets, dependency rules, module size, cycles, dependency hygiene) that run in CI or production. **ArchUnit** expresses structural rules (layers, internal packages, cycles) as JUnit tests over compiled classes. **JPMS** (`module-info.java`) makes module boundaries a compiler-enforced fact rather than a convention. **Coupling metrics** (afferent/efferent coupling, instability, abstractness) show where change will hurt. Combine them with a **ratchet**: record today's violations as a baseline that may only shrink, so you can adopt rules on a legacy codebase without stopping delivery.",
    "minutes": 30,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L5",
