@@ -1159,9 +1159,9 @@
    "id": "reference__decision-guide",
    "path": "reference/decision-guide.md",
    "title": "Decision Guide",
-   "summary": "Mermaid decision trees: which pattern for which problem.",
+   "summary": "\"Which pattern when?\" as decision trees. Start from the **problem you have**, not the pattern you'd like to use, and always check the first branch: maybe a plain method, a lambda or a record is enough. Each leaf links to the deep dive.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
@@ -1172,9 +1172,9 @@
    "id": "reference__anti-patterns",
    "path": "reference/anti-patterns.md",
    "title": "Anti-Pattern Catalogue",
-   "summary": "Catalogue of anti-patterns with symptoms and fixes.",
+   "summary": "Every anti-pattern mentioned in the playbook, in one place: how to **recognise** it, why it **hurts**, and the **fix**, with a link to the page that explains it in depth. Use it as a review checklist.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
@@ -1185,9 +1185,9 @@
    "id": "reference__production-checklist",
    "path": "reference/production-checklist.md",
    "title": "Production Checklist",
-   "summary": "Go-live checklist for pattern-heavy Java code.",
+   "summary": "A go-live checklist for a Java service built with the patterns in this playbook. Tick each item or write down why it doesn't apply. It's grouped by concern, and each item links to the page that explains it.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
@@ -1198,9 +1198,9 @@
    "id": "reference__migration-guide",
    "path": "reference/migration-guide.md",
    "title": "Migration Guide",
-   "summary": "Moving classic pattern code to modern Java (8 → 17 → 21) and from inheritance-heavy designs.",
+   "summary": "How to move pattern implementations from older Java and framework styles to modern Java 21 idioms: anonymous classes to lambdas, Visitor to sealed types with pattern matching, hand-written value classes to records, field injection to constructor injection, and older libraries (Hystrix, Guava Cache, `java.util.Observable`) to their maintained replacements. Each migration lists the safe steps.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
@@ -1211,9 +1211,9 @@
    "id": "reference__version-history",
    "path": "reference/version-history.md",
    "title": "Java Version History for Patterns",
-   "summary": "What each Java release changed for design patterns and why.",
+   "summary": "Java's evolution keeps changing how patterns are written. Generics made factories and iterators type-safe, lambdas turned Strategy and Command into one-liners, records made value objects and builders shorter, sealed types and pattern matching replaced most Visitors, and virtual threads changed concurrency patterns. This page lists, version by version, what changed and why it matters for pattern code.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
