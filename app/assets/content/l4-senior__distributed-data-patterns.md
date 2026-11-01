@@ -882,10 +882,10 @@ saga rows: [FC-1=COMPLETED[RESERVE_STOCK, CHARGE_PAYMENT, BOOK_RIDER], FC-2=CANC
 > **Root cause:** `points += n` with no dedupe; redelivered messages were applied again.
 > **Fix:** processed-message table in the same transaction.
 
-!!! danger "Treating a timeout as \"didn't happen\""
-    **Symptom:** customers were refunded but riders still arrived.
-    **Root cause:** the saga compensated on timeout but ignored the late success reply.
-    **Fix:** handle late replies for cancelled sagas by compensating them (Example 3).
+> 🚨 **Treating a timeout as "didn't happen"**  
+> **Symptom:** customers were refunded but riders still arrived.
+> **Root cause:** the saga compensated on timeout but ignored the late success reply.
+> **Fix:** handle late replies for cancelled sagas by compensating them (Example 3).
 
 > 🚨 **Event sourcing everything**  
 > **Symptom:** simple settings screens took weeks; queries needed projections for everything.

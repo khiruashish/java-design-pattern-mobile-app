@@ -96,10 +96,11 @@ def convert(text):
     lines, out, i = text.split("\n"), [], 0
     while i < len(lines):
         line = lines[i]
-        m = re.match(r'^(\s*)(!!!|\?\?\?\+?) (\w+)(?: "([^"]*)")?\s*$', line)
+        m = re.match(r'^(\s*)(!!!|\?\?\?\+?) (\w+)(?: "((?:[^"\\]|\\.)*)")?\s*$', line)
         t = re.match(r'^(\s*)=== "([^"]+)"\s*$', line)
         if m:                                                              # admonition -> quote
             indent, kind, title = m.group(1), m.group(3), m.group(4)
+            title = re.sub(r'\\(.)', r'\1', title) if title else title    # titles may escape quotes
             sub = [l[len(indent):] if l.startswith(indent) else l for l in lines[i + 1:]]
             block, used = dedent_block(sub, 0)
             heading = f"{ICONS.get(kind, '📝')} **{title or kind.title()}**  "   # hard line break

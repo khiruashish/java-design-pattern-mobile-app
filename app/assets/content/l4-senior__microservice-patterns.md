@@ -871,10 +871,10 @@ public class HomeScreenAggregatorDemo {
 > **Root cause:** entity decomposition and a shared database.
 > **Fix:** redraw boundaries around capabilities; split schemas; communicate via contracts and events.
 
-!!! danger "Shared database \"just for reads\""
-    **Symptom:** a reporting service broke after Customer renamed a column.
-    **Root cause:** direct reads of another service's tables.
-    **Fix:** events into a reporting store, or a published read API.
+> 🚨 **Shared database "just for reads"**  
+> **Symptom:** a reporting service broke after Customer renamed a column.
+> **Root cause:** direct reads of another service's tables.
+> **Fix:** events into a reporting store, or a published read API.
 
 > 🚨 **Business logic in the gateway**  
 > **Symptom:** discount rules in gateway filters; every pricing change needs the platform team.
