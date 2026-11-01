@@ -1,0 +1,2 @@
+offset:  page1=[FC-7, FC-6, FC-5] page2=[FC-5, FC-4, FC-3]  (FC-5 shown twice)
+cursor:  page1=[FC-7, FC-6, FC-5] page2=[FC-4, FC-3, FC-2]  next cursor=NQ

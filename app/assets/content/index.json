@@ -1009,9 +1009,9 @@
    "id": "l4-senior__api-design-patterns",
    "path": "l4-senior/api-design-patterns.md",
    "title": "API Design Patterns",
-   "summary": "Design APIs that stay stable as they grow.",
+   "summary": "An API is a promise to code you don't control, so design it to evolve without breaking callers. **Fluent interfaces** (and staged builders) make Java APIs read well and make misuse fail to compile. **Versioning** lets incompatible changes coexist; deprecate with dates and measure usage before retiring. **Cursor (keyset) pagination** stays correct and fast as data changes; offset pagination doesn't. **Idempotency keys** make retried POSTs safe: store the result per key and replay it. **Backward compatibility rules**: add optional fields freely; never remove, rename, retype or newly require fields; treat new enum values as potentially breaking; clients read tolerantly. Consistent errors (Problem Details) round it off.",
    "minutes": 30,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",

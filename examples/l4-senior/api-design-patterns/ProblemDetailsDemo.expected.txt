@@ -1,0 +1,2 @@
+409 Content-Type: application/problem+json
+{"type":"https://api.freshcart.example/problems/slot-full","title":"Delivery slot is full","status":409,"detail":"Slot 07:00-09:00 has no capacity left; choose another slot","instance":"/v2/orders"}

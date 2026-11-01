@@ -1,0 +1,4 @@
+v1 {"sku":"MILK-1L","name":"Toned Milk","price":68.5}  [Deprecation: true, Sunset: Sat, 01 May 2027 00:00:00 GMT]
+v2 {"sku":"MILK-1L","name":"Toned Milk","price":{"amountPaise":6850,"currency":"INR"},"unit":"1 L"}
+v1 {"sku":"MILK-1L","name":"Toned Milk","price":68.5}  [Deprecation: true, Sunset: Sat, 01 May 2027 00:00:00 GMT]
+usage by version: {v1=2, v2=1}

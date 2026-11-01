@@ -1,0 +1,2 @@
+SlotQuery[city=BLR, date=2026-11-02, minFreeSlots=5, expressOnly=true]
+SlotQuery[city=PUN, date=2026-11-03, minFreeSlots=1, expressOnly=false]

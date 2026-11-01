@@ -1,0 +1,6 @@
+add optional riderName: []
+proposed v1.1:
+  BREAKING removed 'eta'
+  BREAKING changed type of 'total' number -> object
+  BREAKING new required field 'slotId' (old clients never send it)
+  BREAKING new enum values [OUT_FOR_DELIVERY] in 'status' (breaks strict clients)

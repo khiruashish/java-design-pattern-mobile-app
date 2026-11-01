@@ -1,0 +1,10 @@
+  concurrent duplicate: 409 {Content-Type=application/problem+json, Retry-After=1} {"type":"/problems/request-in-progress","status":409,"detail":"The original request is still being processed"}
+first:      201 {Location=/v2/orders/FC-2001} {"orderId":"FC-2001","total":{"amountPaise":13600,"currency":"INR"}}
+retry:      201 {Idempotent-Replayed=true, Location=/v2/orders/FC-2001} {"orderId":"FC-2001","total":{"amountPaise":13600,"currency":"INR"}}
+other body: 422 {Content-Type=application/problem+json} {"type":"/problems/idempotency-key-reused","status":422,"detail":"This key was used for a different request"}
+no key:     400 {Content-Type=application/problem+json} {"type":"/problems/idempotency-key-missing","status":400,"detail":"Send an Idempotency-Key header with every POST /orders"}
+invalid:    422 {Content-Type=application/problem+json} {"type":"/problems/order-invalid","status":422,"detail":"Quantity must be at least 1"}
+5xx:        503 {Content-Type=application/problem+json} {"type":"/problems/temporarily-unavailable","status":503,"detail":"Please retry with the same Idempotency-Key"}
+retry 5xx:  201 {Location=/v1/orders/FC-2002} {"orderId":"FC-2002","total":136.00}
+after 24 h: 201 {Location=/v2/orders/FC-2003} {"orderId":"FC-2003","total":{"amountPaise":13600,"currency":"INR"}}
+orders created: 3
