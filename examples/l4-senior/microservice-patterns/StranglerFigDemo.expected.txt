@@ -1,0 +1,11 @@
+phase 0:
+  legacy monolith handled /catalog/dairy
+  legacy monolith handled /slots/today
+  legacy monolith handled /checkout
+  legacy monolith handled /account
+phase 1:
+  catalog-service handled /catalog/dairy
+  slots-service handled /slots/today
+  legacy monolith handled /checkout
+  legacy monolith handled /account
+slots rolled back: legacy monolith handled /slots/today

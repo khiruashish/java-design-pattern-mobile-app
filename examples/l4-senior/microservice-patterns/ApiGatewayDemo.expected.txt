@@ -1,0 +1,6 @@
+Response[status=200, body=products for app-asha (req-1)]
+Response[status=200, body=orders, saw auth header: false]
+Response[status=404, body=no route]
+Response[status=429, body=slow down]
+Response[status=401, body=missing token]
+log: [200 /catalog/dairy, 200 /orders/FC-1, 404 /wallet/balance, 429 /catalog/fruit, 401 /catalog/dairy]

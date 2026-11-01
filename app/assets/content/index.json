@@ -939,9 +939,9 @@
    "id": "l4-senior__microservice-patterns",
    "path": "l4-senior/microservice-patterns.md",
    "title": "Microservice Patterns",
-   "summary": "Decompose and connect services.",
+   "summary": "Microservices are independently deployable services, each owning one business capability and its data. **Decompose by capability or subdomain**, not by entity, so a use case touches few services. Give each service **its own database**; share data through APIs and events. Put an **API gateway** in front for routing, authentication, rate limits and request IDs. Use **service discovery** so callers find live instances. Migrate from a monolith with the **strangler fig**: route one slice at a time to new services, shadow-compare first, keep rollback cheap. Move cross-cutting network concerns (mTLS, retries, metrics) into a **sidecar** or service mesh. Microservices buy team autonomy and independent scaling at the price of distributed-systems complexity, so start from a modular monolith unless you have the teams and the need.",
    "minutes": 40,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",

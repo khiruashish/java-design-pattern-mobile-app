@@ -1,0 +1,3 @@
+before customer schema change: FC-1 for Asha R.
+after customer schema change:  FC-1 for Asha R.
+a cross-service SQL join on first_name would now see: null

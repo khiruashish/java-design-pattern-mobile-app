@@ -1,0 +1,17 @@
+200 in 60 ms, degraded=[]
+  catalog: /catalog/home for C-1 via 10.0.1.1
+  cart: /cart/home for C-1 via 10.0.2.1
+  offers: /offers/home for C-1 via 10.0.3.1
+200 in 150 ms, degraded=[offers]
+  catalog: /catalog/home for C-1 via 10.0.1.2
+  cart: /cart/home for C-1 via 10.0.2.1
+503 in 150 ms, degraded=[]
+  outcome req-1 catalog=ok
+  outcome req-1 cart=ok
+  outcome req-1 offers=ok
+  outcome req-2 catalog=ok
+  outcome req-2 cart=ok
+  outcome req-2 offers=timeout
+  outcome req-3 catalog=ok
+  outcome req-3 cart=no-instance
+  outcome req-3 offers=timeout
