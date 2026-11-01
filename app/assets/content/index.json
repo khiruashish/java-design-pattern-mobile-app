@@ -1120,9 +1120,9 @@
    "id": "reference__cheatsheet",
    "path": "reference/cheatsheet.md",
    "title": "Cheat Sheet",
-   "summary": "Every pattern on one page: intent, structure and a Java skeleton.",
+   "summary": "Every pattern on one page: intent, when to reach for it, and a minimal Java 21 skeleton in the FreshCart domain. Follow the link on each name for the full deep dive with runnable examples.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
@@ -1133,9 +1133,9 @@
    "id": "reference__configuration",
    "path": "reference/configuration.md",
    "title": "Build & Tooling Configuration",
-   "summary": "Maven, compiler, test and static-analysis settings used by the examples, with defaults and when to change them.",
+   "summary": "The settings that most often decide whether a pattern behaves as intended: compiler flags, Spring Boot switches that change how DI and proxies work, and the defaults of the resilience, caching, pooling and messaging libraries used in this playbook. Each row gives the default, what it does, and when to change it.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
@@ -1146,9 +1146,9 @@
    "id": "reference__comparisons",
    "path": "reference/comparisons.md",
    "title": "Pattern Comparisons",
-   "summary": "Side-by-side comparisons of patterns that look alike, with a decision table.",
+   "summary": "Many patterns look alike in a class diagram and differ only in **intent**. This page puts the commonly confused ones side by side, with a decision table for each group, so you can name the pattern you need and explain why not the others.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
