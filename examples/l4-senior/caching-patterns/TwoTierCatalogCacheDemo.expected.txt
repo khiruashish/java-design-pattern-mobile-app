@@ -1,0 +1,9 @@
+app-a MILK-1L from DB: DairyDay Toned Milk 1L Rs 68
+app-a MILK-1L from L1: DairyDay Toned Milk 1L Rs 68
+app-b MILK-1L from L2: DairyDay Toned Milk 1L Rs 68
+app-a NOSUCH-1 from DB: not found
+app-b NOSUCH-1 from L2: not found
+app-b MILK-1L from DB: DairyDay Toned Milk 1L Rs 70
+app-a MILK-1L from L2: DairyDay Toned Milk 1L Rs 70
+app-b MILK-1L from L2: DairyDay Toned Milk 1L Rs 70
+database reads: 3 for 8 lookups

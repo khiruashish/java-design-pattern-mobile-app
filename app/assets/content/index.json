@@ -995,9 +995,9 @@
    "id": "l4-senior__caching-patterns",
    "path": "l4-senior/caching-patterns.md",
    "title": "Caching Patterns",
-   "summary": "Choose where and how to cache.",
+   "summary": "A cache trades freshness and memory for speed and load reduction. **Cache-aside** (the app loads on a miss and deletes on write) is the default. **Read-through / write-through** put the cache in front of the store so callers only talk to the cache. **Write-behind** acknowledges writes from the cache and flushes later: fast, but unflushed data can be lost. **Invalidation** is the hard part: combine TTLs (bounded staleness), explicit deletes on write, broadcast invalidation for local caches and versioned keys. Protect hot keys from **stampedes** with single-flight loading and TTL jitter. In Java, **Caffeine** is the in-process cache and **Redis** the usual shared cache; many systems use both as L1 and L2.",
    "minutes": 30,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",

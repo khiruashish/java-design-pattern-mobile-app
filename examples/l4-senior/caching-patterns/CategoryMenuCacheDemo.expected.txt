@@ -1,0 +1,2 @@
+900 menu requests -> 3 database queries
+[Dairy, Fruits, Vegetables, Bakery]

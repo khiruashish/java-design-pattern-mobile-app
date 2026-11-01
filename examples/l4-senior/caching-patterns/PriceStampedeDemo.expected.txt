@@ -1,0 +1,2 @@
+plain TTL:              db loads=200, worst second=200 loads, {hit=14800, loaded=200}
+single-flight + jitter: db loads=50, worst second=8 loads, {hit=14800, joined in-flight load=150, loaded=50}
