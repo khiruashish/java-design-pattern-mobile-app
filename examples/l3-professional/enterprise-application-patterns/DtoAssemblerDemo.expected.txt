@@ -1,0 +1,2 @@
+domain has cost and fraud data: true, unscored
+api returns: OrderSummaryDto[orderId=ORD-77, maskedPhone=******3210, items=3, total=Rs 181]

@@ -1,0 +1,4 @@
+PASS InMemoryStock
+FAIL BackorderStock [refuses when not enough stock, unknown sku returns false (threw IllegalStateException), never negative]
+PASS BackorderAwareStock
+backordered MILK: 9, available: 5

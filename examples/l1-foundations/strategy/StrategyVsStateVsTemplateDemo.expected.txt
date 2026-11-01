@@ -1,0 +1,4 @@
+strategy: 75000 / 74950
+state: now Packed, cancel -> cancelled, full refund
+state: too late to cancel
+template: FreshCart | sales 1,204 orders | end

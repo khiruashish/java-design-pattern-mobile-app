@@ -1,0 +1,3 @@
+mobile:  MobileTrackingDto[status=OUT_FOR_DELIVERY, total=Rs 518, rider=Bina, eta=12 min]
+support: SupportConsoleDto[orderId=FC-501, status=OUT_FOR_DELIVERY, warehouse=BLR-HSR-2, notes=customer asked for no plastic, riderPhone=9000000007, vehicle=KA01AB1234]
+mobile payload fields: 4, downstream fields: 14

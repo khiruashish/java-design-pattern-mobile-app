@@ -1,0 +1,3 @@
+tomato kg: 35
+okra kg: 0
+C3: Crate[id=C3, produce=spinach, kg=8]

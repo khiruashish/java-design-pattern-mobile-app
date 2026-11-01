@@ -1,0 +1,7 @@
+price: Rs 170.10
+json:  {"sku":"B-1","items":[{"sku":"P-1","name":"Bread \"multigrain\"","barcode":"8901000000011"},{"sku":"P-2","name":"Eggs x6","barcode":"8901000000028"},{"sku":"B-2","items":[{"sku":"L-1","name":"Banana","grams":1000}]}]}
+valid: []
+  problem: B-9: discount over 30% needs approval
+  problem: B-9 > P-9: barcode must be 13 digits
+  problem: B-9 > B-10: empty bundle
+  problem: B-9 > L-9: weight must be positive

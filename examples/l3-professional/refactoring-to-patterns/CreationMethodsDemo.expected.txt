@@ -1,0 +1,5 @@
+before: flat=100 paise, min=500 (units unclear)
+FRESH10: discount on Rs 600 = Rs 60, free delivery=false
+SAVE100: discount on Rs 600 = Rs 100, free delivery=false
+SHIPFREE: discount on Rs 600 = Rs 0, free delivery=true
+rejected: percent must be 1..50

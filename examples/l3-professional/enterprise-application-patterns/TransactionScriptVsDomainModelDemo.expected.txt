@@ -1,0 +1,4 @@
+script: {status=PLACED, total=53280}
+domain: status=PLACED, total=53280
+domain refuses: order is PLACED
+domain refuses: qty must be positive: EGGS-12

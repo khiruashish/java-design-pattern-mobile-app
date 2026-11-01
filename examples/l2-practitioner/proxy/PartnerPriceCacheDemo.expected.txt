@@ -1,0 +1,2 @@
+100 lookups at 09:00 -> supplier calls: 2 (hits 98)
+after 6 minutes, TOMATO refreshed -> supplier calls: 3

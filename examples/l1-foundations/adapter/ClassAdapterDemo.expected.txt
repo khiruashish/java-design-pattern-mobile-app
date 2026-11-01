@@ -1,0 +1,2 @@
+net weight: 1.200 kg
+price at 120/kg: 144.00

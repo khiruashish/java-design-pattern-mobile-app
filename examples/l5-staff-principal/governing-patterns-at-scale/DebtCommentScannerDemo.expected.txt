@@ -1,0 +1,4 @@
+EXPIRED checkout/CheckoutService.java (checkout-team, 2026-09-30): split pricing out of CheckoutService
+UNTRACKED loyalty/PointsClient.java: // TODO make this faster -> add owner and expiry
+checkout-team: open debt 2, expired 1
+growth-team: open debt 1, expired 0

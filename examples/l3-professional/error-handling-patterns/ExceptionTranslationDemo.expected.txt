@@ -1,0 +1,5 @@
+ok: redeemed WELCOME50
+duplicate: tell customer 'coupon WELCOME50 was already used'
+  cause chain: CouponAlreadyRedeemedException <- DuplicateKeyException <- SQLIntegrityConstraintViolationException
+timeout: retry later (database busy)
+  cause chain: TransientDataAccessException <- SQLTransientConnectionException

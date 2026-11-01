@@ -1,0 +1,6 @@
+  FC-9601 waits (no free rider)
+  FC-9602 waits (no free rider)
+  assign FC-9601 -> R-42
+  assign FC-9602 -> R-43
+  R-43 waits (no packed order)
+  assign FC-9603 -> R-43

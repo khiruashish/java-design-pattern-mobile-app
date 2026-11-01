@@ -1,0 +1,3 @@
+MILK-1L on hand: 17
+after the first two movements: 28
+written off as damaged: 2

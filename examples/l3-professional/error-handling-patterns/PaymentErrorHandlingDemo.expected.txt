@@ -1,0 +1,10 @@
+Paid[paymentId=pay_001]
+Paid[paymentId=pay_002]
+Declined[reasonForCustomer=Your bank declined the payment: insufficient funds]
+TryAgainLater[reasonForCustomer=Payments are slow right now. You have not been charged.]
+log:
+  FC-2 attempt 1: unavailable (retryable)
+  FC-3 attempt 1: insufficient_funds
+  FC-4 attempt 1: rate_limited (retryable)
+  FC-4 attempt 2: rate_limited (retryable)
+  FC-4 attempt 3: rate_limited (retryable)

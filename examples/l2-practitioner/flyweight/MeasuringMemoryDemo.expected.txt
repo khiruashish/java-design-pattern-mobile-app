@@ -1,0 +1,3 @@
+estimate: unshared ~81 MB of glyph caches, shared ~8 KB
+measured: shared version uses less than a quarter of the memory: true
+labels still usable: SKU-4 -> promo

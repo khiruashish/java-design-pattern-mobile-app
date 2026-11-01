@@ -1,0 +1,9 @@
+  list shows []
+  header shows selected: none
+  continue button enabled: false
+> load
+  list shows [07-09 (full), 09-11 (4 left), 18-20 (12 left)]
+> tap 07-09
+> tap 09-11
+  header shows selected: 09-11
+  continue button enabled: true

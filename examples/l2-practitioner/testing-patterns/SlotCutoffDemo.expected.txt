@@ -1,0 +1,4 @@
+ordered 2026-10-31T21:59:59 -> delivered 2026-11-01
+ordered 2026-10-31T22:00:00 -> delivered 2026-11-02
+ordered 2026-12-31T23:30:00 -> delivered 2027-01-02
+same instant, UTC clock: 2026-11-02

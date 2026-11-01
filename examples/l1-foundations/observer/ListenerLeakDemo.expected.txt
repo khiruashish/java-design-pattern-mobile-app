@@ -1,0 +1,2 @@
+leaky: listeners still registered = 1000 (~20 MB kept alive)
+fixed: listeners still registered = 0

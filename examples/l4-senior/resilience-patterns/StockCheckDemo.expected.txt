@@ -1,0 +1,3 @@
+MILK-1L: allowed (12 left)
+PANEER-200G: out of stock
+CURD-500G: allowed, confirm at packing (inventory slow)

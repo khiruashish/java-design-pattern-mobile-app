@@ -1,0 +1,5 @@
+strategy: standard 32500, member 30000
+state after offer 1: AVAILABLE
+state after offer 2: ON_BREAK
+  on break: job goes to another rider
+state after offer 3: AVAILABLE

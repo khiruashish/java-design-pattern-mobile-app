@@ -1,0 +1,3 @@
+email to asha@example.com: order FC-5001 confirmed, total $34.99
+email to ravi@example.com: order FC-5002 confirmed, total $54.00
+stored FC-5002 total: 5400

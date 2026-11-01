@@ -1,0 +1,3 @@
+standard: [pack [FROZEN-PEAS, BREAD], seal bag]
+grocery:  [pack [FROZEN-PEAS, BREAD], add ice packs, seal bag, photo of sealed bag for proof]
+gift:     [remove price tags, pack [CHOCOLATES], seal bag, add gift note]

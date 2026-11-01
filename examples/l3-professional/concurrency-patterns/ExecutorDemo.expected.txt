@@ -1,0 +1,3 @@
+before: started 20 threads for 20 tiny tasks
+after: 200 invoices on 4 threads, total Rs 45125, largest pool size 4
+terminated cleanly: true

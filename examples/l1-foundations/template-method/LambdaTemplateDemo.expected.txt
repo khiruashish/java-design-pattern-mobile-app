@@ -1,0 +1,2 @@
+prices: MILK=6800; OIL=18950; ok=2 rejected=2
+skus:   milk; eggs; rice; oil; ok=4 rejected=0

@@ -1,0 +1,3 @@
+list:            37800
+member:          34020
+member + 5% GST: 35721

@@ -1,0 +1,8 @@
+correct cart:
+  PASS cartWorks
+  PASS adding the same SKU twice adds quantities
+  PASS zero quantity is rejected
+cart with a bug:
+  FAIL cartWorks: check failed
+  FAIL adding the same SKU twice adds quantities: MILK quantity: expected 3 but was 2
+  PASS zero quantity is rejected

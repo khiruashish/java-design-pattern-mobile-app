@@ -1,0 +1,5 @@
+PACKED:
+  sms: your order FC-801 is packed
+  analytics: FC-801 PLACED->PACKED
+OUT_FOR_DELIVERY:
+  sms: your order FC-801 is out for delivery

@@ -1,0 +1,3 @@
+50 concurrent requests for MILK-1L: loader called 1 time(s), values [6800]
+first load failed: pricing DB timeout
+second call retries and gets 4500 paise (loader attempts 2)

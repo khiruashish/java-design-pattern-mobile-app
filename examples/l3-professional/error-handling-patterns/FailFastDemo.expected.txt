@@ -1,0 +1,7 @@
+lazy config accepted at startup
+first payment, hours later: NumberFormatException: For input string: "3s"
+startup refused: payment.timeout.ms must be a whole number, got '3s'
+startup refused: payment.base-url must use https: http://api.paylink.example
+startup refused: payment.max-retries must be 0..5, got 9
+startup ok: PaymentConfig[baseUrl=https://api.paylink.example, timeout=PT3S, maxRetries=2]
+refund refused: refund 25000 must be in 1..10000

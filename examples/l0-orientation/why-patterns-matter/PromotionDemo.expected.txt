@@ -1,0 +1,5 @@
+switch   TEN_PERCENT    -> $4.80
+switch   FLAT_5_OVER_40 -> $5.00
+strategy TEN_PERCENT    -> $4.80
+strategy FLAT_5_OVER_40 -> $5.00
+strategy BULK_10        -> $3.00

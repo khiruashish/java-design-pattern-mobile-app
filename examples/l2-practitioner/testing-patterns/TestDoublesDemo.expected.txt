@@ -1,0 +1,4 @@
+stub declines -> declined, saved status PAYMENT_FAILED
+mock expects one charge -> ok
+mock verified; spy saw [98450 | Order FC-2 paid at 2026-10-31T10:15:00Z]
+fake now holds {FC-1=PAYMENT_FAILED, FC-2=PAID}

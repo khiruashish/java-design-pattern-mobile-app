@@ -1,0 +1,7 @@
+FreshCart (3)
+  Fruits & Veg (1)
+    Fresh fruit (1)
+      - Banana
+  Dairy (2)
+    - Milk 1L
+    - Curd 400g

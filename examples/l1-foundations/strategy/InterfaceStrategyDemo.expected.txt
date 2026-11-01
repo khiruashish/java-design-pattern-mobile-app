@@ -1,0 +1,4 @@
+before (distance): 4800
+FlatFee[cents=4900] -> small 36900, big 66900
+DistanceFee[baseCents=2000, perKmCents=800] -> small 36800, big 66800
+FreeOverThreshold[thresholdCents=50000, otherwise=DistanceFee[baseCents=2000, perKmCents=800]] -> small 36800, big 62000

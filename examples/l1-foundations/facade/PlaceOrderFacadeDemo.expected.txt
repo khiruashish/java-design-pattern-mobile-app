@@ -1,0 +1,7 @@
+Placed[orderId=FC-2301, paymentId=pay-1, chargedCents=40000, warnings=[]]
+retry same key: Placed[orderId=FC-2301, paymentId=pay-1, chargedCents=40000, warnings=[]], total charges 1
+Rejected[orderId=FC-2302, reason=card declined, undone=[coupon restored, stock released]]
+Rejected[orderId=FC-2303, reason=SOLD-OUT unavailable, undone=[]]
+Placed[orderId=FC-2304, paymentId=pay-2, chargedCents=12000, warnings=[confirmation not sent: sms gateway down]]
+Rejected[orderId=FC-2305, reason=coupon WELCOME20 already used, undone=[stock released]]
+reserved: [FC-2301, FC-2304], coupons used: [WELCOME20], saved orders: [FC-2301, FC-2304]

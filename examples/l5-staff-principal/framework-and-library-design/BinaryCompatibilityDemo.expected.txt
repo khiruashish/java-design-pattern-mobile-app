@@ -1,0 +1,5 @@
+app compiled once against lib 1.0
+run with lib 1.0: total 20400
+run with lib 1.1 (adds an overload): total 20400
+run with lib 2.0 (int qty -> long qty): NoSuchMethodError 'long lib.Pricing.total(java.lang.String, int)'
+after recompiling the app against 2.0: total 20400

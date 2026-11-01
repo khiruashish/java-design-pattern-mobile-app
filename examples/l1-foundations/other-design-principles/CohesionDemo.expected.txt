@@ -1,0 +1,3 @@
+utils grab-bag: $12.99, true, 300
+rejected: invalid pincode 012345
+delivery planned: [FC-9001->hub-411, FC-9002->hub-560]

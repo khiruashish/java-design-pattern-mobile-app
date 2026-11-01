@@ -1,0 +1,3 @@
+missing curd:  4500
+late delivery: 7500
+damaged, 3 days later: 0

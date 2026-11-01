@@ -1,0 +1,9 @@
+FC-1 paid
+FC-2 pending (PayLink unavailable after retries)
+FC-3 pending (breaker open, no call made)
+FC-4 pending (breaker open, no call made)
+  retry attempt 1
+  retry attempt 2
+  breaker State transition from CLOSED to OPEN
+remote calls: 4, breaker state: OPEN
+failure rate: 75.0%, not permitted: 2

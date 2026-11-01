@@ -1,0 +1,5 @@
+TrackingUpdate[orderId=FC-1901, status=IN_TRANSIT, at=2026-11-02T08:00:00Z, courier=QuickDrop]
+TrackingUpdate[orderId=FC-1902, status=IN_TRANSIT, at=2026-11-02T10:05:00Z, courier=ParcelGo]
+TrackingUpdate[orderId=FC-1903, status=UNKNOWN, at=2026-11-02T08:05:00Z, courier=QuickDrop]
+TrackingUpdate[orderId=FC-1904, status=FAILED, at=2026-11-02T10:12:00Z, courier=ParcelGo]
+needs review (unknown codes): [FC-1903]

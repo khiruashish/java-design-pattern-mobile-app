@@ -1,0 +1,7 @@
+delivered: true
+  t=0 TextBlast -> 429
+  t=1000 TextBlast -> 503
+  t=1292 TextBlast -> 503
+  t=1891 TextBlast -> 503
+  failing over from TextBlast
+  t=2448 BackupSms -> 200

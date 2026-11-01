@@ -1,0 +1,7 @@
+catalog browse  done
+delivery slots  new service owns data; delete legacy path
+order history   reads migrated; legacy still owns writes (CDC syncs to new)
+checkout        canary at 5%
+invoicing       not started
+traffic on new services: 93%
+capabilities fully strangled: 1 of 5

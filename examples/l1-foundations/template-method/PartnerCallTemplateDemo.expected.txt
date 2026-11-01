@@ -1,0 +1,7 @@
+booking QD-778 for FC-1601, backoffs [200ms, 400ms]
+quickdrop book failed after 1 attempt(s): HTTP 422 address not serviceable
+quickdrop book failed after 3 attempt(s): HTTP 503
+rejected before calling: bad pincode 41
+pay_91 CAPTURED, backoffs [50ms, 100ms, 200ms]
+{paylink.status.ok=1, paylink.status.retry=3, quickdrop.book.failed=2, quickdrop.book.ok=1, quickdrop.book.retry=4}
+total time slept (fake): [200ms, 400ms, 200ms, 400ms, 50ms, 100ms, 200ms]

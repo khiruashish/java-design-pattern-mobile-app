@@ -1,0 +1,4 @@
+BIKE: before 20 kg/12 min, after 20 kg/12 min
+CAR: before 150 kg/21 min, after 150 kg/21 min
+CYCLE: before 8 kg/24 min, after 8 kg/24 min
+type-code typo found only at runtime: TRUCK

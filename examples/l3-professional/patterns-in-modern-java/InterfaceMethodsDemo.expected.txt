@@ -1,0 +1,4 @@
+SMS 98450: [FreshCart] Order FC-1 placed
+PUSH 98450: [FreshCart] Order FC-1 placed
+SMS 98450: [FreshCart] Order FC-1 arrives in 12 min
+PUSH 98450: [FreshCart] Order FC-1 arrives in 12 min

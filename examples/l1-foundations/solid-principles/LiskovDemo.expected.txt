@@ -1,0 +1,4 @@
+Rectangle label area: 20 (expected 20)
+Square label area:    16 (expected 20)
+Rect[width=5, height=4] area 20
+Sq[side=4] area 16

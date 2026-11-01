@@ -1,0 +1,4 @@
+speculative: 500
+yagni:       500
+later, Mumbai: 500
+later, Pune: 700

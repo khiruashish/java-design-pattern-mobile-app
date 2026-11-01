@@ -1,0 +1,3 @@
+container created, in dependency order: [Clock, PriceRepo, Pricing, StockRepo, Stock, Checkout]
+Clock shared as a singleton: true
+both produced a Checkout: true

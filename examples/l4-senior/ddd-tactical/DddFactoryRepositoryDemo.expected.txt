@@ -1,0 +1,4 @@
+factory refused: MILK-1L-WEEKDAY delivers only on [MON, TUE, WED, THU, FRI]
+SUB-1 MILK-1L-WEEKDAY [MON, WED, FRI]
+SUB-2 MILK-2L-DAILY [SAT, SUN]
+SUB-2 loaded whole: 2L on [SAT, SUN]

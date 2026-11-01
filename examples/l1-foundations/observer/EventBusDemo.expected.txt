@@ -1,0 +1,13 @@
+email sent for FC-1401
+email sent for FC-1402
+email sent for FC-1404
+points for FC-1401
+points for FC-1404
+promo banner for FC-1401
+publisher saw critical failure: fraud check timeout
+stock reserved for FC-1401
+stock reserved for FC-1402
+stock reserved for FC-1404
+support ticket for FC-1403: card declined
+dead letters: [fraud(fraud check timeout), loyalty(loyalty API 503)]
+{email.ok=3, fraud.failed=1, loyalty.failed=1, loyalty.ok=2, promo.ok=1, stock.ok=3, support.ok=1}

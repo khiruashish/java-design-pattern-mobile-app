@@ -1,0 +1,7 @@
+  stock: {MILK-1L=40}
+  stock: {MILK-1L=140}
+  unknown command 'reboot', known: [restock-milk, clear-milk, show]
+  notify ops: milk restocked
+  audit: milk restocked
+  after clear-milk: {MILK-1L=0}
+  after undo: {MILK-1L=140}

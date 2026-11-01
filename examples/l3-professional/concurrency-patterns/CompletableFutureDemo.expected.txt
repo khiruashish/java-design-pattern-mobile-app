@@ -1,0 +1,2 @@
+ProductPage[pricePaise=6400, stock=42, etaMinutes=45, reviews=reviews unavailable]
+took under 600 ms (sequential would be 1,100+): true

@@ -1,0 +1,6 @@
+startup: disabled features [metrics, loyalty]
+  sms: Order FC-2001 confirmed
+Receipt[orderId=FC-2001, paymentRef=PAY-FC-2001, points=0, loyaltyDegraded=true]
+sms suppressed: 2
+loyalty points owed later: [u2:30000, u3:12000]
+startup failed: payments is required; refusing to start with a no-op payment gateway

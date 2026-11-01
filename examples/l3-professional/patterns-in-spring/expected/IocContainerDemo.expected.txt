@@ -1,0 +1,4 @@
+textblast -> 98450 (fallback is BackupSender)
+singleton: same notifier each time? true
+prototype: new cart session each time? true
+@Configuration class is itself proxied: true

@@ -1,0 +1,5 @@
+Integer 127 == 127: true   (cached, -128..127)
+Integer 128 == 128: false  (new objects) -> always use equals: true
+Boolean.valueOf(true) == Boolean.TRUE: true
+literal == literal: true, literal == new String: false, after intern(): true
+built at runtime == literal: false, equals: true

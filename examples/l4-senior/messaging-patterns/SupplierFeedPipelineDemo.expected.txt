@@ -1,0 +1,8 @@
+dead-letter:
+  DairyDay 'CURD-500G,abc': NumberFormatException For input string: "abc"
+  GreenValley 'MANGO-1KG|15000': IllegalArgumentException unknown SKU MANGO-1KG
+price-apply:
+  MILK-1L 7000 (+3%)
+  CURD-500G 4400 (-2%)
+price-review:
+  TOMATO-1KG 6000 (+100%)

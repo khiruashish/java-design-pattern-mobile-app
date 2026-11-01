@@ -1,0 +1,4 @@
+aisle 2: Bread
+aisle 4: Rice
+aisle 7: Milk
+aisle 7: Curd

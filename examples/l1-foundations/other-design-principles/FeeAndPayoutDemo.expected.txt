@@ -1,0 +1,4 @@
+FC-7001  2.0 km  fee $3.19  payout $3.00  margin $0.19
+FC-7002  6.5 km  fee $5.89  payout $4.43  margin $1.46
+FC-7003  6.5 km  fee $0.00  payout $4.43  margin -$4.43
+FC-7004 rejected: distance must be in (0, 25] km: 40.0

@@ -1,0 +1,3 @@
+before: [APPLE-1KG] [MILK-1L, PANEER-200]
+after:  [APPLE-1KG] [MILK-1L, PANEER-200]
+new ask, no new method: [PANEER-200]

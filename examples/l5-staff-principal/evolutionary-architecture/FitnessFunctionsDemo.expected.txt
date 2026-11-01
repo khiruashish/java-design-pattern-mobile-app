@@ -1,0 +1,13 @@
+release 41:
+  ok   checkout p95 latency   <= 300 ms            (continual, holistic)
+  ok   no module cycles       0 cycles             (triggered, atomic)
+  ok   module size            <= 40 kloc           (triggered, atomic)
+  ok   domain test coverage   >= 80%               (triggered, atomic)
+  ok   no critical CVEs       0                    (triggered + nightly)
+release 42 candidate:
+  ok   checkout p95 latency   <= 300 ms            (continual, holistic)
+  FAIL no module cycles       0 cycles             (triggered, atomic)
+  FAIL module size            <= 40 kloc           (triggered, atomic)
+  ok   domain test coverage   >= 80%               (triggered, atomic)
+  ok   no critical CVEs       0                    (triggered + nightly)
+release 42 blocked until the fitness functions pass

@@ -1,0 +1,4 @@
+by price: [Bread, milk, Milk, apple juice]
+String order: [Bread, Milk, apple juice, milk]
+Collator:     [apple juice, Bread, milk, Milk]
+TreeSet by brand keeps 3 of 4: [Milk, apple juice, milk]

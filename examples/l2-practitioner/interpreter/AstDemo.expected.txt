@@ -1,0 +1,3 @@
+tokens: [25, +, 8, *, (, km, -, 2, )]
+ast:    (+ 25 (* 8 (- km 2)))   (* binds tighter than +)
+fee for 5 km: Rs 49

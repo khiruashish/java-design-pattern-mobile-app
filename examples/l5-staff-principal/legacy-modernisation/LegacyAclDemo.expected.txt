@@ -1,0 +1,3 @@
+Customer[id=C-42, name=Asha Rao, balancePaise=13600, codAllowed=true, since=1998-03-15]
+Customer[id=C-1207, name=Vikram S, balancePaise=0, codAllowed=false, since=2024-01-02]
+quarantined: unknown COD flag 'X'

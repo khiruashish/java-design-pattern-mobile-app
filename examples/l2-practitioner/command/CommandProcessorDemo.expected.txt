@@ -1,0 +1,13 @@
+refunded 649 on FC-7201
+refunded 649 on FC-7201
+sms to +919800000001
+rejected
+backoff waits: [PT0.1S, PT0.2S]
+dead letters: [refund-FC-7202]
+  audit: refund-FC-7201 attempt 1 failed: PayLink timeout
+  audit: refund-FC-7201 attempt 2 failed: PayLink timeout
+  audit: refund-FC-7201 ok on attempt 3
+  audit: refund-FC-7201 duplicate
+  audit: sms-FC-7201 ok on attempt 1
+  audit: refund-FC-7202 rejected: refund must be positive
+provider down: dead-lettered, waits [PT0.1S, PT0.2S]

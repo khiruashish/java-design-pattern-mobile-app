@@ -1,0 +1,7 @@
+before: can't dispatch: not packed yet
+  can't dispatch when Placed
+  packed
+  handed to rider
+  can't cancel when OutForDelivery
+  delivered
+final state: Delivered

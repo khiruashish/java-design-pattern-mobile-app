@@ -1,0 +1,5 @@
+checkout returned immediately; 3 commands queued
+  emailed invoice FC-7101 to asha@mail
+  emailed invoice FC-7102 to ravi@mail
+  skip duplicate inv-FC-7101
+invoices sent: [FC-7101, FC-7102]

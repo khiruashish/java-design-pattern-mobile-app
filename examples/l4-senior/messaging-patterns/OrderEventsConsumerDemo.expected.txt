@@ -1,0 +1,15 @@
+assignment: [A=[0, 2], B=[1]]
+A handled e1 FC-1 PLACED
+A handled e2 FC-1 PAID
+A crashed before committing p0
+assignment: [B=[0, 1, 2]]
+B skip duplicate e1
+B skip duplicate e2
+B handled e3 FC-2 PLACED
+B sent e4 to retry topic (attempt 1)
+B handled e5 FC-3 PLACED
+B sent e6 to retry topic (attempt 1)
+B handled e4 FC-2 PAID
+B sent e6 to retry topic (attempt 2)
+B dead-lettered e6: loyalty service 503
+loyalty awarded: 2, DLQ: [e6], committed offsets: [2, 2, 2]

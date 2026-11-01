@@ -1,0 +1,6 @@
+created PriceRepository
+created TaxRules
+created PricingService
+created CheckoutService
+same PriceRepository shared: true
+dependency cycle: AService -> BService -> AService

@@ -1,0 +1,11 @@
+sequenceDiagram
+    App->>Checkout: placeOrder(FC-4001, MILK-1L, 2)
+    Checkout->>Inventory: reserve(MILK-1L, 2)
+    Inventory-->>Checkout: 3
+    Checkout->>Payments: charge(FC-4001, 258)
+    Payments-->>Checkout: PAID-FC-4001
+    Checkout-->>App: PAID-FC-4001
+    App->>Checkout: placeOrder(FC-4002, MILK-1L, 9)
+    Checkout->>Inventory: reserve(MILK-1L, 9)
+    Inventory--xCheckout: only 3 left
+    Checkout--xApp: only 3 left

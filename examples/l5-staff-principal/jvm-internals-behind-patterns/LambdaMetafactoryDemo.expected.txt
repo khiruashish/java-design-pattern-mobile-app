@@ -1,0 +1,4 @@
+non-capturing lambda reused: true
+capturing lambda reused: false
+hidden class: true, synthetic: true, anonymous inner class: false
+10% off Rs 136: Rs 122

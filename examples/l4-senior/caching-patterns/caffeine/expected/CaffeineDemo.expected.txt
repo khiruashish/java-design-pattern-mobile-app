@@ -1,0 +1,5 @@
+after 5 reads: loads={CURD-500G=1, MILK-1L=1}
+t=90s read returns 68 (old value served, refresh triggered)
+after the background refresh: 70
+t=12.5min entries left: 0
+hits=5 misses=2 hitRate=0.71 loads=3

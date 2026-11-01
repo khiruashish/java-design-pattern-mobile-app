@@ -1,0 +1,3 @@
+lookups: 6, database queries: 3
+after evicting MILK-1L, database queries: 4
+log: [MILK-1L hit, MILK-1L hit, RICE-5KG hit, MILK-1L hit, GHEE-500 missing, GHEE-500 missing, MILK-1L hit]

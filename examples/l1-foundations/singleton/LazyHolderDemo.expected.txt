@@ -1,0 +1,6 @@
+1. calling a static helper: ProductCatalog (no loading needed for this)
+2. first getInstance():
+  loading catalog (expensive)...
+   milk = 129
+3. second getInstance(): no loading line below
+   bread = 249

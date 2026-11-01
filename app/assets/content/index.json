@@ -1,0 +1,1339 @@
+{
+ "levels": [
+  {
+   "id": "l0-orientation",
+   "code": "L0",
+   "name": "Orientation",
+   "experience": "Day 0",
+   "pages": [
+    "l0-orientation__index",
+    "l0-orientation__what-are-design-patterns",
+    "l0-orientation__why-patterns-matter",
+    "l0-orientation__java-setup",
+    "l0-orientation__reading-uml"
+   ]
+  },
+  {
+   "id": "l1-foundations",
+   "code": "L1",
+   "name": "Foundations",
+   "experience": "0–1 yr",
+   "pages": [
+    "l1-foundations__index",
+    "l1-foundations__oop-refresher",
+    "l1-foundations__solid-principles",
+    "l1-foundations__other-design-principles",
+    "l1-foundations__singleton",
+    "l1-foundations__factory-method",
+    "l1-foundations__builder",
+    "l1-foundations__strategy",
+    "l1-foundations__observer",
+    "l1-foundations__template-method",
+    "l1-foundations__adapter",
+    "l1-foundations__decorator",
+    "l1-foundations__facade"
+   ]
+  },
+  {
+   "id": "l2-practitioner",
+   "code": "L2",
+   "name": "Practitioner",
+   "experience": "1–3 yrs",
+   "pages": [
+    "l2-practitioner__index",
+    "l2-practitioner__abstract-factory",
+    "l2-practitioner__prototype",
+    "l2-practitioner__object-pool",
+    "l2-practitioner__dependency-injection",
+    "l2-practitioner__composite",
+    "l2-practitioner__proxy",
+    "l2-practitioner__bridge",
+    "l2-practitioner__flyweight",
+    "l2-practitioner__command",
+    "l2-practitioner__iterator",
+    "l2-practitioner__state",
+    "l2-practitioner__chain-of-responsibility",
+    "l2-practitioner__mediator",
+    "l2-practitioner__memento",
+    "l2-practitioner__visitor",
+    "l2-practitioner__interpreter",
+    "l2-practitioner__null-object",
+    "l2-practitioner__specification",
+    "l2-practitioner__testing-patterns"
+   ]
+  },
+  {
+   "id": "l3-professional",
+   "code": "L3",
+   "name": "Professional",
+   "experience": "3–6 yrs",
+   "pages": [
+    "l3-professional__index",
+    "l3-professional__patterns-in-modern-java",
+    "l3-professional__functional-patterns",
+    "l3-professional__patterns-in-the-jdk",
+    "l3-professional__patterns-in-spring",
+    "l3-professional__concurrency-patterns",
+    "l3-professional__enterprise-application-patterns",
+    "l3-professional__ui-and-mobile-patterns",
+    "l3-professional__error-handling-patterns",
+    "l3-professional__anti-patterns-and-code-smells",
+    "l3-professional__refactoring-to-patterns",
+    "l3-professional__performance-of-patterns"
+   ]
+  },
+  {
+   "id": "l4-senior",
+   "code": "L4",
+   "name": "Senior / Lead",
+   "experience": "6–10 yrs",
+   "pages": [
+    "l4-senior__index",
+    "l4-senior__architectural-patterns",
+    "l4-senior__ddd-tactical",
+    "l4-senior__ddd-strategic",
+    "l4-senior__microservice-patterns",
+    "l4-senior__resilience-patterns",
+    "l4-senior__distributed-data-patterns",
+    "l4-senior__messaging-patterns",
+    "l4-senior__caching-patterns",
+    "l4-senior__api-design-patterns"
+   ]
+  },
+  {
+   "id": "l5-staff-principal",
+   "code": "L5",
+   "name": "Staff / Principal",
+   "experience": "10–15+ yrs",
+   "pages": [
+    "l5-staff-principal__index",
+    "l5-staff-principal__pattern-selection",
+    "l5-staff-principal__evolutionary-architecture",
+    "l5-staff-principal__legacy-modernisation",
+    "l5-staff-principal__jvm-internals-behind-patterns",
+    "l5-staff-principal__framework-and-library-design",
+    "l5-staff-principal__governing-patterns-at-scale"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "reference",
+   "name": "Reference",
+   "pages": [
+    "reference__cheatsheet",
+    "reference__configuration",
+    "reference__comparisons",
+    "reference__decision-guide",
+    "reference__anti-patterns",
+    "reference__production-checklist",
+    "reference__migration-guide",
+    "reference__version-history"
+   ]
+  },
+  {
+   "id": "projects",
+   "name": "Projects",
+   "pages": [
+    "projects__index",
+    "projects__capstone"
+   ]
+  },
+  {
+   "id": "interview",
+   "name": "Interview",
+   "pages": [
+    "interview__index",
+    "interview__questions-by-level",
+    "interview__scenario-questions",
+    "interview__hands-on-tasks"
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "id": "index",
+   "path": "index.md",
+   "title": "Java Design Patterns Playbook",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [],
+   "group": ""
+  },
+  {
+   "id": "how-to-use",
+   "path": "how-to-use.md",
+   "title": "How to Use This Playbook",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [],
+   "group": ""
+  },
+  {
+   "id": "roadmap",
+   "path": "roadmap.md",
+   "title": "Roadmap",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [],
+   "group": ""
+  },
+  {
+   "id": "l0-orientation__index",
+   "path": "l0-orientation/index.md",
+   "title": "L0 · Orientation",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L0"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l0-orientation__what-are-design-patterns",
+   "path": "l0-orientation/what-are-design-patterns.md",
+   "title": "What Are Design Patterns",
+   "summary": "A design pattern is a named, proven solution to a design problem that keeps coming back, described so you can adapt it rather than copy it. The classic catalogue is the Gang of Four's 23 patterns, grouped into creational, structural and behavioural. Learn them to recognise problems faster and to talk about designs in a few words.",
+   "minutes": 15,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L0",
+    "core"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l0-orientation__why-patterns-matter",
+   "path": "l0-orientation/why-patterns-matter.md",
+   "title": "Why Patterns Matter (and When They Don't)",
+   "summary": "Patterns matter because they give teams a shared vocabulary and proven ways to keep code easy to change. They stop mattering, and start hurting, when you add them for changes that never come. Modern Java has made several patterns much smaller, so the goal is the pattern's intent, not its original class diagram.",
+   "minutes": 12,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L0",
+    "core"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l0-orientation__java-setup",
+   "path": "l0-orientation/java-setup.md",
+   "title": "Setting Up Java to Run the Examples",
+   "summary": "Install a JDK 21, check it with `java -version`, and you can run every example in this playbook with `java File.java`. Use Maven when an example has several files or tests, and JShell when you want to try one line. Any major IDE works.",
+   "minutes": 10,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L0",
+    "tooling"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l0-orientation__reading-uml",
+   "path": "l0-orientation/reading-uml.md",
+   "title": "Reading UML for Patterns",
+   "summary": "Every pattern page shows its structure as a UML class diagram and its behaviour as a sequence diagram. You need about a dozen symbols to read them: boxes for classes and interfaces, six kinds of lines for relationships, and arrows for calls over time. This page maps each symbol to the Java code that produces it.",
+   "minutes": 15,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L0",
+    "core"
+   ],
+   "group": "l0-orientation"
+  },
+  {
+   "id": "l1-foundations__index",
+   "path": "l1-foundations/index.md",
+   "title": "L1 · Foundations",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L1"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__oop-refresher",
+   "path": "l1-foundations/oop-refresher.md",
+   "title": "OOP Refresher for Patterns",
+   "summary": "Every design pattern is a particular arrangement of four OOP ideas: encapsulation, abstraction, inheritance and polymorphism. If you can hide state behind methods, depend on interfaces, and choose composition over inheritance by default, most patterns stop looking like magic and start looking like common sense.",
+   "minutes": 25,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "core"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__solid-principles",
+   "path": "l1-foundations/solid-principles.md",
+   "title": "SOLID Principles",
+   "summary": "SOLID is five principles for classes that are easy to change: one reason to change per class, extend without editing, subtypes that keep their parent's promises, small interfaces, and dependencies on abstractions. They are the \"why\" behind most design patterns: when you can name which principle a design breaks, you usually know which pattern fixes it.",
+   "minutes": 55,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "core"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__other-design-principles",
+   "path": "l1-foundations/other-design-principles.md",
+   "title": "DRY, KISS, YAGNI and Friends",
+   "summary": "SOLID tells you how to make code flexible; DRY, KISS and YAGNI stop you overdoing it. Keep each piece of *knowledge* in one place (DRY), choose the simplest design that works (KISS), and don't build what nobody needs yet (YAGNI). Law of Demeter, Tell Don't Ask, cohesion/coupling and GRASP help you decide which class a piece of behaviour belongs to.",
+   "minutes": 50,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "core"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__singleton",
+   "path": "l1-foundations/singleton.md",
+   "title": "Singleton",
+   "summary": "Singleton guarantees a class has exactly one instance and gives global access to it. In Java the safest forms are an `enum` or the lazy holder idiom. Use it sparingly: global state hurts testing and hides dependencies, so in most applications you want *one instance created in the composition root and injected*, not the Singleton pattern itself.",
+   "minutes": 45,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "creational"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__factory-method",
+   "path": "l1-foundations/factory-method.md",
+   "title": "Factory Method",
+   "summary": "Factory Method moves the decision \"which class do I create?\" out of the code that uses the object. In the classic form a base class calls an abstract `create...()` method that subclasses override. In everyday Java you'll more often see its relatives: static factory methods (`List.of`, `Money.ofCents`), parameterised factories (`switch` on a kind) and `Supplier<T>`. Use it when the concrete type varies; skip it when `new` is clear and stable.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "creational"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__builder",
+   "path": "l1-foundations/builder.md",
+   "title": "Builder",
+   "summary": "Builder constructs a complex object step by step, so callers name each value they set, optional fields get defaults, and validation runs once in `build()` before an immutable object exists. Use it when a constructor would take many parameters, several of them optional. In modern Java, pair it with records; for two or three fields, a constructor or static factory is better.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "creational"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__strategy",
+   "path": "l1-foundations/strategy.md",
+   "title": "Strategy",
+   "summary": "Strategy puts each variant of an algorithm (how to price, sort, assign, round) behind one interface, so the code that uses it can swap algorithms without `if/else` chains. In Java 8+ a strategy is often just a lambda (`Comparator` is the most famous example). It's the pattern you'll use most; the hard parts are choosing the strategy at runtime and rolling new ones out safely.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "behavioral"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__observer",
+   "path": "l1-foundations/observer.md",
+   "title": "Observer",
+   "summary": "Observer lets one object (the subject) notify any number of others (observers) when something happens, without knowing who they are. It's how \"order placed\" reaches inventory, email and loyalty without checkout calling each one. The pattern is easy; the production questions are hard: sync or async, what happens when an observer fails, and who unsubscribes.",
+   "minutes": 45,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "behavioral"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__template-method",
+   "path": "l1-foundations/template-method.md",
+   "title": "Template Method",
+   "summary": "Template Method fixes the steps of an algorithm in one `final` method of a base class and lets subclasses fill in the steps that vary. It's how frameworks keep the important parts (transactions, retries, validation) in one place while you supply the business bits. In modern Java, passing the varying steps as lambdas often does the same job without inheritance.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "behavioral"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__adapter",
+   "path": "l1-foundations/adapter.md",
+   "title": "Adapter",
+   "summary": "Adapter makes an existing class (a vendor SDK, a legacy library) usable through the interface your code expects, by wrapping it and translating calls, data and errors. It's the everyday tool for integrating third parties without letting their types, units and error codes leak into your domain. Prefer object adapters (composition); test every adapter against one shared contract.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "structural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__decorator",
+   "path": "l1-foundations/decorator.md",
+   "title": "Decorator",
+   "summary": "Decorator adds behaviour to an object by wrapping it in another object with the same interface. Each wrapper adds one concern (caching, retries, logging, discounts), and wrappers stack in any order at runtime, which avoids a subclass for every combination. `java.io` streams are the classic example; resilience stacks (retry, circuit breaker, metrics) are the everyday production one.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "structural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l1-foundations__facade",
+   "path": "l1-foundations/facade.md",
+   "title": "Facade",
+   "summary": "Facade gives a complicated set of classes one simple entry point for a common task, like \"place order\" or \"get delivery quote\". The client calls one method; the facade coordinates the subsystems in the right order. Keep facades focused on one use-case area, keep business rules in services or the domain, and use facades as the public face of modules.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L1",
+    "structural"
+   ],
+   "group": "l1-foundations"
+  },
+  {
+   "id": "l2-practitioner__index",
+   "path": "l2-practitioner/index.md",
+   "title": "L2 · Practitioner",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L2"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__abstract-factory",
+   "path": "l2-practitioner/abstract-factory.md",
+   "title": "Abstract Factory",
+   "summary": "Abstract Factory is an interface for creating a *family* of related objects (tax rules, address format and delivery promise for a country; charge, webhook and refund clients for an environment) without naming their classes. Pick one concrete factory, usually at startup, and every object it creates is guaranteed to match. Its weakness: adding a new kind of product changes every factory.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "creational"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__prototype",
+   "path": "l2-practitioner/prototype.md",
+   "title": "Prototype",
+   "summary": "Prototype creates new objects by copying an existing, pre-configured one, then customising the copy. It's useful when setting an object up from scratch is long or error-prone: templates, campaigns, store configurations. In Java, copy with copy constructors or copy methods, not `Cloneable`. Decide deliberately what is deep-copied, shared, reset or left out.",
+   "minutes": 30,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "creational"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__object-pool",
+   "path": "l2-practitioner/object-pool.md",
+   "title": "Object Pool",
+   "summary": "An object pool keeps a limited set of expensive objects (database connections, threads, heavyweight clients) and lends them out instead of creating new ones each time. Pools also *limit* how many are in use, which protects scarce resources. On today's JVM, don't pool cheap objects, and with virtual threads, don't pool threads: limit access to the resource instead.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "creational"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__dependency-injection",
+   "path": "l2-practitioner/dependency-injection.md",
+   "title": "Dependency Injection",
+   "summary": "Dependency Injection (DI) means an object **receives** the things it needs (repositories, clients, clocks) through its constructor instead of creating or looking them up itself. One place, the **composition root**, builds the object graph. A container such as Spring automates that wiring, but the pattern works fine in plain Java. Prefer constructor injection, avoid Service Locators, and watch scopes: a singleton must never hold a request-scoped object.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "creational"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__composite",
+   "path": "l2-practitioner/composite.md",
+   "title": "Composite",
+   "summary": "Composite lets you treat a single object and a group of objects through the same interface, so a tree (a combo pack of items and smaller packs, a category menu, a UI layout) can be priced, counted or drawn with one call on the root. Leaves do the work; composites forward it to their children and combine the results. In modern Java, model the tree as a sealed interface with records and use pattern-matching switches.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "structural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__proxy",
+   "path": "l2-practitioner/proxy.md",
+   "title": "Proxy",
+   "summary": "A Proxy is a stand-in object with the same interface as the real one that **controls access** to it: creating it lazily, checking permissions, caching answers, or forwarding calls over the network. In Java you meet proxies every day: Spring's `@Transactional`, `@Cacheable` and `@PreAuthorize` work by wrapping your beans in generated proxies (JDK dynamic proxies for interfaces, ByteBuddy/CGLIB subclasses for classes). Know their one big trap: calling `this.method()` from inside the object skips the proxy.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "structural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__bridge",
+   "path": "l2-practitioner/bridge.md",
+   "title": "Bridge",
+   "summary": "Bridge splits one class hierarchy that varies in **two independent ways** into two hierarchies connected by a reference: the **abstraction** (what you do: order update, promo, report) holds an **implementor** (how it's done: SMS, push, CSV, S3). Each side grows on its own, so m kinds × n back ends need m + n classes instead of m × n. JDBC is the classic Java example: your code uses `Connection`, each vendor ships a `Driver`.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "structural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__flyweight",
+   "path": "l2-practitioner/flyweight.md",
+   "title": "Flyweight",
+   "summary": "Flyweight saves memory when you have huge numbers of similar objects: split each object's data into **intrinsic** state (the same for many objects, immutable, shared) and **extrinsic** state (unique per use, kept outside or passed in). A factory hands out one shared instance per intrinsic value. The JDK uses it for `Integer.valueOf`, `Boolean.TRUE` and the String pool, which is also why `==` on boxed numbers is a classic bug. Measure first: it only pays off with many objects and repeated, heavy intrinsic data.",
+   "minutes": 30,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "structural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__command",
+   "path": "l2-practitioner/command.md",
+   "title": "Command",
+   "summary": "Command turns a request (\"reserve 2 milk\", \"refund order FC-7201\") into an object. Once a request is an object, you can queue it, log it, retry it, undo it, combine several into one, or run it later on another machine. In modern Java a simple command is just a lambda (`Runnable`); use a record or class when you need data, a name, undo, or persistence. Commands that cross process boundaries need idempotency keys.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioral"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__iterator",
+   "path": "l2-practitioner/iterator.md",
+   "title": "Iterator",
+   "summary": "Iterator gives sequential access to the elements of a collection without exposing how it's stored. In Java it's built in: `Iterable` makes for-each work, `Iterator` walks one element at a time, and `Spliterator` powers streams. Write your own when the data isn't a plain list: a tree, a paginated API, a database cursor. Know the contracts: `ArrayList` iterators fail fast on concurrent changes, concurrent collections iterate weakly consistently, and a lazy iterator should fetch only what the caller actually uses.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioral"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__state",
+   "path": "l2-practitioner/state.md",
+   "title": "State",
+   "summary": "State lets an object change its behaviour when its internal state changes, so \"what does cancel do?\" is answered by the current state instead of `if`/`switch` chains in every method. Java gives you several ways to build it: one class per state (classic GoF), an enum with allowed transitions, sealed records with an exhaustive `switch` (modern Java), or a transition table (state machine as data). In production, add guards, optimistic versioning, idempotent events and a history.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioral"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__chain-of-responsibility",
+   "path": "l2-practitioner/chain-of-responsibility.md",
+   "title": "Chain of Responsibility",
+   "summary": "Chain of Responsibility passes a request along a sequence of handlers; each one either handles it, passes it on, or (in the filter style) does something before and after the rest of the chain. It decouples the sender from whoever ends up handling the request. You use it every day in Java: servlet filters, Spring `HandlerInterceptor`s and Spring Security's filter chain. Order matters, and every chain needs a defined ending for requests nobody handles.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioral"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__mediator",
+   "path": "l2-practitioner/mediator.md",
+   "title": "Mediator",
+   "summary": "Mediator puts the coordination between several objects into one place. Instead of every object knowing and calling the others (a web of n² links), each \"colleague\" talks only to the mediator, which decides who should react. Typical uses: UI screens where fields affect each other, dispatchers matching orders with riders, and in-process buses that route requests to handlers. Keep each mediator focused on one workflow, or it becomes a god class.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioral"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__memento",
+   "path": "l2-practitioner/memento.md",
+   "title": "Memento",
+   "summary": "Memento captures an object's state as a snapshot, without exposing its internals, so the object can be restored later: undo, \"discard changes\", checkpoints before risky operations, and drafts saved for later. The object (originator) creates and restores its own snapshots; another object (caretaker) stores them without looking inside. In Java, a deeply immutable `record` is a natural memento. Watch the memory cost: big state with small changes may be better served by storing changes (Command) instead of full copies.",
+   "minutes": 30,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioral"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__visitor",
+   "path": "l2-practitioner/visitor.md",
+   "title": "Visitor",
+   "summary": "Visitor lets you add new operations (tax, weight, export, validation) to a fixed set of element types without changing those types. Classic Visitor uses \"double dispatch\": each element's `accept(visitor)` calls the visitor method for its own type. Since Java 21, a sealed interface plus an exhaustive `switch` with pattern matching does the same job with far less code, and the compiler checks you handled every type. Choose Visitor when operations change more often than types.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioral"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__interpreter",
+   "path": "l2-practitioner/interpreter.md",
+   "title": "Interpreter",
+   "summary": "Interpreter turns a small language (promo rules, fee formulas, filters) into a tree of objects and evaluates that tree. Each grammar rule becomes a node type; evaluation is a recursive walk. In Java 21 the nodes are sealed records and evaluation is an exhaustive `switch`. Parse once, evaluate many times, and when the input comes from people (not code), add type checking, size limits and clear error messages. When the grammar grows beyond a page, use a parser generator such as ANTLR or an existing expression language instead of hand-writing one.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__null-object",
+   "path": "l2-practitioner/null-object.md",
+   "title": "Null Object",
+   "summary": "A Null Object is an implementation of an interface that does nothing, used instead of `null` when \"nothing\" has one obvious meaning: no discount, no notification, no metrics. Callers stop writing `if (x != null)`, and `NullPointerException`s from forgotten checks disappear. Its bigger sibling, the Special Case, gives specific, sensible answers for situations like \"guest customer\" or \"invalid coupon\". Use `Optional` instead when the caller must decide what absence means, and never use a Null Object for something that must happen, such as a payment.",
+   "minutes": 30,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__specification",
+   "path": "l2-practitioner/specification.md",
+   "title": "Specification",
+   "summary": "A Specification is a business rule packaged as an object with one question: \"does this candidate satisfy me?\". Small named rules (`inStock`, `organic`, `cheaperThan(100)`) combine with `and`, `or` and `not` into bigger ones, so you stop writing a finder method for every combination. In memory, `java.util.function.Predicate` is often enough. When the data lives in a database, the specification builds a query instead (Spring Data JPA's `Specification<T>`), so filtering runs in SQL with bind parameters.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "behavioural"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l2-practitioner__testing-patterns",
+   "path": "l2-practitioner/testing-patterns.md",
+   "title": "Testing Patterns",
+   "summary": "Tests have their own design patterns. **Test doubles** (dummy, stub, fake, spy, mock) stand in for collaborators. **Object Mother** and **Test Data Builder** make test data short and readable. **Arrange-Act-Assert** gives every test the same three-part shape. Design patterns in production code (DI, Strategy, Decorator) create **seams** where doubles plug in. **Contract tests** run one suite against every implementation of an interface, including your fakes, so the fakes stay honest.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L2",
+    "testing"
+   ],
+   "group": "l2-practitioner"
+  },
+  {
+   "id": "l3-professional__index",
+   "path": "l3-professional/index.md",
+   "title": "L3 · Professional",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L3"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__patterns-in-modern-java",
+   "path": "l3-professional/patterns-in-modern-java.md",
+   "title": "Patterns in Modern Java (17–21)",
+   "summary": "Java 16–21 added records, sealed types, pattern matching for `switch` and record patterns, on top of lambdas (8) and richer interfaces (8–9). Together they change how many GoF patterns look. Value Objects and Mementos become records. Closed hierarchies become sealed interfaces. Visitor becomes a `switch`. Strategy, Command and Template Method become lambdas. Singleton and State become enums. The intent of each pattern stays the same; the boilerplate goes, and the compiler checks more of it for you.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__functional-patterns",
+   "path": "l3-professional/functional-patterns.md",
+   "title": "Functional Patterns in Java",
+   "summary": "Functional programming has its own pattern catalogue, and Java 8–21 supports most of it. **Higher-order functions** wrap behaviour (retry, caching, logging) once. **Composition** builds pipelines from small functions. **Optional** and **Result/Either** make absence and failure into values you can chain. **Currying and partial application** fix arguments early. **Streams** express data pipelines declaratively. **Immutability** makes all of it safe to share and parallelise. The practical architecture is \"functional core, imperative shell\": pure functions inside, I/O at the edges.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__patterns-in-the-jdk",
+   "path": "l3-professional/patterns-in-the-jdk.md",
+   "title": "Patterns in the JDK",
+   "summary": "You already use dozens of design patterns every day through the JDK. Collections give you Iterator, Adapter (`Arrays.asList`), Proxy views (`unmodifiableList`) and Factory methods (`List.of`). `java.io` is a stack of Decorators with an Adapter (`InputStreamReader`) between bytes and characters. `Runtime` is a Singleton, `Integer.valueOf` a Flyweight, `Collections.emptyList` a Null Object. `Comparator` is Strategy. `ServiceLoader` is a plugin registry. `Flow` is Observer with back-pressure. Recognising them tells you how the APIs behave, including their traps.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__patterns-in-spring",
+   "path": "l3-professional/patterns-in-spring.md",
+   "title": "Patterns in Spring",
+   "summary": "Spring is a set of design patterns you configure. The **IoC container** is a Factory plus Dependency Injection with Singleton and Prototype scopes. **AOP** features (`@Transactional`, `@Cacheable`, `@Async`, method security) are **Proxies** around your beans, which is why calling an annotated method on `this` silently skips them. **`JdbcTemplate`**, `TransactionTemplate` and `RestTemplate` are **Template Method with callbacks**. **Application events** are **Observer**. **`FactoryBean`** is Factory. Injecting `List<Strategy>` or `Map<String, Strategy>` gives you **Strategy** registries for free. Knowing the pattern behind each feature explains most Spring surprises.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__concurrency-patterns",
+   "path": "l3-professional/concurrency-patterns.md",
+   "title": "Concurrency Patterns",
+   "summary": "Concurrent code goes wrong when threads share mutable state without coordination. The patterns here avoid that in three ways. **Don't share**: immutability and thread confinement. **Share through a safe channel**: producer-consumer queues, thread pools, futures, Active Object. **Coordinate explicitly**: read-write locks, balking, guarded suspension, atomic compare-and-set. Java 21's **virtual threads** make blocking, thread-per-request code scale again, and **structured concurrency** and **scoped values** (final in Java 25) tidy up task lifetimes and context passing. Prefer the highest-level tool that fits: an executor over raw threads, a concurrent collection over a lock, an immutable snapshot over both.",
+   "minutes": 50,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "concurrency"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__enterprise-application-patterns",
+   "path": "l3-professional/enterprise-application-patterns.md",
+   "title": "Enterprise Application Patterns",
+   "summary": "Martin Fowler's *Patterns of Enterprise Application Architecture* (PoEAA, 2002) names the building blocks of almost every business application: how to organise **business logic** (Transaction Script or Domain Model), where **use cases** live (Service Layer), and how objects reach the **database** (Repository, Data Mapper or Active Record, Unit of Work, Identity Map, Lazy Load), plus how data crosses **boundaries** (DTOs and assemblers). JPA/Hibernate and Spring Data implement most of them for you, so knowing them explains what your ORM is doing, why N+1 queries and lost updates happen, and when to step outside the framework.",
+   "minutes": 45,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "data"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__ui-and-mobile-patterns",
+   "path": "l3-professional/ui-and-mobile-patterns.md",
+   "title": "UI and Mobile Patterns",
+   "summary": "UI code fails when screens hold business logic, state is scattered, and asynchronous answers arrive in surprising orders. **MVC, MVP and MVVM** separate what's shown (view) from what it means (model) and the logic in between (controller, presenter, ViewModel). **MVI / unidirectional data flow** goes further: one immutable state, changed only by a pure reducer, so every screen is a function of state. Mobile apps add **offline-first repositories** (local data is the source of truth), **coordinators** that own navigation, and a **Backend for Frontend** that shapes server data for each client. Android's recommended architecture is MVVM + UDF with Jetpack Compose; Flutter's BLoC and Riverpod follow the same ideas.",
+   "minutes": 45,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "ui"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__error-handling-patterns",
+   "path": "l3-professional/error-handling-patterns.md",
+   "title": "Error Handling Patterns",
+   "summary": "Good error handling answers three questions: **who can do something about this failure, what do they need to know, and what state is the system left in?** Use **checked exceptions** (sparingly) for recoverable conditions a caller must handle, **unchecked** ones for bugs and unrecoverable failures. **Translate** exceptions at layer boundaries so each layer speaks its own language, keeping the cause. Use **Result types** when failure is an expected outcome, so the compiler forces handling. **Fail fast** on bad input and configuration, as early and clearly as possible. Use the **Notification pattern** to report every validation problem at once. Never swallow exceptions, and never lose the cause.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__anti-patterns-and-code-smells",
+   "path": "l3-professional/anti-patterns-and-code-smells.md",
+   "title": "Anti-Patterns and Code Smells",
+   "summary": "An **anti-pattern** is a common solution that looks reasonable but causes more problems than it solves. A **code smell** is a surface symptom (a long method, a repeated switch, a class with 60 fields) that often points to a deeper design problem. This page covers the classic anti-patterns (**God Object, Anaemic Domain Model, Spaghetti code and Lava Flow, Golden Hammer, Singletonitis, Poltergeists**) and the smells that suggest which pattern would help. Two lessons: patterns fix smells, and patterns overused *are* smells. Detect with reviews and static analysis, fix in small steps protected by tests, and gate only *new* problems so legacy debt doesn't block delivery.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__refactoring-to-patterns",
+   "path": "l3-professional/refactoring-to-patterns.md",
+   "title": "Refactoring to Patterns",
+   "summary": "Patterns are best **discovered** in working code, not imposed up front. Joshua Kerievsky's *Refactoring to Patterns* (2004) shows how to move code **toward** a pattern when a smell justifies it, and **away** from one when it no longer pays. The workflow is always the same: pin current behaviour with tests (a golden master if needed), then change structure in small, behaviour-preserving steps, running the tests after each. Key moves: **Replace Conditional with Polymorphism**, **Replace Constructors with Creation Methods**, **Extract Strategy**, and **Inline** a pattern that adds only indirection. For risky production changes, use **Parallel Change** (expand, migrate, contract) with shadow comparison and gradual rollout.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "core"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l3-professional__performance-of-patterns",
+   "path": "l3-professional/performance-of-patterns.md",
+   "title": "Performance Cost of Patterns",
+   "summary": "Most design patterns add indirection: an interface call, a wrapper object, a proxy, a lookup. On the JVM that indirection is usually **almost free**, because the JIT compiler inlines calls at **monomorphic and bimorphic** call sites and **escape analysis** removes short-lived objects. Costs become real when call sites turn **megamorphic** (many implementations through one site), when objects **escape** (stored, boxed, carried in loops), when calls go through **reflection or dynamic proxies** on hot paths, and at **startup**, where reflective DI containers scan and wire classes. Rules: don't guess, **measure with JMH**; compare against a baseline in the same run; optimise only the hot path, and keep the pattern everywhere else.",
+   "minutes": 45,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L3",
+    "performance"
+   ],
+   "group": "l3-professional"
+  },
+  {
+   "id": "l4-senior__index",
+   "path": "l4-senior/index.md",
+   "title": "L4 · Senior / Lead",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L4"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__architectural-patterns",
+   "path": "l4-senior/architectural-patterns.md",
+   "title": "Architectural Patterns",
+   "summary": "Architectural patterns decide the **shape of a whole application**: which parts exist, which may depend on which, and how they communicate. **Layered** architecture is the familiar default. **Hexagonal** (ports and adapters) and **Clean/Onion** put the domain at the centre and push frameworks, databases and UIs to the edges, so they can be swapped and the core tested alone. A **modular monolith** gives microservice-like boundaries inside one deployable. **Microkernel** builds a small core extended by plugins. **Event-driven** architecture connects parts through published facts instead of direct calls. The senior skill isn't knowing the diagrams; it's choosing based on team size, change patterns and operational cost, and **enforcing** the chosen boundaries with automated checks.",
+   "minutes": 45,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "architecture"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__ddd-tactical",
+   "path": "l4-senior/ddd-tactical.md",
+   "title": "Domain-Driven Design: Tactical Patterns",
+   "summary": "DDD's tactical patterns are the building blocks for modelling a complex domain in code. **Entities** have identity that persists as attributes change. **Value objects** are immutable, compared by value and validate themselves (`Money`, `PinCode`). **Aggregates** group objects that must stay consistent, with one **root** that enforces invariants; one transaction changes one aggregate. **Domain events** record meaningful things that happened. **Domain services** hold logic that belongs to no single object. **Factories** create valid aggregates, and **repositories** store and load whole aggregates by ID. In Java 21, records, sealed types and pattern matching make these patterns lighter than ever.",
+   "minutes": 45,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "architecture"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__ddd-strategic",
+   "path": "l4-senior/ddd-strategic.md",
+   "title": "Domain-Driven Design: Strategic Patterns",
+   "summary": "Strategic DDD is about **where one model ends and another begins**. A **ubiquitous language** makes code read like the business. A **bounded context** is the boundary inside which a model and its language are consistent; \"product\" can mean different things in Catalogue, Warehouse and Pricing, and that's fine. A **context map** documents how contexts relate (customer/supplier, conformist, partnership, shared kernel, open host service). An **anti-corruption layer** translates a foreign model so it can't distort yours. A **shared kernel** is a small model two contexts deliberately share; a **published language** is a documented, versioned format for integration. These decisions shape team boundaries, service boundaries and integration contracts, and they matter more than any tactical pattern.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "architecture"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__microservice-patterns",
+   "path": "l4-senior/microservice-patterns.md",
+   "title": "Microservice Patterns",
+   "summary": "Microservices are independently deployable services, each owning one business capability and its data. **Decompose by capability or subdomain**, not by entity, so a use case touches few services. Give each service **its own database**; share data through APIs and events. Put an **API gateway** in front for routing, authentication, rate limits and request IDs. Use **service discovery** so callers find live instances. Migrate from a monolith with the **strangler fig**: route one slice at a time to new services, shadow-compare first, keep rollback cheap. Move cross-cutting network concerns (mTLS, retries, metrics) into a **sidecar** or service mesh. Microservices buy team autonomy and independent scaling at the price of distributed-systems complexity, so start from a modular monolith unless you have the teams and the need.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "architecture"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__resilience-patterns",
+   "path": "l4-senior/resilience-patterns.md",
+   "title": "Resilience Patterns",
+   "summary": "Every remote dependency will be slow or down at some point; resilience patterns stop that from taking your service with it. A **timeout** bounds how long you wait. A **retry with exponential backoff and jitter** recovers from transient failures without a thundering herd, and only for idempotent operations. A **circuit breaker** stops calling a failing dependency and fails fast until it recovers. A **bulkhead** caps concurrency per dependency so one slow service can't use all your threads. A **rate limiter** keeps you within a quota or protects you from overload. A **fallback** returns something useful (cached, default, degraded) instead of an error. **Resilience4j** provides all of them as composable decorators; the order you compose them in matters.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "operations"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__distributed-data-patterns",
+   "path": "l4-senior/distributed-data-patterns.md",
+   "title": "Distributed Data Patterns",
+   "summary": "Once each service owns its data, there's no single ACID transaction across them. A **saga** runs a business transaction as a series of local transactions with **compensating actions** for undo. The **transactional outbox** writes the event in the same local transaction as the data, so \"saved but never published\" can't happen; a relay publishes afterwards, at least once. **CQRS** separates the write model (rules) from read models (shaped for queries), updated from events. **Event sourcing** stores events as the source of truth and derives state from them. **Idempotent consumers** make at-least-once delivery safe. **Change data capture** turns the database's own change log into events. Together they trade immediate consistency for availability and autonomy, so design every screen and rule for eventual consistency.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "data"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__messaging-patterns",
+   "path": "l4-senior/messaging-patterns.md",
+   "title": "Messaging and Integration Patterns",
+   "summary": "Messaging connects systems through channels instead of direct calls, so senders and receivers don't need to be up at the same time or know each other. A **queue** (point-to-point) gives each message to one receiver; a **topic** (publish-subscribe) gives a copy to every subscriber. **Competing consumers** scale a queue, and **partitioning by key** keeps per-entity ordering. A **content-based router** sends each message to the right channel. A **dead letter channel** parks messages that keep failing, with the reason, so they neither block nor vanish. A **message translator** converts external formats into a canonical model at the edge. **Request-reply** over messaging uses a **correlation ID** and a reply-to channel. These are the Enterprise Integration Patterns (Hohpe and Woolf), implemented today by Kafka, RabbitMQ, Spring Integration and Apache Camel.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "integration"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__caching-patterns",
+   "path": "l4-senior/caching-patterns.md",
+   "title": "Caching Patterns",
+   "summary": "A cache trades freshness and memory for speed and load reduction. **Cache-aside** (the app loads on a miss and deletes on write) is the default. **Read-through / write-through** put the cache in front of the store so callers only talk to the cache. **Write-behind** acknowledges writes from the cache and flushes later: fast, but unflushed data can be lost. **Invalidation** is the hard part: combine TTLs (bounded staleness), explicit deletes on write, broadcast invalidation for local caches and versioned keys. Protect hot keys from **stampedes** with single-flight loading and TTL jitter. In Java, **Caffeine** is the in-process cache and **Redis** the usual shared cache; many systems use both as L1 and L2.",
+   "minutes": 30,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "performance"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l4-senior__api-design-patterns",
+   "path": "l4-senior/api-design-patterns.md",
+   "title": "API Design Patterns",
+   "summary": "An API is a promise to code you don't control, so design it to evolve without breaking callers. **Fluent interfaces** (and staged builders) make Java APIs read well and make misuse fail to compile. **Versioning** lets incompatible changes coexist; deprecate with dates and measure usage before retiring. **Cursor (keyset) pagination** stays correct and fast as data changes; offset pagination doesn't. **Idempotency keys** make retried POSTs safe: store the result per key and replay it. **Backward compatibility rules**: add optional fields freely; never remove, rename, retype or newly require fields; treat new enum values as potentially breaking; clients read tolerantly. Consistent errors (Problem Details) round it off.",
+   "minutes": 30,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L4",
+    "integration"
+   ],
+   "group": "l4-senior"
+  },
+  {
+   "id": "l5-staff-principal__index",
+   "path": "l5-staff-principal/index.md",
+   "title": "L5 · Staff / Principal",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "L5"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__pattern-selection",
+   "path": "l5-staff-principal/pattern-selection.md",
+   "title": "Choosing Patterns and Trade-offs",
+   "summary": "At staff level the question is rarely \"how does this pattern work?\" and usually \"is it worth it here, and how will we know if we were wrong?\" Every pattern adds **indirection**: more types and more jumps for every future reader, paid daily, in exchange for flexibility that may never be used. Make the trade-off explicit with **decision frameworks**: name the forces (variants, change rate, teams, runtime needs), apply thresholds, and check how sensitive the outcome is. Record significant decisions as **Architecture Decision Records** so the reasoning survives the people. Spend most care on **irreversible** decisions (one-way doors) and decide reversible ones quickly, buying reversibility with seams where it's cheap.",
+   "minutes": 30,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "architecture"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__evolutionary-architecture",
+   "path": "l5-staff-principal/evolutionary-architecture.md",
+   "title": "Evolutionary Architecture",
+   "summary": "Architecture decays one reasonable shortcut at a time unless something checks it. **Fitness functions** are executable checks of architectural characteristics (latency budgets, dependency rules, module size, cycles, dependency hygiene) that run in CI or production. **ArchUnit** expresses structural rules (layers, internal packages, cycles) as JUnit tests over compiled classes. **JPMS** (`module-info.java`) makes module boundaries a compiler-enforced fact rather than a convention. **Coupling metrics** (afferent/efferent coupling, instability, abstractness) show where change will hurt. Combine them with a **ratchet**: record today's violations as a baseline that may only shrink, so you can adopt rules on a legacy codebase without stopping delivery.",
+   "minutes": 30,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "architecture"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__legacy-modernisation",
+   "path": "l5-staff-principal/legacy-modernisation.md",
+   "title": "Legacy Modernisation Patterns",
+   "summary": "Big-bang rewrites of working systems usually run late and often fail; incremental modernisation keeps delivering while the old system shrinks. The **strangler fig** moves one capability at a time and is only finished when the new side owns the data and the legacy path is deleted. **Branch by abstraction** replaces a component on trunk behind an interface, with no long-lived branch. A **parallel run** executes old and new on real inputs, serves the old result and classifies differences until the new one is trusted. An **anti-corruption layer** keeps legacy formats and quirks out of new code. **Feature toggles** control rollout per segment and give an instant way back. Combine them with idempotent data migration (copy absolute values, backfill, reconcile) and automatic rollback.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "architecture"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__jvm-internals-behind-patterns",
+   "path": "l5-staff-principal/jvm-internals-behind-patterns.md",
+   "title": "JVM Internals Behind Patterns",
+   "summary": "Many patterns rely on JVM guarantees you rarely see. **Class initialisation** runs once per class loader under a lock, which makes the holder idiom and enum singletons safe and lazy, and also means two class loaders mean two singletons. **Dynamic proxies** and bytecode generation (CGLIB, ByteBuddy) power Spring AOP, transactions and mocks, with limits: no self-invocation interception and no final methods. **invokedynamic** with `LambdaMetafactory` turns lambdas into hidden classes at first use, caching non-capturing ones. **MethodHandles** and **VarHandles** are the fast, typed successors to reflection and `Unsafe`. The **Java Memory Model** defines when writes become visible across threads; safe publication (final fields, volatile, locks, static init, concurrent collections) is what makes immutable objects and lazy singletons correct.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "performance"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__framework-and-library-design",
+   "path": "l5-staff-principal/framework-and-library-design.md",
+   "title": "Designing Frameworks and Libraries",
+   "summary": "A library's API is a promise other teams build on. Give them **extension points** (an SPI discovered with `ServiceLoader`, plugins with a versioned contract, annotations the framework scans) and let the framework own the flow (**inversion of control**). Keep everything else hidden behind interfaces, static factories and **JPMS exports**. Evolve without breaking anyone: add default methods and overloads, deprecate before removing, and remember that **source-compatible is not binary-compatible**. Automate the promise with an API compatibility check that enforces semantic versioning in CI.",
+   "minutes": 40,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "architecture"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "l5-staff-principal__governing-patterns-at-scale",
+   "path": "l5-staff-principal/governing-patterns-at-scale.md",
+   "title": "Governing Patterns Across an Organisation",
+   "summary": "With 50 engineers, patterns stop being individual choices and become organisational habits. Govern them with **light, automated, help-oriented** tools: a **pattern catalogue** with ADOPT/TRIAL/HOLD status enforced by lint; **risk-based design reviews** so small changes move fast; **reference implementations** that show the golden path and measure drift; a **technical debt strategy** that budgets capacity by payback; and **deliberate teaching** through skills matrices, pairing and katas. Measure health, but guard against gamed metrics, and use results to offer help, not to rank teams.",
+   "minutes": 35,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "L5",
+    "organisation"
+   ],
+   "group": "l5-staff-principal"
+  },
+  {
+   "id": "reference__cheatsheet",
+   "path": "reference/cheatsheet.md",
+   "title": "Cheat Sheet",
+   "summary": "Every pattern on one page: intent, when to reach for it, and a minimal Java 21 skeleton in the FreshCart domain. Follow the link on each name for the full deep dive with runnable examples.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__configuration",
+   "path": "reference/configuration.md",
+   "title": "Build & Tooling Configuration",
+   "summary": "The settings that most often decide whether a pattern behaves as intended: compiler flags, Spring Boot switches that change how DI and proxies work, and the defaults of the resilience, caching, pooling and messaging libraries used in this playbook. Each row gives the default, what it does, and when to change it.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__comparisons",
+   "path": "reference/comparisons.md",
+   "title": "Pattern Comparisons",
+   "summary": "Many patterns look alike in a class diagram and differ only in **intent**. This page puts the commonly confused ones side by side, with a decision table for each group, so you can name the pattern you need and explain why not the others.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__decision-guide",
+   "path": "reference/decision-guide.md",
+   "title": "Decision Guide",
+   "summary": "\"Which pattern when?\" as decision trees. Start from the **problem you have**, not the pattern you'd like to use, and always check the first branch: maybe a plain method, a lambda or a record is enough. Each leaf links to the deep dive.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__anti-patterns",
+   "path": "reference/anti-patterns.md",
+   "title": "Anti-Pattern Catalogue",
+   "summary": "Every anti-pattern mentioned in the playbook, in one place: how to **recognise** it, why it **hurts**, and the **fix**, with a link to the page that explains it in depth. Use it as a review checklist.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__production-checklist",
+   "path": "reference/production-checklist.md",
+   "title": "Production Checklist",
+   "summary": "A go-live checklist for a Java service built with the patterns in this playbook. Tick each item or write down why it doesn't apply. It's grouped by concern, and each item links to the page that explains it.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__migration-guide",
+   "path": "reference/migration-guide.md",
+   "title": "Migration Guide",
+   "summary": "How to move pattern implementations from older Java and framework styles to modern Java 21 idioms: anonymous classes to lambdas, Visitor to sealed types with pattern matching, hand-written value classes to records, field injection to constructor injection, and older libraries (Hystrix, Guava Cache, `java.util.Observable`) to their maintained replacements. Each migration lists the safe steps.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "reference__version-history",
+   "path": "reference/version-history.md",
+   "title": "Java Version History for Patterns",
+   "summary": "Java's evolution keeps changing how patterns are written. Generics made factories and iterators type-safe, lambdas turned Strategy and Command into one-liners, records made value objects and builders shorter, sealed types and pattern matching replaced most Visitors, and virtual threads changed concurrency patterns. This page lists, version by version, what changed and why it matters for pattern code.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": "reference"
+  },
+  {
+   "id": "projects__index",
+   "path": "projects/index.md",
+   "title": "Projects",
+   "summary": "Hands-on projects that combine many patterns. The main one is the [FreshCart capstone](capstone.md): six milestones from a domain model to production hardening, with a runnable reference solution and tests.",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "projects"
+   ],
+   "group": "projects"
+  },
+  {
+   "id": "projects__capstone",
+   "path": "projects/capstone.md",
+   "title": "Capstone: FreshCart",
+   "summary": "Build FreshCart, a grocery delivery backend and its mobile client contract, using most patterns in this playbook. You work through six milestones: domain model, pricing, delivery partners, checkout with saga, outbox and idempotency, the mobile contract, and production hardening. Each milestone lists requirements, the patterns to use and acceptance tests. A runnable one-file reference solution and its JUnit tests are included so you can compare.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "projects"
+   ],
+   "group": "projects"
+  },
+  {
+   "id": "interview__index",
+   "path": "interview/index.md",
+   "title": "Interview Guide",
+   "summary": "Design-pattern interviews rarely ask \"define Decorator\". They give you a problem and watch how you **find the variation, pick the simplest structure, explain the trade-offs and change your mind when constraints change**. This guide explains the common round types, what each level is judged on, and how to practise with the rest of this section.",
+   "minutes": null,
+   "written": true,
+   "isIndex": true,
+   "tags": [
+    "interview"
+   ],
+   "group": "interview"
+  },
+  {
+   "id": "interview__questions-by-level",
+   "path": "interview/questions-by-level.md",
+   "title": "Questions by Level",
+   "summary": "Graded questions from L1 to L5 with model answers. Try to answer out loud before opening each answer, then follow the link to the page that covers it in depth.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "interview"
+   ],
+   "group": "interview"
+  },
+  {
+   "id": "interview__scenario-questions",
+   "path": "interview/scenario-questions.md",
+   "title": "Scenario Questions",
+   "summary": "\"Production is down, what do you do?\" style questions on pattern-heavy systems. Each scenario gives the symptoms; the strong answer shows how to **stabilise first, then diagnose, then fix the design** so it can't happen again. Most root causes are a missing or misused pattern.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "interview"
+   ],
+   "group": "interview"
+  },
+  {
+   "id": "interview__hands-on-tasks",
+   "path": "interview/hands-on-tasks.md",
+   "title": "Hands-on Tasks",
+   "summary": "Five take-home and live-coding tasks in the FreshCart domain, from L2 to L4, each with requirements, hints and a complete, runnable solution with its real output. Set a timer, write your own version and tests first, then compare.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "interview"
+   ],
+   "group": "interview"
+  },
+  {
+   "id": "glossary",
+   "path": "glossary.md",
+   "title": "Glossary",
+   "summary": "Every term used in the playbook, alphabetically, with a one-line definition and a link to the page that explains it. Acronyms also show as tooltips when you hover over them on any page.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": ""
+  },
+  {
+   "id": "further-reading",
+   "path": "further-reading.md",
+   "title": "Further Reading",
+   "summary": "The books, specifications and references behind this playbook, grouped by level. Start with *Head First Design Patterns* or *Effective Java* if you're new, *Refactoring* and *Java Concurrency in Practice* as you grow, and the architecture and DDD books at L4 and L5. Every item here is a real, published work.",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [
+    "reference"
+   ],
+   "group": ""
+  },
+  {
+   "id": "tags",
+   "path": "tags.md",
+   "title": "Tags",
+   "summary": "",
+   "minutes": null,
+   "written": true,
+   "isIndex": false,
+   "tags": [],
+   "group": ""
+  }
+ ]
+}

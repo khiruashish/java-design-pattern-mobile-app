@@ -1,0 +1,5 @@
+before: a caller cleared the route, stops left = 0
+after: deliver FC-8001 to 12 MG Road
+after: deliver FC-8002 to 4 Church St
+after: deliver FC-8003 to 88 Residency Rd
+after: remove() not supported, the route stays intact

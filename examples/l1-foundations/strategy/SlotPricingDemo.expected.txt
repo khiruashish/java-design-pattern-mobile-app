@@ -1,0 +1,3 @@
+pune    flat+peak     morning  2900  rainy evening  3900
+mumbai  demand-surge  morning  3900  rainy evening  7350
+nashik  launch-offer  morning     0  rainy evening  1900

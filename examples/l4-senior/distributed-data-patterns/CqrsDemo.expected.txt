@@ -1,0 +1,3 @@
+command rejected: minimum order is Rs 99
+read model after 3 of 4 events: {C-1=CustomerSummary[activeOrders=2, activeSpendPaise=37600], C-2=CustomerSummary[activeOrders=1, activeSpendPaise=9900]}
+read model caught up:           {C-1=CustomerSummary[activeOrders=1, activeSpendPaise=24000], C-2=CustomerSummary[activeOrders=1, activeSpendPaise=9900]}

@@ -1,0 +1,8 @@
+stale tab: SUB-1 was changed by someone else; reload and retry
+refused: too late to skip 2026-11-02 (cutoff 22:00 the day before)
+refused: pause at most 30 days
+version 3, November bill: Rs 3264
+event: Started[id=SubscriptionId[value=SUB-1], litres=2]
+event: Skipped[id=SubscriptionId[value=SUB-1], day=2026-11-03]
+event: Paused[id=SubscriptionId[value=SUB-1], from=2026-11-20, to=2026-11-24]
+event: Resumed[id=SubscriptionId[value=SUB-1]]

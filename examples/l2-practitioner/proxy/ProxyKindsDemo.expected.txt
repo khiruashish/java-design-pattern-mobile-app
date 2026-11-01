@@ -1,0 +1,8 @@
+virtual: proxy created, nothing loaded yet
+  (loading 80,000 products into memory...)
+virtual: R-5KG = Basmati rice 5kg
+protection: refunded 50000 on FC-1
+protection: denied, refunds over Rs 1000 need a supervisor
+caching: 3 lookups, 1 supplier call
+  -> wire: GET /stock/MILK-1L
+remote: stock = 37

@@ -1,0 +1,2 @@
+clean design: []
+with BadRenewal: [BadRenewal (USE_CASES) depends on JdbcSubscriptionStore (ADAPTERS)]

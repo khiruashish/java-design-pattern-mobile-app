@@ -1,0 +1,2 @@
+anaemic wallet balance: -1500
+rich wallet refuses: insufficient balance: 1000 < 2500, balance stays 1000

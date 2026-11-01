@@ -1,0 +1,6 @@
+ProductTapped[sku=MANGO-1KG]         home > product/MANGO-1KG
+AddedToCart[sku=MANGO-1KG]           home > product/MANGO-1KG > cart
+CheckoutTapped[]                     home > product/MANGO-1KG > cart > login
+LoginSucceeded[]                     home > product/MANGO-1KG > cart > payment
+PaymentDone[orderId=FC-901]          order/FC-901
+deep link                            home > product/GHEE-1L

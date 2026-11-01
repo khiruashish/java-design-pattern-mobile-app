@@ -1,0 +1,5 @@
+constructor: charged 100
+constructor rejects missing dependency: payments
+setter: object usable before it's ready -> NullPointerException
+setter after wiring: charged 100
+field (needs reflection, even in tests): charged 100

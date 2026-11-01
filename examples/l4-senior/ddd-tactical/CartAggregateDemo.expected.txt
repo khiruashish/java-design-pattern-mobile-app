@@ -1,0 +1,8 @@
+refused: limit 2 for MANGO-1KG
+refused: only one coupon per order (FRESH10 applied)
+refused: cart CART-5 is checked out
+lines: [1xMANGO-1KG, 3xMILK-1L], total Rs 588
+event: ItemAdded[cartId=CART-5, sku=MANGO-1KG, qty=1]
+event: ItemAdded[cartId=CART-5, sku=MILK-1L, qty=3]
+event: CouponApplied[cartId=CART-5, code=FRESH10]
+event: CheckedOut[cartId=CART-5, totalPaise=58860]

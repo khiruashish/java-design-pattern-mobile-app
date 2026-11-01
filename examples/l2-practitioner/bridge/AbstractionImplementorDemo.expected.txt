@@ -1,0 +1,4 @@
+SMS to asha: Order FC-5001 - out for delivery
+PUSH to device of asha [Order FC-5001] delivered
+EMAIL to ravi@mail, subject '20% off fruit'
+PUSH to device of ravi [20% off fruit] today only

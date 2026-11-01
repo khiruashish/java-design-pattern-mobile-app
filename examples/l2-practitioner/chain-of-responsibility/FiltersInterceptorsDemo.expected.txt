@@ -1,0 +1,4 @@
+Response[status=200, body=orders for asha]
+Response[status=401, body=login required]
+log: [-> /orders, <- 200, -> /orders, <- 401]
+auth before logging: rejected request not logged at all -> log []

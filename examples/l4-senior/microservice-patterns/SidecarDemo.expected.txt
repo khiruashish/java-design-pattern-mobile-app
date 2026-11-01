@@ -1,0 +1,3 @@
+without sidecar: failed: connection reset
+with sidecar:    200 Rs 68 (caller spiffe://freshcart/checkout)
+sidecar metrics: [pricing error attempt=1, pricing ok attempt=2]

@@ -1,0 +1,10 @@
+night 1: applied 8, rejected 2 problem(s)
+  line 4 E_SKU 'spinach'
+  line 5 E_PRICE_FORMAT 'abc'
+catalogue now has 8 prices, TOMATO-1KG=3250
+night 2: ABORTED, 2 of 3 rows invalid, over the 20% budget; nothing applied
+  line 2 E_COLUMNS expected 2 columns, got 1
+  line 3 E_COLUMNS expected 2 columns, got 1
+TOMATO-1KG still 3250
+night 3: could not read supplier file (cause: SFTP connection reset)
+startup: maxErrorPercent must be 0..50

@@ -1,0 +1,5 @@
+FC-7 placed: 2 items, Rs 218
+FC-7 swapped 1xPANEER for 1xTOFU
+FC-7 delivered LATE by 22 min
+FC-7 refunded Rs 50 (late delivery)
+side effects: [notify customer of swap on FC-7, issue Rs 50 credit on FC-7]

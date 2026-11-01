@@ -1,0 +1,2 @@
+PR 412 add slot cache: ready to merge
+PR 413 quick fix: BLOCKED, unchecked [No new HOLD patterns from the catalogue]

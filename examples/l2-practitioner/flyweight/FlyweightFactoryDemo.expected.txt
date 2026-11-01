@@ -1,0 +1,3 @@
+300,000 lookups from many threads -> instances created: 3
+same instance: true
+unknown unit BOX (nothing cached for it)

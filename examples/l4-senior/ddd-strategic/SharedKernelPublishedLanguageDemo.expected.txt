@@ -1,0 +1,4 @@
+published: {type=OrderPlaced, version=2, orderId=FC-88, totalPaise=51800, deliveryPin=560034, channel=app}
+reads v1: DeliveryView[orderId=FC-88, pin=560034, channel=unknown]
+reads v2: DeliveryView[orderId=FC-88, pin=560034, channel=app]
+reads v3 (unknown field ignored): DeliveryView[orderId=FC-88, pin=560034, channel=app]

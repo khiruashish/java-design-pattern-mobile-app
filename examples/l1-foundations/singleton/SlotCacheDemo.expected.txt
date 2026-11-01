@@ -1,0 +1,6 @@
+app sees [12:00, 18:00]
+web sees [12:00, 18:00]  (same cache, no db call)
+app sees [18:00]  (expired, reloaded)
+web sees [18:00]  (db down, served stale)
+rejected: slots unavailable for mumbai-02
+db calls: 4, hits=1 misses=4 loadFailures=2

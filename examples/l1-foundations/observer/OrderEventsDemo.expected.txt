@@ -1,0 +1,4 @@
+inventory: reserve [RICE-5KG, OIL-1L]
+loyalty: points for cust-7
+sla: FC-1301 late by 8 min
+inventory: release stock for FC-1302

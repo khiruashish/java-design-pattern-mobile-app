@@ -1,0 +1,7 @@
+req1=12
+req2=RemoteUnavailable
+req3=RemoteUnavailable
+req4=CircuitOpen
+req5=CircuitOpen
+req6=12
+remote calls: 6, metrics: {CircuitOpen=2, RemoteUnavailable=2, ok=2}

@@ -1,0 +1,6 @@
+B2C promoted to NEW after 6 clean comparisons
+B2B stays SHADOW: 6 unexplained difference(s)
+modes: {B2B=SHADOW, B2C=SHADOW}
+  diff B1: legacy Invoice[orderId=B1, netPaise=50000, gstPaise=2500] new Invoice[orderId=B1, netPaise=50000, gstPaise=9000]
+  diff B2: legacy Invoice[orderId=B2, netPaise=50000, gstPaise=2500] new Invoice[orderId=B2, netPaise=50000, gstPaise=9000]
+  ... 9 more log lines; last: auto-rollback B2C to SHADOW

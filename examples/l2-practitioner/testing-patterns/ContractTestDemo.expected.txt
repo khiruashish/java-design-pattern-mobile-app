@@ -1,0 +1,3 @@
+MapCache: meets the contract
+LruCache: meets the contract
+WriteOnceCache: BREAKS [a second put replaces the price]

@@ -1,0 +1,3 @@
+Mon: flat Rs 25 delivery fee -> write it inline; no abstraction yet
+Mar: free above Rs 199 -> an if/else is fine; note the duplication
+Jun: Rs 10 off for DairyDay subscribers -> extract an abstraction (e.g. Strategy) now that the variation is real

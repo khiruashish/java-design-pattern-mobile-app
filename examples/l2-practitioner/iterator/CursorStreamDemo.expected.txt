@@ -1,0 +1,5 @@
+first asha order over Rs 300: Order[id=4, customer=asha, paise=40000]
+  pages=1 rows=4 retries=0 closed=true
+export total: Rs 5500
+  pages=3 rows=10 retries=2 closed=true
+broken cursor stopped: cursor did not advance past id 4

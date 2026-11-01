@@ -1,0 +1,2 @@
+Party pack[Chips, 20% off Drinks[Cola 2L, Soda 2L], Cake]
+price: Rs 624.00

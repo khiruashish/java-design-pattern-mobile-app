@@ -1,0 +1,4 @@
+Time 09:15, ordering closes 30 min before a slot starts
+  08:00-10:00  closed
+  12:00-14:00  open
+  18:00-20:00  open

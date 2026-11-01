@@ -1,0 +1,6 @@
+lsn=1 op=c before=null after=MILK-1L@68
+lsn=2 op=c before=null after=CURD-500G@45
+-- connector restarts, resumes after lsn 2
+lsn=3 op=u before=MILK-1L@68 after=MILK-1L@70
+lsn=4 op=d before=CURD-500G@45 after=null
+lsn=5 op=c before=null after=PANEER-200G@95

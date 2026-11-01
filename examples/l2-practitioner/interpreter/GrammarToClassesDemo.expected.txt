@@ -1,0 +1,3 @@
+Rs 600 of fruit: true
+Rs 300 of fruit: false
+Rs 100 of dairy: true

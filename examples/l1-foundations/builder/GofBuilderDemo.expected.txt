@@ -1,0 +1,8 @@
+INVOICE FC-501
+  MILK   x2  $2.58
+  EGGS   x1  $3.49
+  TOTAL      $6.07
+order,item,qty,cents
+FC-501,MILK,2,258
+FC-501,EGGS,1,349
+FC-501,TOTAL,,607

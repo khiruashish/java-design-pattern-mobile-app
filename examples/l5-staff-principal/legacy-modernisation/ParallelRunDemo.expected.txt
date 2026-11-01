@@ -1,0 +1,2 @@
+comparison: {UNEXPLAINED=1, accepted: legacy truncated to whole rupees=1, match=3}
+  investigate FC-4 legacy=0 new=2500

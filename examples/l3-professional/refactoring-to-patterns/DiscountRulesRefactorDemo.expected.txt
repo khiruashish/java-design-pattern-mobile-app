@@ -1,0 +1,2 @@
+golden master: 20000 random carts, mismatches: 0
+receipt lines: [member 5% over Rs 300 -3000, 3+ dairy items Rs 20 -2000, FRESH10 coupon -6000], total 11000

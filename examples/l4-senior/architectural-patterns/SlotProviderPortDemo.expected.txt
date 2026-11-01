@@ -1,0 +1,4 @@
+InHouseScheduler offers [Slot[id=S-09, window=09:00, capacityLeft=3], Slot[id=S-18, window=18:00, capacityLeft=10]]
+ParcelGoAdapter offers [Slot[id=PG-A, window=09:00, capacityLeft=2]]
+contract InHouseScheduler: pass
+contract ParcelGoAdapter: pass

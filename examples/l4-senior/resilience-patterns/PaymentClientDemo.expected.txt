@@ -1,0 +1,12 @@
+FC-1 Outcome[result=paid, remoteCalls=1] CLOSED
+FC-2 Outcome[result=declined: card refused, remoteCalls=1] CLOSED
+FC-3 Outcome[result=paid, remoteCalls=2] CLOSED
+PayLink charges made: 2 (FC-1 and FC-3; FC-3 timed out, was retried with the same key, charged once)
+FC-4 Outcome[result=pending: queued for later, remoteCalls=1] CLOSED
+FC-5 Outcome[result=pending: queued for later, remoteCalls=2] CLOSED
+FC-6 Outcome[result=pending: queued for later, remoteCalls=1] OPEN
+FC-7 Outcome[result=pending: queued for later, remoteCalls=0] OPEN
+FC-8 Outcome[result=pending: queued for later, remoteCalls=0] OPEN
+after 31 s: HALF_OPEN
+FC-9 Outcome[result=paid, remoteCalls=1] CLOSED
+metrics: {declined=1, fallback=3, ok=3, rejected-open=2, retry-skipped=3}

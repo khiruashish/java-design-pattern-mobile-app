@@ -1,0 +1,2 @@
+140 writes became 1 store write: [batch {views:MILK-1L=100, views:CURD-500G=40}]
+node crashes with 2 unflushed entries: those updates are lost

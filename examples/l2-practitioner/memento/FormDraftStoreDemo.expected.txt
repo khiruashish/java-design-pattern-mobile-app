@@ -1,0 +1,5 @@
+resumed on laptop: step 3 {gstin=29ABCDE1234F1Z5, storeName=FreshCart Whitefield}
+migrated v1 draft: {storeName=Old Store, gstin=29XYZ}
+draft store-13 is corrupted
+40-day-old draft: null, still stored: false
+draft too large

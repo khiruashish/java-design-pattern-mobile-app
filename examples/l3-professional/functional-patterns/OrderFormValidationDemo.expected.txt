@@ -1,0 +1,3 @@
+OK ValidOrder[phone=9845012345, pincode=411001, slot=18-20, tipRupees=20]
+rejected [phone must be 10 digits starting 6-9, pincode must be 6 digits, slot 12-14 is not available, tip must be Rs 0-200]
+rejected [slot 12-14 is not available]

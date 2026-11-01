@@ -1,0 +1,5 @@
+before: agent
+bot approved Rs 150 for FC-150
+agent approved Rs 649 for FC-649
+supervisor approved Rs 3000 for FC-3000
+nobody could approve FC-9000

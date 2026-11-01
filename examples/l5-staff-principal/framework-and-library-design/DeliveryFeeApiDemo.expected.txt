@@ -1,0 +1,4 @@
+standard fee on Rs 300: Rs 29.0
+standard fee on Rs 600: Rs 0.0
+member fee on Rs 300: Rs 0.0
+QuickDrop 1.0 plugin, member call still works: Rs 0.0

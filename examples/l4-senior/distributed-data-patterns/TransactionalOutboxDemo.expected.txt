@@ -1,0 +1,6 @@
+dual write: FC-1 saved, event lost (broker unavailable)
+relay will retry OrderPlaced FC-2 (broker unavailable)
+relay published OrderPlaced FC-2
+relay crashed before marking FC-3 sent
+relay published OrderPlaced FC-3
+orders=[FC-1, FC-2, FC-3] broker=[OrderPlaced FC-2, OrderPlaced FC-3, OrderPlaced FC-3]

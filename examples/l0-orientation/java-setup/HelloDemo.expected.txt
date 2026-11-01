@@ -1,0 +1,2 @@
+Hello, design patterns!
+Running on Java 21

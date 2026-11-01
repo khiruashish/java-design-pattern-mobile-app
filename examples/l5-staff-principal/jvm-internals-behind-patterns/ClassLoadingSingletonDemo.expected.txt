@@ -1,0 +1,4 @@
+version: v1
+events: [main started][PriceTable initialised][before get][instance created]
+same instance in one loader: true
+same class name, same Class object? false (loaders: app vs isolated)

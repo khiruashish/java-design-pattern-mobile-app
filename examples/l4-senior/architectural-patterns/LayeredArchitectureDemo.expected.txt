@@ -1,0 +1,2 @@
+layered:  [MILK-1L Rs 68]
+shortcut: [MILK-1L, PANEER-200G]

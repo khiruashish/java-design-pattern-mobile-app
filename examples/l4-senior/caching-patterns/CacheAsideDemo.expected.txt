@@ -1,0 +1,3 @@
+5 reads of MILK-1L -> 1 database read
+after update: Rs 70, database reads 2
+CURD-500G not cached until asked: false

@@ -1,0 +1,2 @@
+dairyday-csv -> PriceUpdate[sku=MILK-1L, pricePaise=6850, effectiveDate=2026-11-02]
+greenvalley-kv -> PriceUpdate[sku=GV-TOMATO-1KG, pricePaise=3200, effectiveDate=2026-11-02]

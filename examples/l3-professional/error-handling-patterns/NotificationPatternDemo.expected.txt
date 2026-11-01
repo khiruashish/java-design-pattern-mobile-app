@@ -1,0 +1,3 @@
+throwing: name is required
+notification: 400 [FieldError[field=name, message=is required], FieldError[field=phone, message=must have 10 digits], FieldError[field=pin, message=must have 6 digits], FieldError[field=line1, message=is too short]]
+valid: 201 saved

@@ -1,0 +1,2 @@
+ReorderResult[added=[MILK-1L, BREAD], unavailable=[PANEER-200]]
+basket: {asha=[MILK-1L, BREAD]}

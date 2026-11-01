@@ -1,0 +1,4 @@
+rule order: [base, free>=499, rain]
+fee for Rs 300 cart: 3500, for Rs 650 cart: 1000
+UPI collect request for Rs 649 | card charge Rs 649
+unsupported payment mode 'cod', supported [upi, card]

@@ -1,0 +1,2 @@
+slots: [SlotDto[label=12:00-13:00, feeCents=2900], SlotDto[label=18:00-19:00, feeCents=3900]]
+FC-2201 booked 12:00-13:00 with rider-29

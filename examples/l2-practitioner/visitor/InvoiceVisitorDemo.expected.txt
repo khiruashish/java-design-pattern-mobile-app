@@ -1,0 +1,6 @@
+kind,name,net_paise,gst_paise
+loose,Tomatoes,3000,0
+packaged,Atta 5kg x1,25000,1250
+subscription,FreshPass monthly,9900,1782
+giftcard,card GC88****,50000,0
+total Rs 909.32 incl. GST Rs 30.32

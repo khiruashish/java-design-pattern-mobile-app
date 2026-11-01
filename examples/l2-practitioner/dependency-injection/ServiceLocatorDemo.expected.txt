@@ -1,0 +1,4 @@
+locator, nothing registered: no service registered for Payments (found at runtime)
+locator: live charge 100
+locator after a test ran: test charge 100  <- leaked into other code
+DI: test charge 100 (no global state)

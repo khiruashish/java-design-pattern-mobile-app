@@ -1,0 +1,6 @@
+FC-3001: out for delivery
+R-42 at 12.97,77.59
+caller sees the real exception: FC-3001 already dispatched
+log: [OrderApi.status(FC-3001), RiderApi.locate(R-42), OrderApi.cancel(FC-3001)]
+proxy class: $ProxyN, is proxy: true
+classes can't be proxied: java.util.ArrayList is not an interface

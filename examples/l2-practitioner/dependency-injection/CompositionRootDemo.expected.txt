@@ -1,0 +1,3 @@
+  notify: FC-2801 placed at 2026-11-02T09:00:00Z
+  notify: FC-2802 placed at 2026-11-02T09:00:00Z
+report: 2 orders (both services share one repository)

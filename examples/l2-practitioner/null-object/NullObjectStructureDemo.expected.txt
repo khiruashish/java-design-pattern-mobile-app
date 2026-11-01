@@ -1,0 +1,5 @@
+before, 10% off: 9810
+before, no discount: 10900
+before, receipt: NullPointerException
+after, 10% off: 9810, label 10% off
+after, no discount: 10900, label none

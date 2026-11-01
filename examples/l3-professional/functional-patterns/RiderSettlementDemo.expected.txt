@@ -1,0 +1,8 @@
+R1: deliveries=2, payout Rs 82.50
+R2: deliveries=1, payout Rs 81.00
+R3: deliveries=2, payout Rs 171.90
+total Rs 335.40
+skipped line 5 (km is not a number): R2,OUTER,abc,on_time
+skipped line 6 (expected 4 fields): R1,CENTRAL,2.5
+skipped line 8 (km out of range): R2,OUTER,80,on_time
+rate lookups: 2, two parallel runs identical: true

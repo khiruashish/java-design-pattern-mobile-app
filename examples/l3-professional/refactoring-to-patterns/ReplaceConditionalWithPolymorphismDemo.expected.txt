@@ -1,0 +1,4 @@
+PLACED     We've got your order                 cancel=true  same=true
+PACKED     Packed and waiting for a rider       cancel=true  same=true
+OUT        Bina is on the way, 9 min            cancel=false same=true
+DELIVERED  Delivered. Enjoy!                    cancel=false same=true

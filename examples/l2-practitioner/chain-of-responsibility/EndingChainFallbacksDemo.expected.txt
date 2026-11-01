@@ -1,0 +1,5 @@
+MILK-1L = Rs 68 (from cache)
+BREAD-WHITE = Rs 45 (from database)
+MANGO-1KG = Rs 180 (from GreenValley supplier)
+  database failed: db timeout, trying next
+RICE-5KG = price unavailable, item hidden from the app

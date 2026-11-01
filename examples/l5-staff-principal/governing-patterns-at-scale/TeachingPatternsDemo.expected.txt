@@ -1,0 +1,7 @@
+resilience: Bilal pairs with Asha, kata: resilience-patterns practice 1
+resilience: Dev pairs with Asha, kata: resilience-patterns practice 1
+messaging: NO MENTOR for [Asha, Bilal, Chen, Dev], bring in a guild expert or an external course
+caching: Dev pairs with Chen, kata: caching-patterns practice 1
+testing: Chen pairs with Bilal, kata: testing-patterns practice 3
+testing: Dev pairs with Bilal, kata: testing-patterns practice 3
+mentor load: {Asha=2, Bilal=2, Chen=1}

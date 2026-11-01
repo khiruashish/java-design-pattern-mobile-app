@@ -1,0 +1,6 @@
+unmodifiable view sees later change: [MILK, BREAD, EGGS]
+List.copyOf does not:              [MILK, BREAD]
+v1 = [MILK, BREAD] size 2
+v2 = [EGGS, MILK, BREAD] size 3
+v2 shares v1's nodes: true
+mapped v2: [eggs, milk, bread], v2 unchanged: [EGGS, MILK, BREAD]

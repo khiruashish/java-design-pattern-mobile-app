@@ -1,0 +1,4 @@
+threads: 64
+distinct instances seen: 1
+constructor calls: 1
+endpoint: https://pg.example/v1

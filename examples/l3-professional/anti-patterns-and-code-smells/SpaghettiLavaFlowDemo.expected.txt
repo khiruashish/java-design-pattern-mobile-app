@@ -1,0 +1,2 @@
+combinations checked: 40, identical results: 40
+non-member, 300 rupees, night, 8 km: fee 4000

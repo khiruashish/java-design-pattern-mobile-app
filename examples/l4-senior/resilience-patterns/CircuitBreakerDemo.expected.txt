@@ -1,0 +1,11 @@
+t=0 paid [CLOSED]
+t=1000 failed: PayLink 503 [CLOSED]
+t=2000 failed: PayLink 503 [CLOSED]
+t=3000 failed: PayLink 503 [OPEN]
+t=4000 rejected fast (OPEN)
+t=5000 rejected fast (OPEN)
+t=6000 rejected fast (OPEN)
+t=40000 failed: PayLink 503 [OPEN]
+t=75000 paid [HALF_OPEN]
+t=76000 paid [CLOSED]
+remote calls made: 7 of 10 requests

@@ -1,0 +1,3 @@
+ordering uses the exported API: compiles
+ordering reaches into internals: compile error
+  error: package com.freshcart.pricing.internal is not visible

@@ -1,0 +1,3 @@
+37800 -> 35700
+tax then discount: 35721
+categories [dairy, bakery], backend calls: [loadCategories call #1]

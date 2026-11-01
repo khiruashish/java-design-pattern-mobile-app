@@ -1,0 +1,6 @@
+$12.99 $2.50 $0.00
+small amounts cached: true
+large amounts not cached: false
+rejected: too many decimals: $1.999
+rejected: money cannot be negative: -500
+JDK examples: true, [1, 2], 2026-11-02

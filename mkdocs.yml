@@ -1,0 +1,208 @@
+site_name: Java Design Patterns Playbook
+site_description: Java design patterns (Java 21) from Day 0 to expert, with runnable examples, trade-offs and best practices.
+site_url: https://khiruashish.github.io/java-design-pattern-mobile-app/
+repo_url: https://github.com/khiruashish/java-design-pattern-mobile-app
+repo_name: java-design-patterns-playbook
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 Java Design Patterns Playbook
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/khiruashish/java-design-pattern-mobile-app
+
+extra_css:
+  - stylesheets/extra.css
+
+watch:
+  - includes
+
+nav:
+  - Home: index.md
+  - How to use: how-to-use.md
+  - Roadmap: roadmap.md
+  - "L0 Orientation":
+      - l0-orientation/index.md
+      - "What Are Design Patterns": l0-orientation/what-are-design-patterns.md
+      - "Why Patterns Matter (and When They Don't)": l0-orientation/why-patterns-matter.md
+      - "Setting Up Java to Run the Examples": l0-orientation/java-setup.md
+      - "Reading UML for Patterns": l0-orientation/reading-uml.md
+  - "L1 Foundations":
+      - l1-foundations/index.md
+      - "OOP Refresher for Patterns": l1-foundations/oop-refresher.md
+      - "SOLID Principles": l1-foundations/solid-principles.md
+      - "DRY, KISS, YAGNI and Friends": l1-foundations/other-design-principles.md
+      - "Singleton": l1-foundations/singleton.md
+      - "Factory Method": l1-foundations/factory-method.md
+      - "Builder": l1-foundations/builder.md
+      - "Strategy": l1-foundations/strategy.md
+      - "Observer": l1-foundations/observer.md
+      - "Template Method": l1-foundations/template-method.md
+      - "Adapter": l1-foundations/adapter.md
+      - "Decorator": l1-foundations/decorator.md
+      - "Facade": l1-foundations/facade.md
+  - "L2 Practitioner":
+      - l2-practitioner/index.md
+      - "Abstract Factory": l2-practitioner/abstract-factory.md
+      - "Prototype": l2-practitioner/prototype.md
+      - "Object Pool": l2-practitioner/object-pool.md
+      - "Dependency Injection": l2-practitioner/dependency-injection.md
+      - "Composite": l2-practitioner/composite.md
+      - "Proxy": l2-practitioner/proxy.md
+      - "Bridge": l2-practitioner/bridge.md
+      - "Flyweight": l2-practitioner/flyweight.md
+      - "Command": l2-practitioner/command.md
+      - "Iterator": l2-practitioner/iterator.md
+      - "State": l2-practitioner/state.md
+      - "Chain of Responsibility": l2-practitioner/chain-of-responsibility.md
+      - "Mediator": l2-practitioner/mediator.md
+      - "Memento": l2-practitioner/memento.md
+      - "Visitor": l2-practitioner/visitor.md
+      - "Interpreter": l2-practitioner/interpreter.md
+      - "Null Object": l2-practitioner/null-object.md
+      - "Specification": l2-practitioner/specification.md
+      - "Testing Patterns": l2-practitioner/testing-patterns.md
+  - "L3 Professional":
+      - l3-professional/index.md
+      - "Patterns in Modern Java (17–21)": l3-professional/patterns-in-modern-java.md
+      - "Functional Patterns in Java": l3-professional/functional-patterns.md
+      - "Patterns in the JDK": l3-professional/patterns-in-the-jdk.md
+      - "Patterns in Spring": l3-professional/patterns-in-spring.md
+      - "Concurrency Patterns": l3-professional/concurrency-patterns.md
+      - "Enterprise Application Patterns": l3-professional/enterprise-application-patterns.md
+      - "UI and Mobile Patterns": l3-professional/ui-and-mobile-patterns.md
+      - "Error Handling Patterns": l3-professional/error-handling-patterns.md
+      - "Anti-Patterns and Code Smells": l3-professional/anti-patterns-and-code-smells.md
+      - "Refactoring to Patterns": l3-professional/refactoring-to-patterns.md
+      - "Performance Cost of Patterns": l3-professional/performance-of-patterns.md
+  - "L4 Senior / Lead":
+      - l4-senior/index.md
+      - "Architectural Patterns": l4-senior/architectural-patterns.md
+      - "Domain-Driven Design: Tactical Patterns": l4-senior/ddd-tactical.md
+      - "Domain-Driven Design: Strategic Patterns": l4-senior/ddd-strategic.md
+      - "Microservice Patterns": l4-senior/microservice-patterns.md
+      - "Resilience Patterns": l4-senior/resilience-patterns.md
+      - "Distributed Data Patterns": l4-senior/distributed-data-patterns.md
+      - "Messaging and Integration Patterns": l4-senior/messaging-patterns.md
+      - "Caching Patterns": l4-senior/caching-patterns.md
+      - "API Design Patterns": l4-senior/api-design-patterns.md
+  - "L5 Staff / Principal":
+      - l5-staff-principal/index.md
+      - "Choosing Patterns and Trade-offs": l5-staff-principal/pattern-selection.md
+      - "Evolutionary Architecture": l5-staff-principal/evolutionary-architecture.md
+      - "Legacy Modernisation Patterns": l5-staff-principal/legacy-modernisation.md
+      - "JVM Internals Behind Patterns": l5-staff-principal/jvm-internals-behind-patterns.md
+      - "Designing Frameworks and Libraries": l5-staff-principal/framework-and-library-design.md
+      - "Governing Patterns Across an Organisation": l5-staff-principal/governing-patterns-at-scale.md
+  - Reference:
+      - "Cheat Sheet": reference/cheatsheet.md
+      - "Build & Tooling Configuration": reference/configuration.md
+      - "Pattern Comparisons": reference/comparisons.md
+      - "Decision Guide": reference/decision-guide.md
+      - "Anti-Pattern Catalogue": reference/anti-patterns.md
+      - "Production Checklist": reference/production-checklist.md
+      - "Migration Guide": reference/migration-guide.md
+      - "Java Version History for Patterns": reference/version-history.md
+  - Projects:
+      - projects/index.md
+      - "Capstone: FreshCart": projects/capstone.md
+  - Interview:
+      - interview/index.md
+      - "Questions by Level": interview/questions-by-level.md
+      - "Scenario Questions": interview/scenario-questions.md
+      - "Hands-on Tasks": interview/hands-on-tasks.md
+  - Glossary: glossary.md
+  - Further reading: further-reading.md
+  - Tags: tags.md

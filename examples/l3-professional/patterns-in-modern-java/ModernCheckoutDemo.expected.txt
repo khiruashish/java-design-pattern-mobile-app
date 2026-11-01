@@ -1,0 +1,9 @@
+PaymentRequest{orderId=FC-1, mode=UPI, paise=64900, instrument=***, skus=[MILK]}
+  -> Captured{paymentId=upi_FC-1, paise=64900} -> HttpResponse[status=201, body={"paymentId":"upi_FC-1","amount":64900}]
+PaymentRequest{orderId=FC-2, mode=CARD, paise=250000, instrument=***, skus=[TV-STAND]}
+  -> NeedsOtp{challengeId=ch_FC-2, otpHint=***} -> HttpResponse[status=202, body={"challenge":"ch_FC-2"}]
+PaymentRequest{orderId=FC-3, mode=WALLET, paise=12000, instrument=***, skus=[BREAD]}
+  -> Declined{code=INSUFFICIENT_BALANCE, retryable=true} -> HttpResponse[status=409, body={"error":"INSUFFICIENT_BALANCE","retry":true}]
+PaymentRequest{orderId=FC-4, mode=UPI, paise=9000, instrument=***, skus=[EGGS]}
+  -> Declined{code=VPA_INVALID, retryable=false} -> HttpResponse[status=402, body={"error":"VPA_INVALID"}]
+rejected at construction: amount must be positive

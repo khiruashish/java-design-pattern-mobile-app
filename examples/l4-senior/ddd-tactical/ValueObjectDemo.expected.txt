@@ -1,0 +1,6 @@
+line: Rs 204.00, after 10% off: Rs 183.60, original unchanged: Rs 204.00
+equal by value: true
+07-09 overlaps 08-10: true
+rejected: quantity 1..50, got 0
+rejected: windows are 2 hours between 06 and 23
+rejected: only INR supported

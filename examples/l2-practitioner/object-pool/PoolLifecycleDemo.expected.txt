@@ -1,0 +1,3 @@
+third borrow: pool exhausted after 50ms
+reused the returned scanner: true, state reset: true
+broken scanner skipped, got healthy one: true, total created: 2

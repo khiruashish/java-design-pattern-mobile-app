@@ -1,0 +1,16 @@
+Diwali hamper (10% off, max 150)
+  Sweets box (5% off, max 40)
+    Kaju katli 500g             450.00
+    Soan papdi 250g             120.00
+  = Sweets box                  541.50
+  Dry fruits
+    Almonds 200g                280.00
+    Cashews 200g                310.00
+  = Dry fruits                  590.00
+  Diya set                      199.00
+= Diwali hamper                1197.45
+payable: Rs 1197.45, available: true
+Tea time available: false
+rejected: SKU S1 appears twice
+rejected: bundle 'Empty' is empty
+rejected: bundles nested deeper than 4 at 'L5'

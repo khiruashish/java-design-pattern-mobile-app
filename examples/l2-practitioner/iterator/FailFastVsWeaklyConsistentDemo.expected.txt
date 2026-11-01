@@ -1,0 +1,5 @@
+fail-fast: ConcurrentModificationException
+iterator.remove(): [MILK, BREAD]
+removeIf:          [MILK, BREAD]
+weakly consistent: no exception, original keys kept: true (new keys may or may not be seen by the loop)
+snapshot (CopyOnWrite): loop saw 2 items, list now [sms, push, sms-backup, push-backup]

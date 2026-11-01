@@ -1,0 +1,8 @@
+checkout: order FC-1 saved
+  loyalty listener: +6 points for FC-1
+  sms listener: thanks for your big order FC-1
+checkout: publishEvent returned
+checkout: order FC-2 saved
+  loyalty listener: +1 points for FC-2
+checkout: publishEvent returned
+listeners ran 3 times, synchronously, inside publishEvent

@@ -1,0 +1,3 @@
+8 OTPs at t=0:      [send, send, send, send, send, wait, wait, wait]
+one every 250 ms:   [t=500:send, t=750:wait, t=1000:send, t=1250:wait, t=1500:send, t=1750:wait, t=2000:send]
+after 10 s idle:    burst of 5 allowed

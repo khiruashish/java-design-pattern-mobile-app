@@ -1,0 +1,2 @@
+one shared pool of 40:      rejected {offers=60, payments=65}
+bulkheads offers 20, payments 20: rejected {offers=80, payments=0}

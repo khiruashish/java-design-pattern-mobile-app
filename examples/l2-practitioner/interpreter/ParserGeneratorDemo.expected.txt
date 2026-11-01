@@ -1,0 +1,4 @@
+rule: gold AND (fruit OR dairy), customer: [silver, dairy]
+naive split:      true   <- wrong: parentheses ignored
+recursive descent: false
+grammar growing (functions, dates, lists, error recovery)? use a parser generator such as ANTLR

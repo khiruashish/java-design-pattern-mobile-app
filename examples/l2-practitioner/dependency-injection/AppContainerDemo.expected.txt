@@ -1,0 +1,9 @@
+request #1: LIVE 49950
+request #2: LIVE 12000
+one CheckoutService for all requests: true
+[created DbPool, created OrderRepository, created Payments, created CheckoutService, closed Payments, closed DbPool]
+test override: request #5: FAKE 100
+container invalid:
+  - CheckoutService needs Payments but nothing provides it
+  - cycle: CheckoutService -> OrderRepository -> CheckoutService
+  - cycle: OrderRepository -> CheckoutService -> OrderRepository

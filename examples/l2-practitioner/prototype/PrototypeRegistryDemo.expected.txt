@@ -1,0 +1,4 @@
+[pune] Monsoon essentials (teal) [UMBRELLA, TEA, PAKORA-MIX]
+[mumbai] Monsoon essentials (teal) [UMBRELLA, TEA, PAKORA-MIX, RAINCOAT]
+template untouched: [ALL] Monsoon essentials (teal) [UMBRELLA, TEA, PAKORA-MIX]
+rejected: no banner template 'diwali', have [monsoon, weekend]

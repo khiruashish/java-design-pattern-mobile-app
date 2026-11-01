@@ -1,0 +1,4 @@
+loyalty: drift 83%, gaps [contract-tests, feature-flags, structured-logging, timeouts-and-retries (old version), transactional-outbox]
+catalogue: drift 50%, gaps [contract-tests, structured-logging (old version), transactional-outbox]
+checkout: drift 0%
+help first: loyalty

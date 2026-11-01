@@ -1,0 +1,2 @@
+before: [98xxxx0001: order placed, Rs 138] | revenue Rs 138, milk left 9
+after:  [98xxxx0001: order placed, Rs 138] | revenue Rs 138, milk left 9

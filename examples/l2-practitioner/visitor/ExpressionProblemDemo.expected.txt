@@ -1,0 +1,3 @@
+OO style:      add an operation -> edit 2 classes; add a type -> write 1 class
+Visitor style: add an operation -> write 1 visitor; add a type -> edit every visitor (2 methods each) and the interface
+today: 2 types x 3 operations; pick the axis you expect to grow

@@ -1,0 +1,7 @@
+before: 1 mediator, 9 colleagues, 9 events
+after:  CheckoutMediator -> 3 colleagues, 3 events
+after:  DispatchMediator -> 3 colleagues, 3 events
+after:  AfterSalesMediator -> 3 colleagues, 2 events
+after:  MerchandisingMediator -> 3 colleagues, 1 event
+a change to 'refunds' touches [AfterSalesMediator] (before: StoreMediator, which every team edits)
+a change to 'inventory' touches [DispatchMediator, AfterSalesMediator, MerchandisingMediator] (before: StoreMediator, which every team edits)

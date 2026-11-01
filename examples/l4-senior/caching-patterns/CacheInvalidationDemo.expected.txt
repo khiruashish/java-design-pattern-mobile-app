@@ -1,0 +1,3 @@
+delete-on-write, no TTL: cache=68 db=70 (stale until next write)
+with 300 s TTL at t=301: expired, reload 70
+versioned keys: stale entry parked under MILK-1L:v7; readers look up MILK-1L:v8 -> miss, load 72

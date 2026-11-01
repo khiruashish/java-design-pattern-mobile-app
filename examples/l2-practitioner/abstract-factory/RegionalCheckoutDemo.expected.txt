@@ -1,0 +1,3 @@
+IN: net 27000 tax 3750 to Flat 4B, Lake View, Pune - 411001, delivery in 20 minutes
+AE: net 27000 tax 1350 to Villa 12, Al Barsha, Dubai, UAE, delivery within 2 hours
+IN: invalid postcode '41100'

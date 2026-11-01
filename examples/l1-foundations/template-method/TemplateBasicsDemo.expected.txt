@@ -1,0 +1,3 @@
+dark store:    [picker scans 3 items by aisle, FreshCart bags x1, label FC-1501 via in-house rider]
+partner store: [send pick list to partner tablet, partner packs in their own bags, label FC-1502 via QuickDrop]
+rejected: nothing to fulfil

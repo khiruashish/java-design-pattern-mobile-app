@@ -1,0 +1,5 @@
+processed m1 after 1 attempt(s)
+processed m3 after 1 attempt(s)
+dead-lettered m2: negative quantity
+DLQ: m2 attempts=3 reason=negative quantity
+after fix and redrive: [processed m2 after 1 attempt(s)], DLQ size 0

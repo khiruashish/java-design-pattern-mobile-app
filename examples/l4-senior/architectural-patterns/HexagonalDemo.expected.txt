@@ -1,0 +1,4 @@
+201 FC-1
+placed FC-2
+[SMS asha: Order FC-1 confirmed, SMS ravi: Order FC-2 confirmed]
+with fakes: DECLINED, payment calls [meera:9900], notifications []

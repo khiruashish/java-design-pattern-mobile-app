@@ -1,0 +1,4 @@
+reorder: {MILK-1L=2, BREAD=1, EGGS-6=1}
+undo whole macro: {}
+Party pack failed and was rolled back: COLA-2L has only 3 left
+cart after failed macro: {}

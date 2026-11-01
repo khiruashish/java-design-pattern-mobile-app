@@ -1,0 +1,7 @@
+check, clean build: []
+check, sneaky build: [delivery uses internal type dairyday.subscriptions.internal.SubscriptionRow, delivery -> billing is not a declared dependency]
+check, cyclic modules: [cycle: billing -> subscriptions -> billing]
+started asha
+failed ravi: database write failed
+failed meera: 1..5 litres per day
+billing: {asha=408000}, delivery route: [asha]

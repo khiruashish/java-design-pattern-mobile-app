@@ -1,0 +1,3 @@
+memdb: [memdb row for 'SELECT * FROM stock']
+csv:   [MILK,40, BREAD,12]
+No suitable driver found for jdbc:otherdb://reports-db

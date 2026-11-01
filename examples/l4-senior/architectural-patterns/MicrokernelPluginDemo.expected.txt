@@ -1,0 +1,5 @@
+methods in IN: [upi, card, cod], in SG: [card]
+UPI collect request for FC-1
+payment method unavailable, choose another
+COD limit is Rs 2000
+kernel log: [loaded upi, loaded card, loaded cod, refused wallet-v2: api v2, card failed: gateway timeout]

@@ -1,0 +1,7 @@
+parsed as: ((category == "fruit" and cart_total >= 499) or tier == "gold")
+{cart_total=650, category=fruit, tier=silver} -> true
+{cart_total=300, category=fruit, tier=silver} -> false
+{cart_total=120, category=dairy, tier=gold} -> true
+rejected 'cart_total >= ': expected value at end of rule
+rejected 'tier = "gold"': unknown operator '=' at position 5
+rejected 'cart_total >= 499 and': expected field at end of rule

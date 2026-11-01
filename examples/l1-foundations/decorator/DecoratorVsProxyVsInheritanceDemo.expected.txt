@@ -1,0 +1,4 @@
+inheritance needs a class per combination: [CachedDbCatalog, LoggedDbCatalog, CachedLoggedDbCatalog]
+decorator: OIL-1L=18900, log [price(OIL-1L)]
+proxy (staff): OIL-1L=18900
+proxy (guest): guest may not call price

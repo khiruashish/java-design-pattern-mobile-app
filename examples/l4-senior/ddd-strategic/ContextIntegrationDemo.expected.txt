@@ -1,0 +1,7 @@
+v1 -> billing BillingAccount[customerId=C-9, monthlyPaise=204000], delivery RouteStop[subscriptionId=SUB-1, slot=06:00-07:00]
+v2 -> billing BillingAccount[customerId=C-17, monthlyPaise=390000], delivery RouteStop[subscriptionId=SUB-2, slot=07:00-08:00]
+v2 schema vs contracts: []
+proposed v3 (renames price) vs contracts: [billing needs 'pricePerLitrePaise']
+PayLink active -> ACTIVE
+PayLink PENDING_BANK_APPROVAL -> PENDING
+PayLink EXPIRED_BY_NPCI -> REJECTED

@@ -1,0 +1,6 @@
+  allowed-dependencies: catalog -> pricing
+  allowed-dependencies: inventory -> ordering
+  internal-access: catalog/ProductPage.java imports pricing.internal
+  no-cycles: inventory -> ordering -> inventory
+main branch: PASS: 4 known violation(s) remain
+pull request: FAIL: 1 new violation(s) [allowed-dependencies: pricing -> catalog], 2 fixed (remove them from the baseline)

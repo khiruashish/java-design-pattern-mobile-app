@@ -1,0 +1,5 @@
+before: printed [BANANA]
+before: runtime surprise -> printer cannot weigh
+after:  zebra-1 printed [BANANA 1250 g $1.61]
+after:  scanned 8901234567890
+rejected: scale returned 0 g, re-zero the scale

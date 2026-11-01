@@ -1,0 +1,8 @@
+before: SMTP store@freshcart.example: MILK-1L low: 4
+slack#store-ops <- EGGS-12 low: 7 left
+slack#store-ops <- MILK-1L low: 4 left
+alerts sent: 2
+  attempt 1 failed: timeout
+  attempt 2 failed: timeout
+flaky <- MILK-1L low: 4 left
+test double captured: [EGGS-12 low: 7 left, MILK-1L low: 4 left]

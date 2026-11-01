@@ -1,0 +1,12 @@
+index:
+  ADR-0007 Delivery fees as an enum switch [Superseded]
+  ADR-0009 Transactional outbox for order events [Accepted]
+  ADR-0012 Delivery fees as Strategy beans [Accepted]
+  ADR-0013 Caffeine as L1 cache [Proposed]
+  ADR-0014 TextBlast as SMS provider [Superseded]
+5 problems:
+  0013-cache-provider.md: missing section 'Consequences'
+  ADR-0009: review was due 2026-06-30
+  ADR-0014: superseded by missing ADR-0015
+  DeliveryFeeCalculator.java: cites superseded ADR-0007; see ADR-0012
+  OtpSender.java: cites unknown ADR-0021

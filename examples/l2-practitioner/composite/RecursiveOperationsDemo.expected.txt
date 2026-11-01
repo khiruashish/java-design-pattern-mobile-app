@@ -1,0 +1,9 @@
+All (7)
+  Fruits (4)
+    Citrus (2)
+  Dairy (3)
+    Cheese (2)
+path to Lemon: All > Fruits > Citrus
+path to Bread: not found
+recursive walk on 200,000 levels: StackOverflowError
+iterative walk on 200,000 levels: depth 200000

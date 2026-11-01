@@ -1,0 +1,9 @@
+all findings:
+  MAJOR OrderManager.java LongParameterList: place has 6 parameters
+  CRITICAL OrderManager.java GodClass: 6 fields, 2 methods
+  CRITICAL OrderManager.java EmptyCatch: line 14
+  INFO OrderManager.java Singletonitis: uses 3 singletons [Config, Clock, Metrics]
+  CRITICAL SlotService.java EmptyCatch: line 4
+baselined: 4, fixed since baseline: [Invoice.java:LongMethod:render is 140 lines]
+new findings: [SlotService.java EmptyCatch]
+build FAILS

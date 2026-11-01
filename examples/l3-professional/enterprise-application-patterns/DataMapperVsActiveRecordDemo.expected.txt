@@ -1,0 +1,5 @@
+domain object: Product[sku=GHEE-1L, name=Ghee 1L, price=Rs 585.00]
+  UPSERT product {name=Curd 400g, price_paise=4500, sku=CURD-400G}
+  UPSERT product {name=Curd 400g, price_paise=-100, sku=CURD-400G}
+  UPSERT catalog_item {item_code=GHEE-1L, mrp_paise=65000, title=Ghee 1L}
+  UPSERT catalog_item {item_code=GHEE-1L, mrp_paise=58500, title=Ghee 1L}

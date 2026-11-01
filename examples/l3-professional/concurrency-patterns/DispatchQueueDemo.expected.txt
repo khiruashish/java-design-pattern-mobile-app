@@ -1,0 +1,2 @@
+60 orders offered: accepted + rejected = 60, some turned away while the queue was full: true
+every accepted order was packed before shutdown: true

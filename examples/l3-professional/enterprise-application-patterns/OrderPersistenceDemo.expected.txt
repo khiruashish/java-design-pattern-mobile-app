@@ -1,0 +1,13 @@
+Done[shipment=ShipmentView[id=PG-1, status=BOOKED, rider=-]]
+Done[shipment=ShipmentView[id=PG-1, status=ASSIGNED, rider=rider-arjun]]
+desk B: PG-1 changed by someone else (had v1, now v2)
+same object: true, selects: 1
+statements for a read-only unit: 0
+Done[shipment=ShipmentView[id=PG-1, status=PICKED_UP, rider=rider-bina]]
+Invalid[message=PG-1 is PICKED_UP]
+Invalid[message=no shipment PG-9]
+SQL log:
+  INSERT Row[id=PG-1, status=BOOKED, rider=null, version=0]
+  UPDATE PG-1 SET status=ASSIGNED, rider=rider-arjun, version=1 WHERE version=0
+  UPDATE PG-1 SET status=ASSIGNED, rider=rider-bina, version=2 WHERE version=1
+  UPDATE PG-1 SET status=PICKED_UP, rider=rider-bina, version=3 WHERE version=2

@@ -1,0 +1,5 @@
+before, gift card: card fee 2%   <- silently treated as a card
+Upi fee: 0
+Card fee: 1298
+CashOnDelivery fee: 2000
+permitted: [Upi, Card, CashOnDelivery]

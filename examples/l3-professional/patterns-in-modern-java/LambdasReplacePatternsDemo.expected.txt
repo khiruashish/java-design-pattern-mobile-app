@@ -1,0 +1,9 @@
+cheapest: S-18, earliest: S-08, most riders: S-18
+job: release unpaid slot holds
+job: send slot reminders
+--- slots ---
+S-08,8,2500
+S-18,18,1500
+S-20,20,1500
+--- 3 rows ---
+revenue if full: 14000

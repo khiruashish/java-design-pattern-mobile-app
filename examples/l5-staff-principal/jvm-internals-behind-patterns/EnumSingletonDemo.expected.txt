@@ -1,0 +1,2 @@
+classic: second instance created = true
+enum: Cannot reflectively create enum objects

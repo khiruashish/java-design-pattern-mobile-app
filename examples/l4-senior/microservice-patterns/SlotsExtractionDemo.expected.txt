@@ -1,0 +1,5 @@
+v1: stay on monolith (2/6 mismatches)
+  560102 monolith=07:00-09:00 new=18:00-20:00
+  560110 monolith=07:00-09:00 new=18:00-20:00
+v2: cut over (0/6 mismatches)
+560102 now served by the new service: 07:00-09:00

@@ -1,0 +1,3 @@
+200 saved
+400 invalid PIN 12
+200 560034 / 200 none

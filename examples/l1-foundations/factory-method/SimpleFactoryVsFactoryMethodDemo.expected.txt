@@ -1,0 +1,4 @@
+simple factory: QuickDrop courier for FC-1
+simple factory: rejected: no courier configured for goa
+factory method: [DarkStoreDispatcher] in-house rider for FC-2
+factory method: [MarketplaceDispatcher] ParcelGo courier for FC-3

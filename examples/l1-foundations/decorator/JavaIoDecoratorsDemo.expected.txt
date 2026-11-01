@@ -1,0 +1,2 @@
+raw 2208 bytes, gzipped 55 bytes
+read back 201 lines; compressed bytes read: 55

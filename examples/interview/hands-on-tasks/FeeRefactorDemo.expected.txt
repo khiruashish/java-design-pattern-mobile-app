@@ -1,0 +1,3 @@
+characterisation: 36 cases, 0 mismatches
+REGULAR in Pune, Rs 550 basket: rule FreeAbove[thresholdPaise=60000, feePaise=3900], fee 3900 paise
+CORPORATE anywhere: Flat[feePaise=1500]

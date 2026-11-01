@@ -1,0 +1,8 @@
+FC-2001 -> approved plk_501
+FC-2002 -> declined: INSUFFICIENT_FUNDS
+FC-2003 -> declined: CARD_EXPIRED
+FC-2004 -> failed: PayLink E91, retry later
+FC-2005 -> failed: PayLink E77 (unmapped), do not retry
+retry of FC-2001 with same key -> Approved[paymentId=plk_501] (no double charge)
+unmapped vendor codes to investigate: {E77=1}
+rejected: amount must be positive

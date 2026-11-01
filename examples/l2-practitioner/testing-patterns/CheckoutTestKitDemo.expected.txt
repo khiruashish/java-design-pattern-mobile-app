@@ -1,0 +1,4 @@
+PASS small silver cart pays delivery
+PASS gold customers get free delivery
+PASS out of stock charges nothing
+PASS event carries the clock time

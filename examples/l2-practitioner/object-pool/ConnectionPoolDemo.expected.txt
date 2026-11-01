@@ -1,0 +1,6 @@
+third request: Connection is not available, request timed out after 100ms
+conn1: SELECT total FROM orders WHERE id='FC-1'
+conn2: SELECT total FROM orders WHERE id='FC-2'
+conn1: SELECT total FROM orders WHERE id='FC-3'
+conn2: SELECT total FROM orders WHERE id='FC-4'
+idle connections at the end: 2

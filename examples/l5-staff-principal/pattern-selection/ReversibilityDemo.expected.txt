@@ -1,0 +1,6 @@
+PayLink calls spread through the code: 6 files to change to switch provider
+behind a PaymentGateway port: 1 adapter file to change
+Caffeine vs Guava cache inside pricing -> cost 2: two-way door: decide fast, revisit later
+Event schema published to 4 teams -> cost 600: one-way door: slow down, write an ADR, prototype
+PayLink SDK called directly everywhere -> cost 120: one-way door: slow down, write an ADR, prototype
+Payment provider behind a port -> cost 5: two-way door: decide fast, revisit later

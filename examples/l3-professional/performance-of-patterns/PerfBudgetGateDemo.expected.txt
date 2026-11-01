@@ -1,0 +1,3 @@
+budgets: decorator <= 3.0x flat, stringly <= 3.0x flat
+decorator: PASS
+stringly: FAIL

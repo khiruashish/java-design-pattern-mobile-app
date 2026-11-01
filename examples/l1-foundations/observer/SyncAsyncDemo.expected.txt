@@ -1,0 +1,6 @@
+  sync naive took >=300ms: true
+sync naive -> checkout FAILED because an observer threw: loyalty service down
+sync isolated -> placed
+  async returned in <100ms: true
+async -> placed
+errors recorded: [FC-902: loyalty service down, FC-903: loyalty service down]

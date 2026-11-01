@@ -1,0 +1,20 @@
+FC-1 RESERVE_STOCK done
+ignored RESERVE_STOCK reply for FC-1 (saga RUNNING, awaiting CHARGE_PAYMENT)
+-- node1 crashes; node2 takes over from the store
+FC-1 CHARGE_PAYMENT done
+FC-1 COMPLETED
+FC-2 RESERVE_STOCK done
+FC-2 CHARGE_PAYMENT done
+FC-2 CANCELLED: BOOK_RIDER timed out
+late BOOK_RIDER success for cancelled FC-2, compensating
+outbox commands:
+  RESERVE_STOCK FC-1
+  CHARGE_PAYMENT FC-1
+  BOOK_RIDER FC-1
+  RESERVE_STOCK FC-2
+  CHARGE_PAYMENT FC-2
+  BOOK_RIDER FC-2
+  RefundPayment FC-2
+  ReleaseStock FC-2
+  CancelRider FC-2
+saga rows: [FC-1=COMPLETED[RESERVE_STOCK, CHARGE_PAYMENT, BOOK_RIDER], FC-2=CANCELLED[RESERVE_STOCK, CHARGE_PAYMENT]]

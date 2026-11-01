@@ -1,0 +1,5 @@
+PickList[id=PL-1, items=[MILK, BREAD]]
+PickList[id=PL-2, items=[EGGS, RICE]]
+PickList[id=PL-3, items=[OIL]]
+production ids look like PL-<uuid>: true
+constructor reference gives a new object each time: true

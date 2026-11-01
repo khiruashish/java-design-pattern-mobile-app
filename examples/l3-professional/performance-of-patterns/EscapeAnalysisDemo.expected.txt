@@ -1,0 +1,2 @@
+same totals: true, stored 5000000 objects
+temporaries allocate least: true

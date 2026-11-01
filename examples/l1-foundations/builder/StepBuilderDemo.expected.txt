@@ -1,0 +1,3 @@
+Shipment[orderId=FC-720, fromStore=pune-01, toPincode=411001, courier=in-house, fragile=true]
+Shipment[orderId=FC-721, fromStore=pune-02, toPincode=411045, courier=QuickDrop, fragile=false]
+rejected: pincode must be 6 digits: 41100

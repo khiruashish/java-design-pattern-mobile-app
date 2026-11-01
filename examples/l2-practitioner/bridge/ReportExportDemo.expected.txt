@@ -1,0 +1,7 @@
+store,rupees
+"Indiranagar, 2nd stage",1210500
+Koramangala,1845000
+{"report":"daily-sales","rows":[{"store":"Indiranagar, 2nd stage","rupees":1210500},{"store":"Koramangala","rupees":1845000}]}
+sku,units
+EGGS-6,2
+MILK-1L,4

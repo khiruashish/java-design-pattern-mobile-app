@@ -1,0 +1,3 @@
+price watcher: 6800 -> 6400
+stock watcher: sold out
+flow subscriber received in order: [PL-1, PL-2, PL-3, PL-4, PL-5]

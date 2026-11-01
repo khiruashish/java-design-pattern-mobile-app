@@ -1,0 +1,3 @@
+delivered 2 events
+search index (read back current state): {GHEE-1L=64000}, callbacks: 1
+cart copy (state carried in event):     {GHEE-1L=62000}, callbacks: 0

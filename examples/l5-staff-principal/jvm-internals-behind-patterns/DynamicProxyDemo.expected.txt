@@ -1,0 +1,3 @@
+price: 6800
+log: [before price(MILK-1L), after price -> 6800]
+proxy class is generated: true, implements PricingService: true, is a RealPricing: false

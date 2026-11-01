@@ -1,0 +1,4 @@
+Assignment[order=FC-9201, who=R-42, why=idle rider within 3 km]
+Assignment[order=FC-9202, who=ROUTE-7, why=added to a route ending nearby]
+Assignment[order=FC-9203, who=ParcelGo, why=partner fleet (costs more)]
+Assignment[order=FC-9204, who=queue, why=no option now; retry in 2 minutes]

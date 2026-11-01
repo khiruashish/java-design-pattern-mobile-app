@@ -1,0 +1,6 @@
+registry: 40 items in 4 crates
+registry: unknown packing 'drone', known [bag, cold, crates]
+by order: 8 items in 1 bag
+by order: 8 items in insulated box with ice packs
+by order: 45 items in 4 crates
+test: 45 items in 1 bag

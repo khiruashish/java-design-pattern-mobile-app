@@ -1,0 +1,3 @@
+factory method:   bread in paper bag
+abstract factory: bread in paper bag, eggs in recycled carton
+abstract factory: bread in jute bag, eggs in branded gift box

@@ -1,0 +1,3 @@
+without timeout, done after 300 ms? false
+with 200 ms timeout: [stock unknown (timed out), stock unknown (timed out)]
+pool after timeouts: active=2 queued=1 (orTimeout frees the caller, not the thread)

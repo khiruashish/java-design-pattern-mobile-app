@@ -1,0 +1,6 @@
+placed FC-9701; FC-9701 is being packed
+validation behaviour: empty order
+log: [start PlaceOrder, sms to asha, reserve stock for FC-9701, end PlaceOrder, start GetOrderStatus, end GetOrderStatus, start PlaceOrder, failed PlaceOrder]
+notification failures: [OrderPlaced: loyalty service down]
+startup: no handler for [PlaceOrder]
+startup: two handlers for GetOrderStatus

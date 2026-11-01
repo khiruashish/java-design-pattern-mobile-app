@@ -1,0 +1,6 @@
+by entity:     9 services, 9 cross-service hops across 4 use cases
+by capability: 4 services, 5 cross-service hops
+  place order: [Ordering, Inventory, Payments]
+  track order: [Ordering, Fulfilment]
+  restock shelf: [Inventory]
+  refund: [Ordering, Payments]

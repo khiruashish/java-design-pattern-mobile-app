@@ -1,0 +1,5 @@
+Hub -> Baner -> Aundh -> done
+Arrays.asList is an adapter over the array: [CURD, BREAD, EGGS]
+  ...with fixed size: add() unsupported
+unmodifiable proxy sees: [MILK, BREAD, EGGS], synchronized decorator wrote through: [MILK, BREAD, EGGS]
+subList is a view: [BREAD, EGGS]; List.of is a factory returning a hidden immutable class: true

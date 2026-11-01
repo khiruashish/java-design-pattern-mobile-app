@@ -1,0 +1,5 @@
+saved order FC-31
+  loyalty: +5 points for C-17
+  warehouse: pick FC-31
+  payments: refund FC-31 (customer changed mind)
+events left on the aggregate: 0

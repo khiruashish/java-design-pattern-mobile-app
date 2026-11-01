@@ -1,0 +1,3 @@
+560034 -> Delivering to zone BLR-34
+56003A -> '56003A' is not a valid PIN code
+110001 -> We don't deliver to 110001 yet

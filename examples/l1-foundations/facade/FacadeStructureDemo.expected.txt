@@ -1,0 +1,4 @@
+without facade: sms to asha (pay_asha_19800)
+with facade:    sms to asha (pay_asha_19800)
+with facade:    out of stock
+subsystems still usable directly: total = 9900

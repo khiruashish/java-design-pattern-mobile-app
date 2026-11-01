@@ -1,0 +1,4 @@
+new-checkout at 20%: 1993 of 10000 customers
+same customers on every request: true
+after kill switch: 0 customers on new checkout
+expired toggle: diwali-banner (EXPERIMENT, owner growth-team) since 2025-11-15

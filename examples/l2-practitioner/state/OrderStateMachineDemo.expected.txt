@@ -1,0 +1,8 @@
+after PACK: Order[id=FC-9101, state=PACKED, version=2, riderId=null]
+guard: dispatch needs a rider
+race: stale update for FC-9101: expected v2, found v3
+duplicate ev-3 ignored, still OUT_FOR_DELIVERY v3
+illegal: PACK not allowed in OUT_FOR_DELIVERY
+  history: PLACED -> PACKED by ev-1 at 2026-11-02T10:01:00Z
+  history: PACKED -> OUT_FOR_DELIVERY by ev-3 at 2026-11-02T10:02:00Z
+  history: OUT_FOR_DELIVERY -> DELIVERED by ev-6 at 2026-11-02T10:04:00Z

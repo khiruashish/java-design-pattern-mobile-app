@@ -1,0 +1,1 @@
+weight 6000 g (the gift card was skipped: WeightVisitor doesn't implement GiftCardVisitor)

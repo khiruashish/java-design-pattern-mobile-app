@@ -1,0 +1,14 @@
+> add milk
+  [badge] 1 items
+  [list]  {milk=1}
+> add bread
+  [badge] 2 items
+  [list]  {bread=1, milk=1}
+> add milk
+  [badge] 3 items
+  [list]  {bread=1, milk=2}
+> remove milk
+  [badge] 2 items
+  [list]  {bread=1, milk=1}
+> checkout
+  unknown command: checkout

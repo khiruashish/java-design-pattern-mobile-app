@@ -1,0 +1,5 @@
+Arjun: skipped [no cold box for chilled items]
+Bina: eligible
+Chetan: skipped [not on shift, more than 3 km away]
+Divya: skipped [no bag space]
+assign to: Bina

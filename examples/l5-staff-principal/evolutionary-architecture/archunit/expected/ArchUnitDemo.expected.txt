@@ -1,0 +1,5 @@
+FAIL internal packages are private to their module
+     Method <com.freshcart.web.OrderController.post(java.lang.String, long)> calls method <com.freshcart.pricing.internal.DiscountTable.percentFor(java.lang.String)>
+FAIL layers: web -> ordering -> pricing
+     Method <com.freshcart.web.OrderController.post(java.lang.String, long)> calls method <com.freshcart.pricing.internal.DiscountTable.percentFor(java.lang.String)>
+ok   no cycles between modules

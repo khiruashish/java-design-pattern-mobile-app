@@ -1,0 +1,2 @@
+dev: LOG ONLY: sms to 98450 | factory called 1x
+prod: POST https://api.textblast.example/v2/sms to 98450 (timeout 2000 ms) | factory called 1x

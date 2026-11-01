@@ -1,0 +1,2 @@
+3.0 km, raining=false -> Rs 38
+5.0 km, raining=true -> Rs 70

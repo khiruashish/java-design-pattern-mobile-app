@@ -1,0 +1,6 @@
+Builder:        StringBuilder -> FC-1 | Rs 649
+Factory method: LocalDate.of -> 2026-10-31, List.of -> [MILK]
+Flyweight:      Integer.valueOf(42) shared -> true
+Proxy:          unmodifiableList blocks writes -> true
+Singleton:      Runtime.getRuntime() -> true
+Command:        Callable submitted to an executor -> ran

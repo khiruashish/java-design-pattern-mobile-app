@@ -1,0 +1,5 @@
+caller saw: price must be positive
+OK   ops:meena setPrice[MILK-1L, 7000]
+FAIL ops:meena setPrice[CURD-500G, 0]: price must be positive
+OK   ops:meena bulkDiscount[[MILK-1L, CURD-500G], 10]
+prices: {CURD-500G=4050, MILK-1L=6300} (the two setPrice calls inside bulkDiscount were not audited)

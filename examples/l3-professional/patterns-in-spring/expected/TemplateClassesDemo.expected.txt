@@ -1,0 +1,5 @@
+raw JDBC:     [OrderRow[id=FC-1, city=Pune, totalPaise=64900]]
+JdbcTemplate: [OrderRow[id=FC-1, city=Pune, totalPaise=64900]]
+SQL error translated to: DuplicateKeyException
+TransactionTemplate rolled back: payment gateway refused refund
+FC-2 status: DELIVERED

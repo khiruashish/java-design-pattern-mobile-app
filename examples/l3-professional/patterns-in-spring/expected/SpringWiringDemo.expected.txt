@@ -1,0 +1,2 @@
+4 km -> 18 min
+without Spring, same result: 18 min
