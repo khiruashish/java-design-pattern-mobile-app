@@ -1,0 +1,3 @@
+Hi Asha, order FC-12 (Rs 518.50) arrives in 18 min.
+Hi there, order FC-13 (Rs 200) arrives in 25 min.
+same as before: true

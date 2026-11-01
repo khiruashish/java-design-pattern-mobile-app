@@ -1,0 +1,8 @@
+shadow: compared 1000, mismatched 487, served by v2 0
+  FC-2: Quote[feePaise=516, currency=INR] vs Quote[feePaise=517, currency=INR]
+  FC-4: Quote[feePaise=833, currency=INR] vs Quote[feePaise=834, currency=INR]
+  FC-5: Quote[feePaise=991, currency=INR] vs Quote[feePaise=992, currency=INR]
+after fix: compared 1000, mismatched 0
+25% rollout: served by v2 264 of 1000
+same order, same path: true
+kill switch on: served by v2 0

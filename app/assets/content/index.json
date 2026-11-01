@@ -856,9 +856,9 @@
    "id": "l3-professional__refactoring-to-patterns",
    "path": "l3-professional/refactoring-to-patterns.md",
    "title": "Refactoring to Patterns",
-   "summary": "Move existing code toward (and away from) patterns safely.",
-   "minutes": 30,
-   "written": false,
+   "summary": "Patterns are best **discovered** in working code, not imposed up front. Joshua Kerievsky's *Refactoring to Patterns* (2004) shows how to move code **toward** a pattern when a smell justifies it, and **away** from one when it no longer pays. The workflow is always the same: pin current behaviour with tests (a golden master if needed), then change structure in small, behaviour-preserving steps, running the tests after each. Key moves: **Replace Conditional with Polymorphism**, **Replace Constructors with Creation Methods**, **Extract Strategy**, and **Inline** a pattern that adds only indirection. For risky production changes, use **Parallel Change** (expand, migrate, contract) with shadow comparison and gradual rollout.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",
