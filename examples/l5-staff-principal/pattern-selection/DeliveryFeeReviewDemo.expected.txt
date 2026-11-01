@@ -1,0 +1,8 @@
+2025 Q1: keep the enum + switch; revisit at the next variant
+    because few variants (3), rarely changed (0x a month)
+2026 Q2: Strategy per rule, selected by a small registry
+    because 11 variants changing 4x a month
+    because 3 teams edit rules: separate classes avoid merge conflicts
+2026 Q4 proposal: rules engine / decision table
+    because business must change rules without a deploy
+    because 40 rules: a table-driven or rules-engine approach scales better than classes

@@ -1,0 +1,5 @@
+same answer: true (Rs 50)
+types to read: direct 0, patterned 5 (interface, 2 strategies, registry, service)
+runtime cost: 1 extra stack frame (negligible)
+reader cost: direct 1 jump to the rule; patterned 5 (service, lookup, registry, registration, strategy)
+to add a PLATINUM tier: direct = edit 1 method; patterned = add 1 class + 1 registration

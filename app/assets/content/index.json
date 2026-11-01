@@ -1036,9 +1036,9 @@
    "id": "l5-staff-principal__pattern-selection",
    "path": "l5-staff-principal/pattern-selection.md",
    "title": "Choosing Patterns and Trade-offs",
-   "summary": "Decide when a pattern pays off, and say no when it doesn't.",
+   "summary": "At staff level the question is rarely \"how does this pattern work?\" and usually \"is it worth it here, and how will we know if we were wrong?\" Every pattern adds **indirection**: more types and more jumps for every future reader, paid daily, in exchange for flexibility that may never be used. Make the trade-off explicit with **decision frameworks**: name the forces (variants, change rate, teams, runtime needs), apply thresholds, and check how sensitive the outcome is. Record significant decisions as **Architecture Decision Records** so the reasoning survives the people. Spend most care on **irreversible** decisions (one-way doors) and decide reversible ones quickly, buying reversibility with seams where it's cheap.",
    "minutes": 30,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L5",

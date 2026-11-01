@@ -1,0 +1,15 @@
+# ADR-0012: Delivery fees as Strategy beans
+
+Status: Accepted (supersedes ADR-0007)
+
+## Context
+Eleven fee rules, city teams change them weekly.
+
+## Decision
+One Strategy bean per rule, selected by city and slot.
+
+## Consequences
+Rules testable in isolation; one more indirection; enum removed.
+
+ADR-0007 Delivery fees as an enum switch [Superseded by ADR-0012]
+ADR-0012 Delivery fees as Strategy beans [Accepted]

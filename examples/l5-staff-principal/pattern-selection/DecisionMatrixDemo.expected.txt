@@ -1,0 +1,5 @@
+baseline winner: Strategy beans {enum + switch=28, Strategy beans=33, rules engine=29}
+  if simplicity weighs +2: Strategy beans
+  if add-a-rule weighs +2: Strategy beans
+  if testability weighs +2: Strategy beans
+  if runtime-config weighs +2: rules engine  <- flips
