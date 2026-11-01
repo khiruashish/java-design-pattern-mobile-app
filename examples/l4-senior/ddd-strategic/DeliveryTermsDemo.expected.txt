@@ -1,0 +1,2 @@
+rider sees: 3 stops, 2 remaining
+customer sees: CustomerDelivery[orderId=QD-2, window=18:00-20:00, status=next stop]

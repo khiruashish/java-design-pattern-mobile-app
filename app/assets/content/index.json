@@ -925,9 +925,9 @@
    "id": "l4-senior__ddd-strategic",
    "path": "l4-senior/ddd-strategic.md",
    "title": "Domain-Driven Design: Strategic Patterns",
-   "summary": "Split a large domain into models and teams.",
-   "minutes": 35,
-   "written": false,
+   "summary": "Strategic DDD is about **where one model ends and another begins**. A **ubiquitous language** makes code read like the business. A **bounded context** is the boundary inside which a model and its language are consistent; \"product\" can mean different things in Catalogue, Warehouse and Pricing, and that's fine. A **context map** documents how contexts relate (customer/supplier, conformist, partnership, shared kernel, open host service). An **anti-corruption layer** translates a foreign model so it can't distort yours. A **shared kernel** is a small model two contexts deliberately share; a **published language** is a documented, versioned format for integration. These decisions shape team boundaries, service boundaries and integration contracts, and they matter more than any tactical pattern.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",

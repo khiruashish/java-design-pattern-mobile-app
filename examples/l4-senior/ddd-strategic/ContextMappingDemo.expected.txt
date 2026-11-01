@@ -1,0 +1,12 @@
+Catalogue         -> Search    OPEN_HOST_SERVICE
+Catalogue         -> Pricing   CUSTOMER_SUPPLIER
+Pricing           -> Checkout  CUSTOMER_SUPPLIER
+Checkout          -> Delivery  CUSTOMER_SUPPLIER
+ParcelGo API      -> Delivery  ANTICORRUPTION_LAYER
+PayLink API       -> Checkout  CONFORMIST
+Shared Money/Sku  -> Checkout  SHARED_KERNEL
+Shared Money/Sku  -> Pricing   SHARED_KERNEL
+change in Catalogue affects: [Search, Pricing, Checkout, Delivery]
+change in ParcelGo API affects: [Delivery] (stops at the ACL)
+change in PayLink API affects: [Checkout, Delivery] (conformist: change flows through)
+risks to review: [Checkout conforms to PayLink API]

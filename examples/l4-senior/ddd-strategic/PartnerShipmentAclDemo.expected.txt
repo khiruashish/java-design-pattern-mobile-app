@@ -1,0 +1,4 @@
+DeliveryUpdate[orderId=FC-71, status=OUT_FOR_DELIVERY, customerMessage=On the way]
+DeliveryUpdate[orderId=FC-71, status=FAILED_ATTEMPT, customerMessage=We couldn't reach you; we'll try again tomorrow]
+DeliveryUpdate[orderId=FC-71, status=DELIVERED, customerMessage=Delivered. Enjoy!]
+quarantined for review: [PG124/RTO, PG125/DLV]

@@ -1,0 +1,2 @@
+Product[sku=Sku[code=PANEER-200G], name=PANEER MALAI 200G, grams=200, pricePaiseExTax=8900, gstPercent=5]
+Product[sku=Sku[code=CURD-400G], name=DAHI 400G, grams=400, pricePaiseExTax=4500, gstPercent=5]

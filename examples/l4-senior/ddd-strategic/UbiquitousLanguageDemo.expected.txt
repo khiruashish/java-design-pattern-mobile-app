@@ -1,0 +1,4 @@
+same answer at 21:30: true (true)
+at 22:15: false
+terms used in code that are in the glossary: true
+skip cutoff means: 22:00 on the day before delivery
