@@ -1,0 +1,4 @@
+PinCode[value=560034] region South, same city as office: true
+West
+rejected: '056003' is not a 6-digit PIN code
+rejected: '5600' is not a 6-digit PIN code

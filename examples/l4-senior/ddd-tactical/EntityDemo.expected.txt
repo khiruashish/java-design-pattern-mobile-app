@@ -1,0 +1,4 @@
+entity still in VIP set after phone change: true
+same customer loaded twice is equal: true
+value-equality 'customer' equal after phone change: false
+C-17(Asha, 9876500002)

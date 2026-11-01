@@ -911,9 +911,9 @@
    "id": "l4-senior__ddd-tactical",
    "path": "l4-senior/ddd-tactical.md",
    "title": "Domain-Driven Design: Tactical Patterns",
-   "summary": "Model a rich domain in code.",
-   "minutes": 40,
-   "written": false,
+   "summary": "DDD's tactical patterns are the building blocks for modelling a complex domain in code. **Entities** have identity that persists as attributes change. **Value objects** are immutable, compared by value and validate themselves (`Money`, `PinCode`). **Aggregates** group objects that must stay consistent, with one **root** that enforces invariants; one transaction changes one aggregate. **Domain events** record meaningful things that happened. **Domain services** hold logic that belongs to no single object. **Factories** create valid aggregates, and **repositories** store and load whole aggregates by ID. In Java 21, records, sealed types and pattern matching make these patterns lighter than ever.",
+   "minutes": 45,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",

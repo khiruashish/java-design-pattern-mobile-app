@@ -1,0 +1,7 @@
+add 2 ghee: ok
+add 1 more ghee (COD limit): refused (IllegalStateException: COD orders are limited to Rs 2000)
+add 40 eggs (item limit): refused (IllegalStateException: max 30 items per order)
+bypass via lines().add: refused (UnsupportedOperationException)
+place: ok
+add after placing: refused (IllegalStateException: order FC-9 already placed)
+final: 2 items, total 140000
