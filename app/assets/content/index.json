@@ -1302,9 +1302,9 @@
    "id": "glossary",
    "path": "glossary.md",
    "title": "Glossary",
-   "summary": "Every term used in the playbook. Terms also show as tooltips on every page.",
+   "summary": "Every term used in the playbook, alphabetically, with a one-line definition and a link to the page that explains it. Acronyms also show as tooltips when you hover over them on any page.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"
@@ -1315,9 +1315,9 @@
    "id": "further-reading",
    "path": "further-reading.md",
    "title": "Further Reading",
-   "summary": "Books, specifications and talks worth your time.",
+   "summary": "The books, specifications and references behind this playbook, grouped by level. Start with *Head First Design Patterns* or *Effective Java* if you're new, *Refactoring* and *Java Concurrency in Practice* as you grow, and the architecture and DDD books at L4 and L5. Every item here is a real, published work.",
    "minutes": null,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "reference"

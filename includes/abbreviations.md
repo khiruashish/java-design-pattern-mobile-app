@@ -19,3 +19,25 @@
 *[UML]: Unified Modeling Language
 *[API]: Application programming interface
 *[MVVM]: Model-View-ViewModel
+*[ADR]: Architecture decision record
+*[ACL]: Anti-corruption layer
+*[AOP]: Aspect-oriented programming
+*[BFF]: Backend for frontend
+*[CDC]: Change data capture
+*[CDS]: Class data sharing
+*[CRUD]: Create, read, update, delete
+*[JPMS]: Java Platform Module System
+*[JMM]: Java Memory Model
+*[JPA]: Jakarta Persistence API
+*[LTS]: Long-term support Java release
+*[ORM]: Object-relational mapping
+*[SBOM]: Software bill of materials
+*[SLO]: Service level objective
+*[SPI]: Service provider interface
+*[TCK]: Technology compatibility kit
+*[TTL]: Time to live
+*[YAGNI]: You Aren't Gonna Need It
+*[KISS]: Keep It Simple
+*[DRY]: Don't Repeat Yourself
+*[LLD]: Low-level design
+*[HLD]: High-level design
