@@ -1,0 +1,7 @@
+started greenvalley-organic-discount
+rejected dairyday-subscription: built for API 1, host is 2
+failed to start festival-banner: cannot reach config service (host keeps running)
+started small-basket-fee
+basket Rs 400.00 -> Rs 409.0
+stopped small-basket-fee
+stopped greenvalley-organic-discount

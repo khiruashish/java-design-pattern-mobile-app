@@ -1,0 +1,5 @@
+checkout:
+  10 ApplyCoupon ok
+  20 AddDeliveryFee ok
+  30 AwardLoyaltyPoints FAILED (loyalty service timeout), owner growth-team
+total Rs 379.0, notes [coupon FRESH50, QuickDrop fee]

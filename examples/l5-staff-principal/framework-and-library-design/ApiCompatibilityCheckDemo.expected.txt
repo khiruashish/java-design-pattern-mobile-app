@@ -1,0 +1,14 @@
+API 1.0.0:
+  PartnerClient#quote(String):long
+  PartnerClient#quote(String,int):long
+  Transport#post(String,String):String [abstract]
+1.0.0 -> 1.1.0: change needs MINOR, version says MINOR => PASS
+  added    PartnerClient#track(String):String
+  added    Transport#get(String):String
+1.1.0 -> 1.2.0: change needs MAJOR, version says MINOR => FAIL the build
+  removed  PartnerClient#quote(String):long
+  removed  PartnerClient#quote(String,int):long
+  removed  Transport#get(String):String
+  breaks implementers  Transport#get(String):String [abstract]
+  added    PartnerClient#quote(String,long):long
+1.1.0 -> 2.0.0: change needs MAJOR, version says MAJOR => PASS

@@ -1092,9 +1092,9 @@
    "id": "l5-staff-principal__framework-and-library-design",
    "path": "l5-staff-principal/framework-and-library-design.md",
    "title": "Designing Frameworks and Libraries",
-   "summary": "Build extension points other teams can rely on.",
-   "minutes": 35,
-   "written": false,
+   "summary": "A library's API is a promise other teams build on. Give them **extension points** (an SPI discovered with `ServiceLoader`, plugins with a versioned contract, annotations the framework scans) and let the framework own the flow (**inversion of control**). Keep everything else hidden behind interfaces, static factories and **JPMS exports**. Evolve without breaking anyone: add default methods and overloads, deprecate before removing, and remember that **source-compatible is not binary-compatible**. Automate the promise with an API compatibility check that enforces semantic versioning in CI.",
+   "minutes": 40,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L5",

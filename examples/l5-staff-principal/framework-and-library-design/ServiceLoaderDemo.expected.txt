@@ -1,0 +1,7 @@
+META-INF/services/ServiceLoaderDemo$DeliveryPartner
+found provider type QuickDropPartner (not instantiated yet)
+found provider type ParcelGoPartner (not instantiated yet)
+found provider type BrokenPartner (not instantiated yet)
+QuickDrop quote for 5 km: Rs 45.0
+ParcelGo quote for 5 km: Rs 45.5
+skipped a provider: missing API key
