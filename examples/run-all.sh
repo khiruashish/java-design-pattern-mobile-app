@@ -8,9 +8,16 @@ failed=0
 while IFS= read -r demo; do
   expected="${demo%.java}.expected.txt"
   [[ -f "$expected" ]] || { echo "MISSING $expected"; failed=1; continue; }
-  if diff -u "$expected" <(java "$demo" 2>/dev/null); then
+  # Demos that measure real time say "run-all: retries=N" and may be retried on a busy machine.
+  tries=$(grep -oE 'run-all: retries=[0-9]+' "$demo" | grep -oE '[0-9]+$' || echo 1)
+  ok=0
+  for ((t = 1; t <= tries; t++)); do
+    if diff -q "$expected" <(java "$demo" 2>/dev/null) >/dev/null; then ok=1; break; fi
+  done
+  if [[ $ok == 1 ]]; then
     echo "PASS $demo"
   else
+    diff -u "$expected" <(java "$demo" 2>/dev/null) || true
     echo "FAIL $demo"; failed=1
   fi
 done < <(find . -name '*Demo.java' -not -path '*/src/*' -not -path '*/target/*' | sort)

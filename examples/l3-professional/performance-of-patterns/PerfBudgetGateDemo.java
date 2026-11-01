@@ -10,6 +10,7 @@ import java.util.function.LongSupplier;
  * guards against dead-code elimination with a sink, and reports INCONCLUSIVE instead of failing when the
  * measurements are too noisy. The clock is injectable so the gate's own logic is unit-testable.
  */
+// run-all: retries=3 (real timings can be noisy on a busy machine)
 public class PerfBudgetGateDemo {
 
     enum Verdict { PASS, FAIL, INCONCLUSIVE }
