@@ -1078,9 +1078,9 @@
    "id": "l5-staff-principal__jvm-internals-behind-patterns",
    "path": "l5-staff-principal/jvm-internals-behind-patterns.md",
    "title": "JVM Internals Behind Patterns",
-   "summary": "Understand how the JVM implements what patterns rely on.",
+   "summary": "Many patterns rely on JVM guarantees you rarely see. **Class initialisation** runs once per class loader under a lock, which makes the holder idiom and enum singletons safe and lazy, and also means two class loaders mean two singletons. **Dynamic proxies** and bytecode generation (CGLIB, ByteBuddy) power Spring AOP, transactions and mocks, with limits: no self-invocation interception and no final methods. **invokedynamic** with `LambdaMetafactory` turns lambdas into hidden classes at first use, caching non-capturing ones. **MethodHandles** and **VarHandles** are the fast, typed successors to reflection and `Unsafe`. The **Java Memory Model** defines when writes become visible across threads; safe publication (final fields, volatile, locks, static init, concurrent collections) is what makes immutable objects and lazy singletons correct.",
    "minutes": 40,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L5",

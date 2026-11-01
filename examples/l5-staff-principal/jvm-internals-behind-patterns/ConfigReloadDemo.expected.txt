@@ -1,0 +1,4 @@
+rejected: non-positive price in v2 (still serving v1)
+ignored stale v1
+stress: inconsistent totals = 0, final 200, listeners notified 199 times
+basket now: Rs 163.0

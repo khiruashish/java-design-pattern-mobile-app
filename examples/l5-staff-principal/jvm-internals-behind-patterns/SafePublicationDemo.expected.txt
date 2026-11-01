@@ -1,0 +1,3 @@
+4 threads read: [6800, 6800, 6800, 6800], same instance: true
+after replace: 7000
+rules: final fields, volatile, synchronized, static init, java.util.concurrent all publish safely

@@ -1,0 +1,3 @@
+reflection: 8
+method handle: 5, type (Stock,int)int
+20 buyers, 10 units: 10 reservations, 0 left (never negative)
