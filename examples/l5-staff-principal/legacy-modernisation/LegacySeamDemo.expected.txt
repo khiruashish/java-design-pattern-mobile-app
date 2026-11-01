@@ -1,0 +1,2 @@
+production: reorder PANEER-200G
+test with stub stock=25: ok PANEER-200G

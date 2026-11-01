@@ -1064,9 +1064,9 @@
    "id": "l5-staff-principal__legacy-modernisation",
    "path": "l5-staff-principal/legacy-modernisation.md",
    "title": "Legacy Modernisation Patterns",
-   "summary": "Move old systems forward without a rewrite.",
+   "summary": "Big-bang rewrites of working systems usually run late and often fail; incremental modernisation keeps delivering while the old system shrinks. The **strangler fig** moves one capability at a time and is only finished when the new side owns the data and the legacy path is deleted. **Branch by abstraction** replaces a component on trunk behind an interface, with no long-lived branch. A **parallel run** executes old and new on real inputs, serves the old result and classifies differences until the new one is trusted. An **anti-corruption layer** keeps legacy formats and quirks out of new code. **Feature toggles** control rollout per segment and give an instant way back. Combine them with idempotent data migration (copy absolute values, backfill, reconcile) and automatic rollback.",
    "minutes": 35,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L5",

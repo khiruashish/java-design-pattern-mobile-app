@@ -1,0 +1,4 @@
+backfill batch copied 3 balance(s)
+backfill batch copied 1 balance(s)
+mismatches: [C-6 legacy=50 new=null]
+after replaying the retry queue: [] -> safe to switch reads
