@@ -953,9 +953,9 @@
    "id": "l4-senior__resilience-patterns",
    "path": "l4-senior/resilience-patterns.md",
    "title": "Resilience Patterns",
-   "summary": "Keep systems up when dependencies fail.",
+   "summary": "Every remote dependency will be slow or down at some point; resilience patterns stop that from taking your service with it. A **timeout** bounds how long you wait. A **retry with exponential backoff and jitter** recovers from transient failures without a thundering herd, and only for idempotent operations. A **circuit breaker** stops calling a failing dependency and fails fast until it recovers. A **bulkhead** caps concurrency per dependency so one slow service can't use all your threads. A **rate limiter** keeps you within a quota or protects you from overload. A **fallback** returns something useful (cached, default, degraded) instead of an error. **Resilience4j** provides all of them as composable decorators; the order you compose them in matters.",
    "minutes": 35,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",
