@@ -1,0 +1,8 @@
+queue: pick tasks
+  picker Ravi got pick FC-1
+  picker Meena got pick FC-2
+  picker Ravi got pick FC-3
+topic: OrderPlaced
+  loyalty: award points for FC-1
+  analytics: count FC-1
+  notifications: confirm FC-1

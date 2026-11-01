@@ -1,0 +1,5 @@
+bulk-orders: [FC-3]
+cod-verification: [FC-2]
+express-fulfilment: [FC-1, FC-5]
+standard-fulfilment: [FC-6]
+unsupported-city: [FC-4]

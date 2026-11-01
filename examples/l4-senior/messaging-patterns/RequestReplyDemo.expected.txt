@@ -1,0 +1,5 @@
+sent [corr-1, corr-2, corr-3] with replyTo=replies.checkout-7
+corr-2 -> Rs 25
+corr-1 -> Rs 0 (free above Rs 199)
+corr-3 timed out
+unknown or late reply corr-3 dropped

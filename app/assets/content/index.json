@@ -981,9 +981,9 @@
    "id": "l4-senior__messaging-patterns",
    "path": "l4-senior/messaging-patterns.md",
    "title": "Messaging and Integration Patterns",
-   "summary": "Connect systems with messages (Enterprise Integration Patterns).",
+   "summary": "Messaging connects systems through channels instead of direct calls, so senders and receivers don't need to be up at the same time or know each other. A **queue** (point-to-point) gives each message to one receiver; a **topic** (publish-subscribe) gives a copy to every subscriber. **Competing consumers** scale a queue, and **partitioning by key** keeps per-entity ordering. A **content-based router** sends each message to the right channel. A **dead letter channel** parks messages that keep failing, with the reason, so they neither block nor vanish. A **message translator** converts external formats into a canonical model at the edge. **Request-reply** over messaging uses a **correlation ID** and a reply-to channel. These are the Enterprise Integration Patterns (Hohpe and Woolf), implemented today by Kafka, RabbitMQ, Spring Integration and Apache Camel.",
    "minutes": 35,
-   "written": false,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",
