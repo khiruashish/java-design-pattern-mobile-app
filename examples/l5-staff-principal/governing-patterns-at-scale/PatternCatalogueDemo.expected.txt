@@ -1,0 +1,9 @@
+catalogue:
+  ADOPT  Constructor injection      owner platform-guild
+  ADOPT  Transactional outbox       owner data-guild
+  TRIAL  Event sourcing             owner data-guild
+  HOLD   Service locator            owner platform-guild
+  HOLD   Mutable static singleton   owner platform-guild
+lint:
+  ordering/OrderService.java: Service locator is HOLD, use constructor injection instead (ask platform-guild)
+  pricing/PriceCache.java: Mutable static singleton is HOLD, inject a bean, or use an immutable enum (ask platform-guild)

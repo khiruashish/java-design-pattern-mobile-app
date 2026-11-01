@@ -1,0 +1,5 @@
+weights {catalogue=30, reference=25, debt=25, review=20}
+checkout  score  97 (+5 vs last quarter) -> share what works at the guild demo
+catalogue score  73 (-12 vs last quarter) -> tech lead check-in: what changed this quarter?
+loyalty   score  47 (-2 vs last quarter) -> offer guild pairing and a reference migration sprint
+          flag: rubber-stamp reviews suspected (median 1.5 min)

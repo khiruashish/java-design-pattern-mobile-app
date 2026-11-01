@@ -1,0 +1,7 @@
+quarter capacity 180 days, debt budget 36 days (20%)
+  Flaky end-to-end suite                                     payback  1.6 months  FUNDED
+  Hand-rolled retry loops in 9 clients                       payback  2.0 months  FUNDED
+  God class CheckoutService (merge conflicts, slow reviews)  payback  3.8 months  FUNDED
+  Service locator in ordering                                payback  8.0 months  FUNDED
+  Legacy XML config for pricing                              payback 20.0 months  register
+spent 33 of 36 days; still paying 1.0 days per month on unfunded debt

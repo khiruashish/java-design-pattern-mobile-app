@@ -1106,9 +1106,9 @@
    "id": "l5-staff-principal__governing-patterns-at-scale",
    "path": "l5-staff-principal/governing-patterns-at-scale.md",
    "title": "Governing Patterns Across an Organisation",
-   "summary": "Set standards, review designs and grow engineers.",
-   "minutes": 25,
-   "written": false,
+   "summary": "With 50 engineers, patterns stop being individual choices and become organisational habits. Govern them with **light, automated, help-oriented** tools: a **pattern catalogue** with ADOPT/TRIAL/HOLD status enforced by lint; **risk-based design reviews** so small changes move fast; **reference implementations** that show the golden path and measure drift; a **technical debt strategy** that budgets capacity by payback; and **deliberate teaching** through skills matrices, pairing and katas. Measure health, but guard against gamed metrics, and use results to offer help, not to rank teams.",
+   "minutes": 35,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L5",

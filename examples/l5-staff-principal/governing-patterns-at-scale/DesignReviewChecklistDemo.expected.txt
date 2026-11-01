@@ -1,0 +1,3 @@
+Add banner text to home screen: risk 1 -> SELF_SERVE
+Cache delivery slots with a TRIAL pattern: risk 3 -> PEER_REVIEW
+Split loyalty points into its own service: risk 9 -> ARCHITECTURE_REVIEW, unanswered [traffic]
