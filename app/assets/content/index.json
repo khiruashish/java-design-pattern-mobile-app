@@ -897,9 +897,9 @@
    "id": "l4-senior__architectural-patterns",
    "path": "l4-senior/architectural-patterns.md",
    "title": "Architectural Patterns",
-   "summary": "Structure whole applications.",
-   "minutes": 40,
-   "written": false,
+   "summary": "Architectural patterns decide the **shape of a whole application**: which parts exist, which may depend on which, and how they communicate. **Layered** architecture is the familiar default. **Hexagonal** (ports and adapters) and **Clean/Onion** put the domain at the centre and push frameworks, databases and UIs to the edges, so they can be swapped and the core tested alone. A **modular monolith** gives microservice-like boundaries inside one deployable. **Microkernel** builds a small core extended by plugins. **Event-driven** architecture connects parts through published facts instead of direct calls. The senior skill isn't knowing the diagrams; it's choosing based on team size, change patterns and operational cost, and **enforcing** the chosen boundaries with automated checks.",
+   "minutes": 45,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L4",
