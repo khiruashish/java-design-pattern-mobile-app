@@ -1,0 +1,2 @@
+checksums: 3999990000000, 2024995000000, 1032417380000
+timings per call are printed to stderr; they vary by machine and JVM

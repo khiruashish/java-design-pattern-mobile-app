@@ -870,9 +870,9 @@
    "id": "l3-professional__performance-of-patterns",
    "path": "l3-professional/performance-of-patterns.md",
    "title": "Performance Cost of Patterns",
-   "summary": "Know what indirection costs on the JVM and how to measure it.",
-   "minutes": 30,
-   "written": false,
+   "summary": "Most design patterns add indirection: an interface call, a wrapper object, a proxy, a lookup. On the JVM that indirection is usually **almost free**, because the JIT compiler inlines calls at **monomorphic and bimorphic** call sites and **escape analysis** removes short-lived objects. Costs become real when call sites turn **megamorphic** (many implementations through one site), when objects **escape** (stored, boxed, carried in loops), when calls go through **reflection or dynamic proxies** on hot paths, and at **startup**, where reflective DI containers scan and wire classes. Rules: don't guess, **measure with JMH**; compare against a baseline in the same run; optimise only the hot path, and keep the pattern everywhere else.",
+   "minutes": 45,
+   "written": true,
    "isIndex": false,
    "tags": [
     "L3",
